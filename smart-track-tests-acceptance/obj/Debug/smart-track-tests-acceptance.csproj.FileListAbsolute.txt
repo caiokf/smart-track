@@ -1,0 +1,5 @@
+C:\Development\smart-track\smart-track-tests-acceptance\bin\Debug\smart-track-tests-acceptance.dll
+C:\Development\smart-track\smart-track-tests-acceptance\bin\Debug\smart-track-tests-acceptance.pdb
+C:\Development\smart-track\smart-track-tests-acceptance\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\smart-track\smart-track-tests-acceptance\obj\Debug\smart-track-tests-acceptance.dll
+C:\Development\smart-track\smart-track-tests-acceptance\obj\Debug\smart-track-tests-acceptance.pdb
