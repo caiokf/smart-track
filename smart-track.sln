@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smart-track", "smart-track\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smart-track-tests-unit", "smart-track-tests-unit\smart-track-tests-unit.csproj", "{7C5E3F69-87AE-42A2-9B6F-0A716822B673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smart-track-tests-acceptance", "..\smart-track\smart-track-tests-acceptance\smart-track-tests-acceptance.csproj", "{763A35F6-9D42-49E3-BD1F-0212FED5243B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smart-track-tests-acceptance", "smart-track-tests-acceptance\smart-track-tests-acceptance.csproj", "{763A35F6-9D42-49E3-BD1F-0212FED5243B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smart-track-model", "smart-track-model\smart-track-model.csproj", "{86B9CDA1-17B8-435D-AC29-A55FB04EF3AA}"
 EndProject
