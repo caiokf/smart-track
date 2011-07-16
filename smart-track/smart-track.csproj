@@ -42,8 +42,8 @@
     <Reference Include="AutoMapper">
       <HintPath>..\packages\AutoMapper.1.1.0.118\lib\AutoMapper.dll</HintPath>
     </Reference>
-    <Reference Include="Bottles">
-      <HintPath>..\packages\Bottles.0.9.0.96\lib\Bottles.dll</HintPath>
+    <Reference Include="Bottles, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bottles.0.9.0.98\lib\Bottles.dll</HintPath>
     </Reference>
     <Reference Include="dotless.Core">
       <HintPath>..\packages\dotless.1.1.0\lib\dotless.Core.dll</HintPath>
@@ -57,11 +57,14 @@
     <Reference Include="FubuLocalization">
       <HintPath>..\packages\FubuLocalization.0.9.1.32\lib\FubuLocalization.dll</HintPath>
     </Reference>
-    <Reference Include="FubuMVC.Core">
-      <HintPath>..\packages\FubuMVC.References.0.9.1.524\lib\FubuMVC.Core.dll</HintPath>
+    <Reference Include="FubuMVC.Core, Version=0.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FubuMVC.References.0.9.1.528\lib\FubuMVC.Core.dll</HintPath>
     </Reference>
-    <Reference Include="FubuMVC.StructureMap">
-      <HintPath>..\packages\FubuMVC.References.0.9.1.524\lib\FubuMVC.StructureMap.dll</HintPath>
+    <Reference Include="FubuMVC.Spark">
+      <HintPath>..\packages\FubuMVC.Spark.0.9.1.528\lib\FubuMVC.Spark.dll</HintPath>
+    </Reference>
+    <Reference Include="FubuMVC.StructureMap, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FubuMVC.References.0.9.1.528\lib\FubuMVC.StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="HtmlTags">
       <HintPath>..\packages\HtmlTags.1.0.0.23\lib\4.0\HtmlTags.dll</HintPath>
@@ -124,6 +127,9 @@
     <Reference Include="Spark">
       <HintPath>..\packages\Spark.1.6\lib\NET40\Spark.dll</HintPath>
     </Reference>
+    <Reference Include="Spark.Web.Mvc">
+      <HintPath>..\packages\Spark.Web.Mvc2.1.6\lib\NET40\Spark.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="SquishIt.Framework">
       <HintPath>..\packages\SquishIt.0.7.1\lib\SquishIt.Framework.dll</HintPath>
     </Reference>
@@ -162,8 +168,9 @@
     <Reference Include="V8Bridge.Interface">
       <HintPath>..\packages\SassAndCoffee.Core.1.0\lib\net40\V8Bridge.Interface.dll</HintPath>
     </Reference>
-    <Reference Include="WebActivator">
-      <HintPath>..\packages\WebActivator.1.1.0.0\lib\NETFramework40\WebActivator.dll</HintPath>
+    <Reference Include="WebActivator, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebActivator.1.4.1\lib\net40\WebActivator.dll</HintPath>
     </Reference>
     <Reference Include="Yahoo.Yui.Compressor">
       <HintPath>..\packages\YUICompressor.NET.1.5.0.0\lib\NET35\Yahoo.Yui.Compressor.dll</HintPath>
@@ -171,12 +178,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
+    <Compile Include="Configuration\SparkConfiguration.cs" />
+    <Compile Include="Http\Output\JsonResponse.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Configuration\StructureMapRegistry.asax.cs" />
+    <Compile Include="Configuration\StructureMapRegistry.cs" />
+    <Compile Include="Utils\Extensions\SparkExtensions.cs" />
+    <None Include="Content\styles\colors.less" />
+    <None Include="Content\styles\login\login.less" />
+    <None Include="Views\Login\Login.spark" />
+    <None Include="Views\Shared\_global.spark" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -237,11 +251,16 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.6.2.js" />
-    <Content Include="Scripts\jquery-1.6.2.min.js" />
-    <Content Include="Scripts\jquery-ui-1.8.14.js" />
-    <Content Include="Scripts\jquery-ui-1.8.14.min.js" />
+    <Content Include="Content\scripts\jquery\jquery-1.6.2-vsdoc.js" />
+    <Content Include="Content\scripts\jquery\jquery-1.6.2.js" />
+    <Content Include="Content\scripts\jquery\jquery-1.6.2.min.js" />
+    <Content Include="Content\scripts\jquery-ui\jquery-ui-1.8.14.js" />
+    <Content Include="Content\scripts\jquery-ui\jquery-ui-1.8.14.min.js" />
+    <Content Include="Content\scripts\smart-track\login\login.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>login.coffee</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -249,26 +268,36 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Scripts\jquery-1.4.1.js" />
-    <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\MicrosoftAjax.js" />
-    <Content Include="Scripts\MicrosoftAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Content\scripts\jquery\jquery.validate.js" />
+    <Content Include="Content\scripts\jquery\jquery.validate.min.js" />
+    <Content Include="Content\scripts\jquery\jquery.validate-vsdoc.js" />
+    <Content Include="Content\scripts\microsoft-ajax\MicrosoftAjax.js" />
+    <Content Include="Content\scripts\microsoft-ajax\MicrosoftAjax.debug.js" />
+    <Content Include="Content\scripts\microsoft-ajax\MicrosoftMvcAjax.js" />
+    <Content Include="Content\scripts\microsoft-ajax\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Content\scripts\microsoft-ajax\MicrosoftMvcValidation.js" />
+    <Content Include="Content\scripts\microsoft-ajax\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Views\Shared\" />
+    <Folder Include="Content\images\" />
+    <Folder Include="Http\Handlers\" />
+    <Folder Include="Http\Modules\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\smart-track-model\smart-track-model.csproj">
+      <Project>{86B9CDA1-17B8-435D-AC29-A55FB04EF3AA}</Project>
+      <Name>smart-track-model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\scripts\smart-track\login\login.coffee">
+      <Generator>CoffeeScriptGenerator</Generator>
+      <LastGenOutput>login.js</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

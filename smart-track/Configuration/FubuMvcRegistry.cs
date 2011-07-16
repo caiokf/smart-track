@@ -1,5 +1,7 @@
 using FubuMVC.Core;
 using SmartTrack.Web.Controllers;
+using SmartTrack.Web.Http.Output;
+using SmartTrack.Web.Utils.Extensions;
 
 namespace SmartTrack.Web.Configuration
 {
@@ -7,38 +9,37 @@ namespace SmartTrack.Web.Configuration
     {
         public FubuMvcRegistry()
         {
-            // This line turns on the basic diagnostics and request tracing
             IncludeDiagnostics(true);
-
-            // All public methods from concrete classes ending in "Controller"
-            // in this assembly are assumed to be action methods
-            Actions.IncludeClassesSuffixedWithController();
-
-            // Policies
-            Routes
-                .IgnoreControllerNamesEntirely()
-                .IgnoreMethodSuffix("Html")
-                .RootAtAssemblyNamespace()
-                .HomeIs<LoginController>(x => x.Login());
-
             
-            // Match views to action methods by matching
-            // on model type, view name, and namespace
-            Views.TryToAttachWithDefaultConventions();
-
-            /*
-             IncludeDiagnostics(true);
-
             Applies.ToThisAssembly();
 
-            Actions
-                .IncludeTypesNamed(x => x.EndsWith("Controller"));
+            Actions.IncludeClassesSuffixedWithController();
 
             Routes
-                .IgnoreControllerNamespaceEntirely()
-                .ConstrainToHttpMethod(action => action.Method.Name.EndsWith("Command"), "POST")
-                .ConstrainToHttpMethod(action => action.Method.Name.StartsWith("Query"), "GET");
+                .HomeIs<LoginInputModel>()
+                .IgnoreControllerNamesEntirely()
+                .IgnoreMethodSuffix("Html");
+                //.ConstrainToHttpMethod(action => action.Method.Name.EndsWith("Command"), "POST")
+                //.ConstrainToHttpMethod(action => action.Method.Name.StartsWith("Query"), "GET")
+                //.RootAtAssemblyNamespace();
 
+            // Match views to action methods by matching
+            // on model type, view name, and namespace
+            this.UseSpark();
+
+            Views
+                .TryToAttach(x =>
+                {
+                    x.by_ViewModel_and_Namespace_and_MethodName();
+                    x.by_ViewModel_and_Namespace();
+                    x.by_ViewModel();
+                })
+                .TryToAttachWithDefaultConventions();
+
+            Output.ToJson.WhenTheOutputModelIs<JsonResponse>();
+
+            /*
+            
             Views
                 .TryToAttach(x=>
                 {
@@ -47,9 +48,7 @@ namespace SmartTrack.Web.Configuration
                     x.by_ViewModel_and_Namespace();
                     x.by_ViewModel();
                 });
-
-            HomeIs<HomeInputModel>();
-             
+                         
              */
         }
     }

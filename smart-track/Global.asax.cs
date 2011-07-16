@@ -3,6 +3,7 @@ using System.Web.Routing;
 using FubuMVC.Core;
 using FubuMVC.StructureMap;
 using SmartTrack.Web.Configuration;
+using Spark.Web.Mvc;
 using StructureMap;
 
 namespace SmartTrack.Web
@@ -14,8 +15,10 @@ namespace SmartTrack.Web
             ObjectFactory.Initialize(x => x.AddRegistry(new StructureMapRegistry()));
 
 		    FubuApplication.For<FubuMvcRegistry>()
-		        .StructureMap(ObjectFactory.Container)
+                .StructureMapObjectFactory()
 		        .Bootstrap(RouteTable.Routes);
+            
+            SparkEngineStarter.RegisterViewEngine(new SparkConfiguration());
 		}
 	}
 }

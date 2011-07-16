@@ -8,11 +8,50 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.config" caret="1580" fromTop="38" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:Class1.cs" caret="155" fromTop="10" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax" caret="0" fromTop="0" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:User.cs" caret="102" fromTop="5" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:StructureMapRegistry.cs" caret="496" fromTop="14" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/d:scripts/d:smart-track/d:login/f:login.js" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/d:scripts/d:smart-track/d:login/f:login.coffee" caret="19" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="450" fromTop="5" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Http/d:Output/f:JsonResponse.cs" caret="11" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.config" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/f:Site.css" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="521" fromTop="20" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx" caret="419" fromTop="11" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx.cs" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="288" fromTop="4" />
+      <File id="07B30A29-F45E-4C98-B234-868DF237272A/f:Global.asax.cs" caret="0" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.config" caret="1830" fromTop="30" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="270" fromTop="11" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="58" fromTop="2" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="797" fromTop="30" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="237" fromTop="9" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="302" fromTop="11" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="751" fromTop="11" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1700" fromTop="29" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="607" fromTop="20" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="1794" fromTop="27" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="556" fromTop="15" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/d:scripts/d:smart-track/d:login/f:login.coffee" caret="19" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="521" fromTop="13" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="423" fromTop="18" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1250" fromTop="28" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1301" fromTop="17" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1751" fromTop="33" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Http/d:Output/f:JsonResponse.cs" caret="11" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="450" fromTop="5" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1189" fromTop="24" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1189" fromTop="24" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1189" fromTop="24" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1189" fromTop="24" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx.cs" caret="133" fromTop="7" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx" caret="419" fromTop="11" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx.cs" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="552" fromTop="5" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1191" fromTop="19" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="967" fromTop="14" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -26,4 +65,92 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="this" priority="63" />
+      <Item value="x" priority="287" />
+      <Item value="using" priority="30" />
+      <Item value="FubuMVC" priority="30" />
+      <Item value="FubuCore" priority="30" />
+      <Item value="LoginController`0" priority="31" />
+      <Item value="StructureMap" priority="27" />
+      <Item value="Bootstrap" priority="26" />
+      <Item value="FubuApplication`0" priority="31" />
+      <Item value="ctor" priority="127" />
+      <Item value="ObjectFactory`0" priority="32" />
+      <Item value="Client" priority="26" />
+      <Item value="Url" priority="31" />
+      <Item value="string" priority="126" />
+      <Item value="new" priority="63" />
+      <Item value="For`1" priority="63" />
+      <Item value="DocumentStore`0" priority="63" />
+      <Item value="return" priority="95" />
+      <Item value="documentStore" priority="31" />
+      <Item value="DocumentSession`0" priority="31" />
+      <Item value="c" priority="31" />
+      <Item value="session" priority="63" />
+      <Item value="users" priority="31" />
+      <Item value="Length" priority="26" />
+      <Item value="Actions" priority="26" />
+      <Item value="SparkViewEngine" priority="26" />
+      <Item value="Spark" priority="58" />
+      <Item value="WebFormViewEngine" priority="25" />
+      <Item value="Configuration" priority="26" />
+      <Item value="LoginInputModel`0" priority="63" />
+      <Item value="LoginViewModel" priority="28" />
+      <Item value="IFubuPage`0" priority="31" />
+      <Item value="LoginViewModel`0" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuMVC.Core.Registration.DSL.RouteConventionExpression">
+      <Item value="HomeIs`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Controllers.LoginController">
+      <Item value="Login`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@StructureMap.ObjectFactory">
+      <Item value="Container" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Configuration.DSL.Expressions.CreatePluginFamilyExpression`1">
+      <Item value="Singleton`0" priority="26" />
+      <Item value="Use`0" priority="53" />
+      <Item value="HybridHttpOrThreadLocalScoped`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.IContext">
+      <Item value="GetInstance`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Raven.Client.Document.DocumentStore">
+      <Item value="OpenSession`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Raven.Client.IDocumentSession">
+      <Item value="SaveChanges`0" priority="26" />
+      <Item value="Load`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuMVC.Core.IContainerFacilityExpression">
+      <Item value="StructureMapObjectFactory`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="AspCodeCompletionContext">
+      <Item value="script" priority="6" />
+      <Item value="type" priority="6" />
+      <Item value="text/C#" priority="6" />
+      <Item value="login.js" priority="6" />
+      <Item value="Core" priority="6" />
+      <Item value="Web" priority="6" />
+      <Item value="View" priority="6" />
+      <Item value="SimpleFubuPage`1" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuMVC.Core.Registration.DSL.ViewExpression">
+      <Item value="TryToAttach`0" priority="26" />
+      <Item value="IfTheViewTypeMatches`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuMVC.Core.Registration.DSL.ViewsForActionFilterExpression">
+      <Item value="by_ViewModel`0" priority="26" />
+      <Item value="by_ViewModel_and_Namespace_and_MethodName`0" priority="26" />
+      <Item value="by_ViewModel_and_Namespace`0" priority="26" />
+      <Item value="by`1" priority="26" />
+      <Item value="by`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

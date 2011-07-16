@@ -1,23 +1,23 @@
-﻿using HtmlTags;
+﻿using System.Linq;
+using Raven.Client;
+using SmartTrack.Model;
 
 namespace SmartTrack.Web.Controllers
 {
     public class LoginController
     {
+        private readonly IDocumentSession session;
 
-        public HtmlDocument Login()
+        public LoginController(IDocumentSession session)
         {
-            var document = new HtmlDocument
-            {
-                Title = "Saying hello to you"
-            };
+            this.session = session;
+        }
 
-            document
-                .Add("h1")
-                .Text("Hello world!")
-                .Style("color", "blue");
+        public LoginViewModel Login(LoginInputModel input)
+        {
+            var users = session.Query<User>().Take(100).ToArray();
 
-            return document;
+            return new LoginViewModel();
         }
     }
 
@@ -27,5 +27,6 @@ namespace SmartTrack.Web.Controllers
 
     public class LoginViewModel
     {
+        public string Username { get; set; }
     }
 }
