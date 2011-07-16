@@ -8,7 +8,7 @@
     <ProjectGuid>{7C5E3F69-87AE-42A2-9B6F-0A716822B673}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>smart_track_tests_unit</RootNamespace>
+    <RootNamespace>SmartTrack.Tests.Unit</RootNamespace>
     <AssemblyName>smart-track-tests-unit</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
