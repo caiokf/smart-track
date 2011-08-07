@@ -201,6 +201,7 @@
     <Compile Include="Configuration\FluentNhibernateMappings.cs" />
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
     <Compile Include="Configuration\NHibernateConfiguration.cs" />
+    <Compile Include="Configuration\SchedulerRegistry.cs" />
     <Compile Include="Configuration\SparkConfiguration.cs" />
     <Compile Include="Controllers\Diagnostics\DiagnosticsController.cs" />
     <Compile Include="Controllers\Graphs\GraphsController.cs" />
@@ -219,6 +220,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Configuration\StructureMapRegistry.cs" />
+    <Compile Include="ScheduledTasks\CreateTestData.cs" />
     <Compile Include="Utils\Extensions\SparkExtensions.cs" />
     <None Include="Content\styles\colors.less" />
     <None Include="Content\styles\login\login.less" />

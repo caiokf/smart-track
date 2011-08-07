@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Routing;
+using FluentScheduler;
 using FubuMVC.Core;
 using FubuMVC.StructureMap;
 using SmartTrack.Web.Configuration;
@@ -13,6 +14,8 @@ namespace SmartTrack.Web
 		protected void Application_Start()
 		{
             ObjectFactory.Initialize(x => x.AddRegistry(new StructureMapRegistry()));
+            
+            TaskManager.Initialize(new SchedulerRegistry());
 
 		    FubuApplication.For<FubuMvcRegistry>()
                 .StructureMapObjectFactory()

@@ -9,12 +9,12 @@ namespace SmartTrack.Model
     {
         public virtual Guid Id { get; protected set; }
 
-        public void Hydrate(IEnumerable<IDomainEvent> events)
+        public virtual void Hydrate(IEnumerable<IDomainEvent> events)
         {
             events.ToList().ForEach(Apply);
         }
 
-        public void Apply(IDomainEvent e)
+        public virtual void Apply(IDomainEvent e)
         {
             var eventType = e.GetType();
             var castedEvent = Convert.ChangeType(e, eventType);

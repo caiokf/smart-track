@@ -2,7 +2,7 @@
 
 namespace SmartTrack.Model
 {
-    public class DomainEvent
+    public class DomainEvent : IEntity
     {
         public virtual Guid Id { get; set; }
         public virtual Guid UserId { get; set; }

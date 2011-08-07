@@ -12,7 +12,7 @@ namespace SmartTrack.Model.Repositories
          
     }
 
-    internal class UserRepository
+    public class UserRepository
     {
         private ISession session;
 
@@ -21,7 +21,14 @@ namespace SmartTrack.Model.Repositories
             this.session = session;
         }
 
-        User GetUser(Guid id)
+        public User GetUser(string name)
+        {
+            var user = session.Query<User>()
+                .Where(x => x.Name == name).FirstOrDefault();
+            return user == null ? null : GetUser(user.Id);
+        }
+
+        public User GetUser(Guid id)
         {
             var user = session.Load<User>(id);
             var events = session.Query<DomainEvent>()

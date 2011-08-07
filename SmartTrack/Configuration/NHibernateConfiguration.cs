@@ -1,4 +1,5 @@
-﻿using FluentNHibernate.Automapping;
+﻿using System;
+using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
@@ -12,10 +13,10 @@ namespace SmartTrack.Web.Configuration
         public static ISessionFactory BuildSessionFactory()
         {
             var automap = AutoMap
-                .AssemblyOf<IDomainEvent>()
-                .Where(x => x == typeof(DomainEvent))
-                .Where(x => x.IsSubclassOf(typeof(IEntity)) && x.IsClass && !x.IsAbstract)
-                .UseOverridesFromAssemblyOf<UserMap>();
+                .AssemblyOf<IEntity>()
+                .AddMappingsFromAssemblyOf<UserMap>()
+                .UseOverridesFromAssemblyOf<UserMap>()
+                .Where(x => typeof (IEntity).IsAssignableFrom(x) && x.IsClass && !x.IsAbstract);
 
             return Fluently.Configure()
                 .Mappings(x => x.AutoMappings.Add(automap))
@@ -44,8 +45,8 @@ namespace SmartTrack.Web.Configuration
 
         public static FluentConfiguration DebugDatabase(this FluentConfiguration config)
         {
-            return config.Database(SQLiteConfiguration.Standard.InMemory().ShowSql())
-                .ExposeConfiguration(x => new SchemaExport(x).Create(true, true));
+            return config.Database(SQLiteConfiguration.Standard.UsingFile("sqlite.db").ShowSql())
+                .ExposeConfiguration(x => new SchemaUpdate(x).Execute(false, true));
         }
     }
 }
