@@ -1,0 +1,10 @@
+D:\Desenvolvimento\Caio\smart-track\smart-track-model\bin\Debug\smart-track-model.dll
+D:\Desenvolvimento\Caio\smart-track\smart-track-model\bin\Debug\smart-track-model.pdb
+D:\Desenvolvimento\Caio\smart-track\smart-track-model\obj\Debug\ResolveAssemblyReference.cache
+D:\Desenvolvimento\Caio\smart-track\smart-track-model\obj\Debug\smart-track-model.dll
+D:\Desenvolvimento\Caio\smart-track\smart-track-model\obj\Debug\smart-track-model.pdb
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Model\bin\Debug\SmartTrack.Model.dll
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Model\bin\Debug\SmartTrack.Model.pdb
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Model\obj\Debug\SmartTrack.Model.dll
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Model\obj\Debug\SmartTrack.Model.pdb

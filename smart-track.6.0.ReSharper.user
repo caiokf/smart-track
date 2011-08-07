@@ -8,50 +8,67 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax" caret="0" fromTop="0" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:User.cs" caret="102" fromTop="5" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:StructureMapRegistry.cs" caret="496" fromTop="14" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/d:scripts/d:smart-track/d:login/f:login.js" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/d:scripts/d:smart-track/d:login/f:login.coffee" caret="19" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="450" fromTop="5" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/d:Login/f:login.js" caret="0" fromTop="0" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Http/d:Output/f:JsonResponse.cs" caret="11" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.config" caret="0" fromTop="0" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/f:Site.css" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="521" fromTop="20" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx" caret="419" fromTop="11" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx.cs" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="288" fromTop="4" />
-      <File id="07B30A29-F45E-4C98-B234-868DF237272A/f:Global.asax.cs" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/d:scripts/f:less-1.1.3.min.js" caret="0" fromTop="0" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Base/f:IEntity.cs" caret="76" fromTop="4" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/d:Login/f:login.coffee" caret="8" fromTop="1" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:StructureMapRegistry.cs" caret="119" fromTop="4" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Http/f:IHttpSession.cs" caret="270" fromTop="12" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Views/d:Login/f:Login.spark" caret="671" fromTop="22" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoggedInStatusController.cs" caret="750" fromTop="25" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Views/d:Home/f:Dashboard.spark" caret="391" fromTop="11" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:HomeController.cs" caret="209" fromTop="8" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.config" caret="654" fromTop="12" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/f:packages.config" caret="0" fromTop="0" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:InMemory/f:InMemorySetup.cs" caret="410" fromTop="14" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:DomainEvent.cs" caret="83" fromTop="5" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Base/f:IDomainEvent.cs" caret="81" fromTop="4" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:LoginController.cs" caret="534" fromTop="20" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:Group.cs" caret="278" fromTop="12" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:Measure.cs" caret="749" fromTop="27" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:AggregateRoot.cs" caret="185" fromTop="9" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="1945" fromTop="40" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:Tag.cs" caret="304" fromTop="13" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="397" fromTop="13" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1121" fromTop="21" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="796" fromTop="23" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="442" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Index.aspx" caret="673" fromTop="20" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Index.aspx.cs" caret="150" fromTop="8" />
     </RecentFiles>
     <RecentEdits>
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="270" fromTop="11" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="58" fromTop="2" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="797" fromTop="30" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="237" fromTop="9" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="302" fromTop="11" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="751" fromTop="11" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1700" fromTop="29" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="607" fromTop="20" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="1794" fromTop="27" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="556" fromTop="15" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/d:scripts/d:smart-track/d:login/f:login.coffee" caret="19" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="521" fromTop="13" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:LoginController.cs" caret="423" fromTop="18" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1250" fromTop="28" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1301" fromTop="17" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1751" fromTop="33" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Http/d:Output/f:JsonResponse.cs" caret="11" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="450" fromTop="5" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1189" fromTop="24" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1189" fromTop="24" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1189" fromTop="24" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1189" fromTop="24" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx.cs" caret="133" fromTop="7" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx" caret="419" fromTop="11" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/f:Login.aspx.cs" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="552" fromTop="5" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1191" fromTop="19" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="967" fromTop="14" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="882" fromTop="22" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="186" fromTop="8" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:AggregateRoot.cs" caret="185" fromTop="9" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="767" fromTop="24" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="704" fromTop="23" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="354" fromTop="14" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="1110" fromTop="20" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="1295" fromTop="27" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="1440" fromTop="32" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="1555" fromTop="22" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="1724" fromTop="24" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="1839" fromTop="26" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="1985" fromTop="28" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="1434" fromTop="20" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="2162" fromTop="34" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="2746" fromTop="29" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="3014" fromTop="27" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="662" fromTop="16" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="1028" fromTop="25" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="1028" fromTop="21" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="539" fromTop="22" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="242" fromTop="9" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="388" fromTop="15" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" caret="497" fromTop="19" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Index.aspx" caret="679" fromTop="3" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Index.aspx" caret="205" fromTop="3" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="541" fromTop="16" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="715" fromTop="15" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="1178" fromTop="23" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Index.aspx.cs" caret="37" fromTop="2" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -67,27 +84,27 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="this" priority="63" />
-      <Item value="x" priority="287" />
+      <Item value="this" priority="255" />
+      <Item value="x" priority="767" />
       <Item value="using" priority="30" />
-      <Item value="FubuMVC" priority="30" />
+      <Item value="FubuMVC" priority="62" />
       <Item value="FubuCore" priority="30" />
       <Item value="LoginController`0" priority="31" />
       <Item value="StructureMap" priority="27" />
       <Item value="Bootstrap" priority="26" />
       <Item value="FubuApplication`0" priority="31" />
-      <Item value="ctor" priority="127" />
+      <Item value="ctor" priority="159" />
       <Item value="ObjectFactory`0" priority="32" />
       <Item value="Client" priority="26" />
       <Item value="Url" priority="31" />
-      <Item value="string" priority="126" />
-      <Item value="new" priority="63" />
+      <Item value="string" priority="317" />
+      <Item value="new" priority="448" />
       <Item value="For`1" priority="63" />
       <Item value="DocumentStore`0" priority="63" />
-      <Item value="return" priority="95" />
+      <Item value="return" priority="383" />
       <Item value="documentStore" priority="31" />
       <Item value="DocumentSession`0" priority="31" />
-      <Item value="c" priority="31" />
+      <Item value="c" priority="63" />
       <Item value="session" priority="63" />
       <Item value="users" priority="31" />
       <Item value="Length" priority="26" />
@@ -97,12 +114,97 @@
       <Item value="WebFormViewEngine" priority="25" />
       <Item value="Configuration" priority="26" />
       <Item value="LoginInputModel`0" priority="63" />
-      <Item value="LoginViewModel" priority="28" />
+      <Item value="LoginViewModel" priority="57" />
       <Item value="IFubuPage`0" priority="31" />
       <Item value="LoginViewModel`0" priority="31" />
+      <Item value="MongoDB" priority="31" />
+      <Item value="public" priority="474" />
+      <Item value="static" priority="125" />
+      <Item value="void" priority="95" />
+      <Item value="FluentNHibernate" priority="96" />
+      <Item value="Cfg" priority="53" />
+      <Item value="Fluently`0" priority="26" />
+      <Item value="Data" priority="26" />
+      <Item value="Db" priority="26" />
+      <Item value="MySQLConfiguration`0" priority="26" />
+      <Item value="d" priority="31" />
+      <Item value="var" priority="95" />
+      <Item value="Automapping" priority="27" />
+      <Item value="AutoMap`0" priority="27" />
+      <Item value="AutoPersistenceModel" priority="28" />
+      <Item value="typeof" priority="95" />
+      <Item value="IDomainEvent`0" priority="95" />
+      <Item value="class" priority="154" />
+      <Item value="FluentConfiguration`0" priority="63" />
+      <Item value="config" priority="63" />
+      <Item value="SQLiteConfiguration`0" priority="32" />
+      <Item value="if" priority="95" />
+      <Item value="ISessionFactory`0" priority="31" />
+      <Item value="Form" priority="63" />
+      <Item value="Core" priority="26" />
+      <Item value="View" priority="26" />
+      <Item value="IFubuPageWithModel`0" priority="26" />
+      <Item value="IFubuPage" priority="26" />
+      <Item value="MODEL`0" priority="63" />
+      <Item value="Login" priority="30" />
+      <Item value="get" priority="127" />
+      <Item value="FormCollection`0" priority="31" />
+      <Item value="Html32TextWriter`0" priority="31" />
+      <Item value="Model" priority="31" />
+      <Item value="Policies" priority="95" />
+      <Item value="Urls" priority="31" />
+      <Item value="protected" priority="95" />
+      <Item value="User`0" priority="94" />
+      <Item value="Import`1" priority="31" />
+      <Item value="WebFormsEngine`0" priority="31" />
+      <Item value="TestFixtureSetUp" priority="26" />
+      <Item value="sessionFactory" priority="31" />
+      <Item value="prop" priority="95" />
+      <Item value="Measure`0" priority="62" />
+      <Item value="DateTime`0" priority="90" />
+      <Item value="AddedMeasure`0" priority="31" />
+      <Item value="List&lt;Measure&gt;" priority="57" />
+      <Item value="Measures" priority="159" />
+      <Item value="Measure" priority="61" />
+      <Item value="Name" priority="31" />
+      <Item value="null" priority="31" />
+      <Item value="existing" priority="63" />
+      <Item value="measure" priority="127" />
+      <Item value="e" priority="191" />
+      <Item value="Values" priority="31" />
+      <Item value="Measurement" priority="28" />
+      <Item value="date" priority="31" />
+      <Item value="IEnumerable" priority="122" />
+      <Item value="private" priority="95" />
+      <Item value="List" priority="95" />
+      <Item value="Measurement`0" priority="31" />
+      <Item value="Tags" priority="31" />
+      <Item value="Tag" priority="28" />
+      <Item value="values" priority="31" />
+      <Item value="List&lt;Measurement&gt;" priority="28" />
+      <Item value="Groups" priority="63" />
+      <Item value="Group" priority="28" />
+      <Item value="measures" priority="161" />
+      <Item value="group" priority="31" />
+      <Item value="MeasureAdded" priority="28" />
+      <Item value="Date" priority="31" />
+      <Item value="Value" priority="32" />
+      <Item value="user" priority="159" />
+      <Item value="biceps2" priority="31" />
+      <Item value="ArgumentException" priority="26" />
+      <Item value="AggregateRoot`0" priority="26" />
+      <Item value="try" priority="31" />
+      <Item value="eventType" priority="26" />
+      <Item value="castedEvent" priority="31" />
+      <Item value="GetType`0" priority="31" />
+      <Item value="methods" priority="31" />
+      <Item value="groups" priority="31" />
+      <Item value="FakeEvent" priority="29" />
+      <Item value="ArgumentException`0" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuMVC.Core.Registration.DSL.RouteConventionExpression">
       <Item value="HomeIs`1" priority="26" />
+      <Item value="IgnoreNamespaceText`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Web.Controllers.LoginController">
       <Item value="Login`0" priority="26" />
@@ -126,7 +228,7 @@
       <Item value="Load`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
-      <Item value="Format`0" priority="26" />
+      <Item value="Format`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuMVC.Core.IContainerFacilityExpression">
       <Item value="StructureMapObjectFactory`0" priority="26" />
@@ -136,21 +238,204 @@
       <Item value="type" priority="6" />
       <Item value="text/C#" priority="6" />
       <Item value="login.js" priority="6" />
-      <Item value="Core" priority="6" />
-      <Item value="Web" priority="6" />
-      <Item value="View" priority="6" />
+      <Item value="Core" priority="13" />
+      <Item value="Web" priority="20" />
+      <Item value="View" priority="13" />
       <Item value="SimpleFubuPage`1" priority="6" />
+      <Item value="FubuMVC" priority="7" />
+      <Item value="IFubuPage`1" priority="6" />
+      <Item value="text" priority="6" />
+      <Item value="html" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuMVC.Core.Registration.DSL.ViewExpression">
-      <Item value="TryToAttach`0" priority="26" />
-      <Item value="IfTheViewTypeMatches`0" priority="26" />
+      <Item value="TryToAttach`0" priority="53" />
+      <Item value="IfTheViewTypeMatches`0" priority="53" />
+      <Item value="TryToAttachViewsInPackages`0" priority="26" />
+      <Item value="TryToAttachWithDefaultConventions`0" priority="26" />
+      <Item value="IfTheInputModelOfTheViewMatches`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuMVC.Core.Registration.DSL.ViewsForActionFilterExpression">
-      <Item value="by_ViewModel`0" priority="26" />
+      <Item value="by_ViewModel`0" priority="53" />
       <Item value="by_ViewModel_and_Namespace_and_MethodName`0" priority="26" />
       <Item value="by_ViewModel_and_Namespace`0" priority="26" />
       <Item value="by`1" priority="26" />
       <Item value="by`0" priority="26" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:@FluentNHibernate.Cfg.Fluently">
+      <Item value="Configure`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.FluentConfiguration">
+      <Item value="BuildSessionFactory`0" priority="26" />
+      <Item value="Database`0" priority="26" />
+      <Item value="Diagnostics`0" priority="26" />
+      <Item value="Mappings`0" priority="26" />
+      <Item value="DebugDatabase`0" priority="26" />
+      <Item value="ProductionDatabase`0" priority="22" />
+      <Item value="ConfigureDatabase`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FluentNHibernate.Cfg.Db.MySQLConfiguration">
+      <Item value="Standard" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.MySQLConfiguration">
+      <Item value="ConnectionString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.MySQLConnectionStringBuilder">
+      <Item value="Server`0" priority="26" />
+      <Item value="Database`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Diagnostics.DiagnosticsConfiguration">
+      <Item value="OutputToConsole`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.MappingConfiguration">
+      <Item value="AutoMappings" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.AutoMappingsContainer">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FluentNHibernate.Automapping.AutoMap">
+      <Item value="AssemblyOf`1" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Automapping.AutoPersistenceModel">
+      <Item value="Where`0" priority="83" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="IsSubclassOf`0" priority="53" />
+      <Item value="IsClass" priority="54" />
+      <Item value="IsAbstract" priority="53" />
+      <Item value="ToString`0" priority="26" />
+      <Item value="GetMethods`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.SQLiteConfiguration">
+      <Item value="InMemory`0" priority="27" />
+      <Item value="ShowSql`0" priority="28" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SmartTrack.Web.Configuration.NHibernateConfiguration">
+      <Item value="BuildSessionFactory`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ASP.views_login_index_aspx">
+      <Item value="Form" priority="76" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISessionFactory">
+      <Item value="OpenSession`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.Dsl.MeasureBuilder">
+      <Item value="Bought`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.Measures.Measure">
+      <Item value="Name" priority="107" />
+      <Item value="Values" priority="49" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToLower`0" priority="109" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.AddedMeasure">
+      <Item value="Measure" priority="55" />
+      <Item value="Date" priority="26" />
+      <Item value="Value" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="FirstOrDefault`1" priority="50" />
+      <Item value="Add`0" priority="135" />
+      <Item value="RemoveAll`0" priority="26" />
+      <Item value="Where`1" priority="26" />
+      <Item value="Remove`0" priority="26" />
+      <Item value="Count" priority="26" />
+      <Item value="Single`1" priority="26" />
+      <Item value="ForEach`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.TagAdded">
+      <Item value="Date" priority="26" />
+      <Item value="Tag" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.Measures.Tag">
+      <Item value="Date" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Date" priority="45" />
+      <Item value="AddDays`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.GroupAdded">
+      <Item value="Group" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.Measures.Group">
+      <Item value="Name" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.GroupDeleted">
+      <Item value="Group" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.MeasureAddedToGroup">
+      <Item value="Measure" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Single`1" priority="26" />
+      <Item value="Should`1" priority="53" />
+      <Item value="Count`1" priority="50" />
+      <Item value="First`1" priority="50" />
+      <Item value="ToList`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Today" priority="23" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.MeasureAdded">
+      <Item value="Unit" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.User">
+      <Item value="Apply`0" priority="53" />
+      <Item value="Measures" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IComparableConstraints`1">
+      <Item value="Be" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IComparableBeConstraints`1">
+      <Item value="EqualTo`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IEnumerableConstraints`1">
+      <Item value="Contain`1" priority="26" />
+      <Item value="Have" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IEnumerableHaveConstraints`1">
+      <Item value="SameValuesAs`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.IDomainEvent">
+      <Item value="GetType`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.AggregateRoot">
+      <Item value="Apply`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ChangeType`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.BindingFlags">
+      <Item value="NonPublic" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.MethodInfo">
+      <Item value="GetParameters`0" priority="26" />
+      <Item value="Name" priority="26" />
+      <Item value="Invoke`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.ParameterInfo">
+      <Item value="ParameterType" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="AreEqual`0" priority="26" />
+      <Item value="Throws`1" priority="27" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
+  <UnitTestSessions>
+    <Session>
+      <Name>Session #1</Name>
+      <Elements>
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" type="NUnitTestFixtureElement" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents.add_existing_measure" ParentId="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" MethodName="add_existing_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents.add_more_than_one_measure" ParentId="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" MethodName="add_more_than_one_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents.add_one_measure" ParentId="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" MethodName="add_one_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents.remove_existing_measures" ParentId="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" MethodName="remove_existing_measures" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents.remove_non_existing_measures" ParentId="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" MethodName="remove_non_existing_measures" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents.should_not_receive_events_not_subscribed_to" ParentId="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Persistance.Measures.MeasurementEvents" MethodName="should_not_receive_events_not_subscribed_to" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+      </Elements>
+    </Session>
+  </UnitTestSessions>
+  <Bookmarks>
+    <Bookmark owner="NumberedBookmarkManager" id="Bookmark0" file-id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:Measures/f:MeasurementEvents.cs" coords="(Doc Ln 32 Col 31)" />
+  </Bookmarks>
 </Configuration>
