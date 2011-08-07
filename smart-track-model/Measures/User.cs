@@ -1,71 +1,75 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using SmartTrack.Model.Measures;
 
-namespace SmartTrack.Model
+namespace SmartTrack.Model.Measures
 {
-	public class User
-	{
+    public class User : AggregateRoot
+    {
         protected User() { }
         public User(string name)
         {
             Name = name;
-            Measures = new List<Measure>();
-            Tags = new List<Tag>();
-            Groups = new List<Group>();
+            measures = new List<Measure>();
+            tags = new List<Tag>();
+            groups = new List<Group>();
         }
-
-	    public virtual Guid Id { get; protected set; }
-        public virtual string Name { get; private set; }
-        public virtual List<Measure> Measures { get; set; }
-        public virtual List<Tag> Tags { get; set; }
-        public virtual List<Group> Groups { get; set; }
         
-        public void Apply(MeasureAdded e)
+        public virtual string Name { get; private set; }
+
+        private readonly List<Measure> measures;
+        public virtual IEnumerable<Measure> Measures { get { return measures; } }
+
+        private readonly List<Tag> tags;
+        public virtual IEnumerable<Tag> Tags { get { return tags; } }
+
+        private readonly List<Group> groups;
+        public virtual IEnumerable<Group> Groups { get { return groups; } }
+
+        protected void Apply(MeasureAdded e)
         {
             var measure = Measures.FirstOrDefault(x => x.Name.ToLower() == e.Measure.ToLower());
             if (measure == null)
             {
                 measure = new Measure(e.Measure);
-                Measures.Add(measure);
+                measures.Add(measure);
             }
             measure.AddMeasurement(e.Date, e.Value, e.Unit);
         }
 
-        public void Apply(MeasureDeleted e)
+        protected void Apply(MeasureDeleted e)
         {
-            Measures.RemoveAll(x => x.Name.ToLower() == e.Measure.ToLower());
+            measures.RemoveAll(x => x.Name.ToLower() == e.Measure.ToLower());
         }
 
-        public void Apply(TagAdded e)
+        protected void Apply(TagAdded e)
         {
-            Tags.Add(new Tag(e.Date, e.Tag));
+            tags.Add(new Tag(e.Date, e.Tag));
         }
 
-        public void Apply(TagDeleted e)
+        protected void Apply(TagDeleted e)
         {
-            Tags.RemoveAll(x => x.Name.ToLower() == e.Tag.ToLower() && x.Date.Date == e.Date.Date);
+            tags.RemoveAll(x => x.Name.ToLower() == e.Tag.ToLower() && x.Date.Date == e.Date.Date);
         }
 
-        public void Apply(GroupAdded e)
+        protected void Apply(GroupAdded e)
         {
-            Groups.Add(new Group(e.Group));
+            groups.Add(new Group(e.Group));
         }
 
-        public void Apply(GroupDeleted e)
+        protected void Apply(GroupDeleted e)
         {
-            Groups.RemoveAll(x => x.Name == e.Group);
+            groups.RemoveAll(x => x.Name == e.Group);
         }
 
-        public void Apply(MeasureAddedToGroup e)
+        protected void Apply(MeasureAddedToGroup e)
         {
             var measure = Measures.Where(x => x.Name.ToLower() == e.Measure.ToLower()).Single();
             var group = Groups.Where(x => x.Name.ToLower() == e.Group.ToLower()).Single();
             group.AddMeasure(measure);
         }
 
-        public void Apply(MeasureRemovedFromGroup e)
+        protected void Apply(MeasureRemovedFromGroup e)
         {
             var measure = Measures.Where(x => x.Name.ToLower() == e.Measure.ToLower()).Single();
             var group = Groups.Where(x => x.Name.ToLower() == e.Group.ToLower()).Single();

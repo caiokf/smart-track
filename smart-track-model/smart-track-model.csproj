@@ -40,13 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AggregateRoot.cs" />
     <Compile Include="DomainEvent.cs" />
     <Compile Include="Base\IDomainEvent.cs" />
     <Compile Include="Base\IEntity.cs" />
     <Compile Include="Measures\Group.cs" />
     <Compile Include="Measures\Measure.cs" />
     <Compile Include="Measures\Tag.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Measures\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
