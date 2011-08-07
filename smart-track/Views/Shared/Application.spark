@@ -1,0 +1,9 @@
+﻿<use master="Html"/>
+
+<content name="header">
+	<use file="Header.spark"/>
+</content>
+
+<content name="footer">
+	TAIL DO MIJO
+</content>

@@ -1,17 +1,26 @@
 ﻿<viewdata model="SmartTrack.Web.Controllers.LoginViewModel" />
-<html>
-  <head>
-    <header>What do we wanna do?</header>
-	<h1> ${System.Guid.NewGuid().ToString()} </h1>
-	<footer>That's right baby!</footer>
-    <script src="~/Content/scripts/smart-track/login/login.js" ></script>
-	<link rel="stylesheet" href="~/Content/styles/login/login.css" />
-	<use content="head"/>
-  </head>
-  <body>
-    <div id="header">dot dot dot</div>
-    <div id="sidebar"><use content="sidebar"/></div>
-    <div id="pageContent"><use content="view"/></div>
-    <div id="footer">dot dot dot</div>
-  </body>
-</html>
+<use master="Application"/>
+
+<content name="styles">
+	<link rel="stylesheet/less" type="text/css" href="~/Content/styles/login/login.less" />
+</content>
+
+<content name="scripts">
+	<script type="text/javascript" src="~/Content/scripts/smart-track/login/login.js" ></script>
+</content>
+
+<content name="content">
+
+	<h2>LOGIN</h2>
+	<div id="login-container">
+		<label for="username">Username</label>
+		<input id="username" type="textbox" />
+
+		<label for="password">Username</label>
+		<input id="password" type="password" />
+
+		<button id="login-button" type="button">Login</button>
+	</div>
+</form>
+
+</content>

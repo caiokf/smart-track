@@ -1,5 +1,5 @@
-using Raven.Client;
-using Raven.Client.Document;
+using NHibernate;
+using SmartTrack.Web.Http;
 using StructureMap.Configuration.DSL;
 
 namespace SmartTrack.Web.Configuration
@@ -8,11 +8,11 @@ namespace SmartTrack.Web.Configuration
     {
         public StructureMapRegistry()
         {
-            For<IDocumentStore>().Singleton().Use(() => 
-                new DocumentStore { Url = "http://localhost:8080" }.Initialize());
+            For<IHttpSession>().Use<CurrentHttpContextSession>();
 
-            For<IDocumentSession>().HybridHttpOrThreadLocalScoped().Use(c => 
-                c.GetInstance<IDocumentStore>().OpenSession());
+            For<ISessionFactory>().Singleton().Use(NHibernateConfiguration.BuildSessionFactory);
+            
+            For<ISession>().HybridHttpOrThreadLocalScoped().Use(c => c.GetInstance<ISessionFactory>().OpenSession());
         }
     }
 }

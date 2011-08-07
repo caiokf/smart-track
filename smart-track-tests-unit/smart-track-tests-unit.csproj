@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.1.0.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -55,11 +58,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Persistance\InMemory\InMemorySetup.cs" />
+    <Compile Include="Persistance\Measures\MeasurementEvents.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\smart-track-model\smart-track-model.csproj">
+      <Project>{86B9CDA1-17B8-435D-AC29-A55FB04EF3AA}</Project>
+      <Name>smart-track-model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\smart-track\smart-track.csproj">
+      <Project>{4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9}</Project>
+      <Name>smart-track</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

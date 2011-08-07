@@ -40,9 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainEvent.cs" />
+    <Compile Include="Base\IDomainEvent.cs" />
+    <Compile Include="Base\IEntity.cs" />
+    <Compile Include="Measures\Group.cs" />
+    <Compile Include="Measures\Measure.cs" />
+    <Compile Include="Measures\Tag.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
