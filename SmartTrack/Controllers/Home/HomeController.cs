@@ -1,4 +1,4 @@
-﻿namespace SmartTrack.Web.Controllers
+﻿namespace SmartTrack.Web.Controllers.Home
 {
     public class HomeController
     {

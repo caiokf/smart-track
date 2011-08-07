@@ -2,6 +2,7 @@
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
+using NHibernate.Tool.hbm2ddl;
 using SmartTrack.Model;
 
 namespace SmartTrack.Web.Configuration
@@ -12,7 +13,9 @@ namespace SmartTrack.Web.Configuration
         {
             var automap = AutoMap
                 .AssemblyOf<IDomainEvent>()
-                .Where(x => x == typeof(DomainEvent) || (x.IsSubclassOf(typeof(IEntity)) && x.IsClass && !x.IsAbstract));
+                .Where(x => x == typeof(DomainEvent))
+                .Where(x => x.IsSubclassOf(typeof(IEntity)) && x.IsClass && !x.IsAbstract)
+                .UseOverridesFromAssemblyOf<UserMap>();
 
             return Fluently.Configure()
                 .Mappings(x => x.AutoMappings.Add(automap))
@@ -41,7 +44,8 @@ namespace SmartTrack.Web.Configuration
 
         public static FluentConfiguration DebugDatabase(this FluentConfiguration config)
         {
-            return config.Database(SQLiteConfiguration.Standard.InMemory().ShowSql());
+            return config.Database(SQLiteConfiguration.Standard.InMemory().ShowSql())
+                .ExposeConfiguration(x => new SchemaExport(x).Create(true, true));
         }
     }
 }

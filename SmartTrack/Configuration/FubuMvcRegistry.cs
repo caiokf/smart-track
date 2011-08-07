@@ -1,6 +1,10 @@
+using System.Net;
 using FubuMVC.Core;
+using FubuMVC.Core.Behaviors;
 using FubuMVC.WebForms;
+using SmartTrack.Web.Controllers;
 using SmartTrack.Web.Controllers.Login;
+using SmartTrack.Web.Controllers.Measures;
 using SmartTrack.Web.Http.Output;
 
 namespace SmartTrack.Web.Configuration
@@ -18,7 +22,7 @@ namespace SmartTrack.Web.Configuration
             Actions.IncludeClassesSuffixedWithController();
 
             Routes
-                .HomeIs<LoginController>(x => x.Index())
+                .HomeIs<MeasuresController>(x => x.AllMeasures())
                 .IgnoreControllerNamespaceEntirely()
                 .IgnoreClassSuffix("Controller")
                 .IgnoreMethodSuffix("Html")
@@ -26,7 +30,7 @@ namespace SmartTrack.Web.Configuration
                 .IgnoreMethodSuffix("Get")
                 .ConstrainToHttpMethod(action => action.Method.Name.EndsWith("Command"), "POST")
                 .ConstrainToHttpMethod(action => action.Method.Name.StartsWith("Query"), "GET");
-
+            
             Views.TryToAttachWithDefaultConventions();
 
             Output.ToJson.WhenTheOutputModelIs<JsonResponse>();

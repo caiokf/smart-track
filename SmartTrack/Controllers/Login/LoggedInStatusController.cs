@@ -1,7 +1,7 @@
 ﻿using FubuMVC.Core;
 using SmartTrack.Web.Http;
 
-namespace SmartTrack.Web.Controllers
+namespace SmartTrack.Web.Controllers.Login
 {
     public class LoggedInStatusController
     {

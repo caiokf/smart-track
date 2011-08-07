@@ -1,8 +1,12 @@
 ﻿using FubuMVC.Core.Continuations;
+using FubuMVC.WebForms;
+using SmartTrack.Web.Controllers.Home;
 using SmartTrack.Web.Http;
 
 namespace SmartTrack.Web.Controllers.Login
 {
+    public class Index : FubuPage<LoginViewModel> { }
+
     public class LoginController
     {
         private readonly IHttpSession httpSession;

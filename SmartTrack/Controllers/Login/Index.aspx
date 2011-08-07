@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.master" CodeBehind="Index.aspx.cs" Inherits="SmartTrack.Web.Views.Login.Index" %>
+﻿ <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.master" Inherits="SmartTrack.Web.Controllers.Login.Index" %>
 
 <asp:Content ID="PageContent" runat="server" ContentPlaceHolderID="MainContent" >
  

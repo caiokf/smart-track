@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace SmartTrack.Model
 {
-    public abstract class AggregateRoot
+    public abstract class AggregateRoot : IEntity
     {
         public virtual Guid Id { get; protected set; }
 

@@ -198,32 +198,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\FluentNhibernateMappings.cs" />
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
     <Compile Include="Configuration\NHibernateConfiguration.cs" />
     <Compile Include="Configuration\SparkConfiguration.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoggedInStatusController.cs" />
+    <Compile Include="Controllers\Diagnostics\DiagnosticsController.cs" />
+    <Compile Include="Controllers\Graphs\GraphsController.cs" />
+    <Compile Include="Controllers\Home\HomeController.cs" />
+    <Compile Include="Controllers\Login\LoggedInStatusController.cs" />
+    <Compile Include="Controllers\Measures\MeasuresController.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Http\IHttpSession.cs" />
     <Compile Include="Http\Output\JsonResponse.cs" />
-    <Compile Include="Controllers\Login\LoginController.cs" />
+    <Compile Include="Controllers\Login\LoginController.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Configuration\StructureMapRegistry.cs" />
     <Compile Include="Utils\Extensions\SparkExtensions.cs" />
-    <Compile Include="Views\Login\Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <None Include="Content\styles\colors.less" />
     <None Include="Content\styles\login\login.less" />
     <None Include="Content\styles\site.less" />
-    <None Include="Views\Home\Dashboard.spark" />
-    <None Include="Views\Login\Login.spark" />
-    <None Include="Views\Shared\Application.spark" />
-    <None Include="Views\Shared\Header.spark" />
-    <None Include="Views\Shared\Html.spark" />
+    <Content Include="Controllers\Measures\AllMeasures.aspx" />
     <Content Include="Views\Shared\Site.master" />
   </ItemGroup>
   <ItemGroup>
@@ -296,7 +296,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>login.coffee</DependentUpon>
     </Content>
-    <Content Include="Views\Login\Index.aspx" />
+    <Content Include="Controllers\Login\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -318,6 +318,7 @@
   <ItemGroup>
     <Folder Include="Configuration\Migrations\" />
     <Folder Include="Content\images\" />
+    <Folder Include="Http\Behaviors\" />
     <Folder Include="Http\Handlers\" />
     <Folder Include="Http\Modules\" />
   </ItemGroup>

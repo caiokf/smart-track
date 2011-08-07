@@ -82,3 +82,6 @@ D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\obj\Debug\SmartTrack.T
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\obj\Debug\SmartTrack.Tests.Unit.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\SmartTrack.Web.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\SmartTrack.Web.pdb
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Newtonsoft.Json.dll
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Newtonsoft.Json.pdb
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Newtonsoft.Json.xml
