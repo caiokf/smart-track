@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" Inherits="FubuMVC.WebForms.FubuMasterPage"%>
+<%@ Import Namespace="SquishIt.Framework" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head runat="server">
+		<title>Smart Track</title>
+				
+		<%= Bundle.JavaScript()
+			.Add("~/Content/scripts/jquery/jquery-1.6.2.min.js")
+			.Add("~/Content/scripts/less-1.1.3.min.js")
+            .Render("~/Content/scripts/sitemaster_#.js")
+		%>
+		<asp:ContentPlaceHolder id="ScriptsContent" runat="server"></asp:ContentPlaceHolder>
+				
+		<%= Bundle.Css()
+			.Add("~/Content/styles/colors.less")
+			.Add("Content/styles/site.less")
+		    .Render("~/Content/styles/sitemaster_#.css")      
+		%>
+		<asp:ContentPlaceHolder id="StylesContent" runat="server"></asp:ContentPlaceHolder>
+
+	</head>
+	<body>
+        <div id="header">
+		    <h1>HEADER</h1>
+	    </div>
+
+	    <div id="content">
+		    <asp:ContentPlaceHolder id="MainContent" runat="server"></asp:ContentPlaceHolder>
+	    </div>
+	    
+        <div id="footer">
+		    
+	    </div>
+
+	</body>
+</html>
