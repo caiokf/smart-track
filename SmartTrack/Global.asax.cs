@@ -15,7 +15,7 @@ namespace SmartTrack.Web
 		{
             ObjectFactory.Initialize(x => x.AddRegistry(new StructureMapRegistry()));
             
-            TaskManager.Initialize(new SchedulerRegistry());
+            //TaskManager.Initialize(new SchedulerRegistry());
 
 		    FubuApplication.For<FubuMvcRegistry>()
                 .StructureMapObjectFactory()

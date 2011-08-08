@@ -210,6 +210,10 @@
     <Compile Include="Controllers\Measures\MeasuresController.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Http\Behaviors\Transactions\ITransactionBoundary.cs" />
+    <Compile Include="Http\Behaviors\Transactions\NHibernateTransactionBoundary.cs" />
+    <Compile Include="Http\Behaviors\Transactions\TransactionalContainerExtensions.cs" />
+    <Compile Include="Http\Behaviors\Transactions\TransactionProcessor.cs" />
     <Compile Include="Http\IHttpSession.cs" />
     <Compile Include="Http\Output\JsonResponse.cs" />
     <Compile Include="Controllers\Login\LoginController.cs">
@@ -222,6 +226,7 @@
     <Compile Include="Configuration\StructureMapRegistry.cs" />
     <Compile Include="ScheduledTasks\CreateTestData.cs" />
     <Compile Include="Utils\Extensions\SparkExtensions.cs" />
+    <Compile Include="Http\Behaviors\Transactions\TransactionBehavior.cs" />
     <None Include="Content\styles\colors.less" />
     <None Include="Content\styles\login\login.less" />
     <None Include="Content\styles\site.less" />
@@ -320,7 +325,6 @@
   <ItemGroup>
     <Folder Include="Configuration\Migrations\" />
     <Folder Include="Content\images\" />
-    <Folder Include="Http\Behaviors\" />
     <Folder Include="Http\Handlers\" />
     <Folder Include="Http\Modules\" />
   </ItemGroup>

@@ -1,10 +1,7 @@
-using System.Net;
 using FubuMVC.Core;
-using FubuMVC.Core.Behaviors;
 using FubuMVC.WebForms;
-using SmartTrack.Web.Controllers;
-using SmartTrack.Web.Controllers.Login;
 using SmartTrack.Web.Controllers.Measures;
+using SmartTrack.Web.Http.Behaviors.Transactions;
 using SmartTrack.Web.Http.Output;
 
 namespace SmartTrack.Web.Configuration
@@ -21,6 +18,8 @@ namespace SmartTrack.Web.Configuration
 
             Actions.IncludeClassesSuffixedWithController();
 
+            Policies.WrapBehaviorChainsWith<TransactionBehavior>();
+            
             Routes
                 .HomeIs<MeasuresController>(x => x.AllMeasures())
                 .IgnoreControllerNamespaceEntirely()
