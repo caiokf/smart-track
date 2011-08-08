@@ -6,13 +6,16 @@ namespace SmartTrack.Model.Measures
 {
     public class User : AggregateRoot
     {
-        protected User() { }
-        public User(string name)
+        protected User()
         {
-            Name = name;
             measures = new List<Measure>();
             tags = new List<Tag>();
             groups = new List<Group>();
+        }
+
+        public User(string name) : this()
+        {
+            Name = name;
         }
         
         public virtual string Name { get; private set; }

@@ -9,7 +9,25 @@ namespace SmartTrack.Model.Repositories
 {
     public class Repository
     {
-         
+        private ISession session;
+
+        public Repository(ISession session)
+        {
+            this.session = session;
+        }
+
+        public void SaveEvent<T>(T addedEvent, User user) where T : IDomainEvent
+        {
+            var e = new DomainEvent
+            {
+                DateTime = DateTime.Now,
+                UserId = user.Id,
+                EventType = addedEvent.GetType().ToString(),
+                Event = JsonConvert.SerializeObject(addedEvent)
+            };
+            session.Save(e);
+            session.Flush();
+        }
     }
 
     public class UserRepository

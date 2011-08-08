@@ -17,59 +17,59 @@
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/d:styles/f:site.less" caret="174" fromTop="9" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Content/d:styles/d:login/f:login.less" caret="0" fromTop="0" />
       <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Base/f:IEntity.cs" caret="108" fromTop="6" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Views/d:Shared/f:Site.master" caret="657" fromTop="16" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:LoginController.cs" caret="141" fromTop="4" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Home/f:HomeController.cs" caret="10" fromTop="0" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Graphs/f:GraphsController.cs" caret="46" fromTop="1" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Diagnostics/f:DiagnosticsController.cs" caret="119" fromTop="6" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:SchedulerRegistry.cs" caret="346" fromTop="14" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:Repository.cs" caret="658" fromTop="29" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:AggregateRoot.cs" caret="0" fromTop="0" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="581" fromTop="12" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:AllMeasures.aspx" caret="143" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Index.aspx" caret="497" fromTop="15" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:LoggedInStatusController.cs" caret="1370" fromTop="49" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Http/f:IHttpSession.cs" caret="270" fromTop="6" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:StructureMapRegistry.cs" caret="645" fromTop="9" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="118" fromTop="4" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:ScheduledTasks/f:CreateTestData.cs" caret="608" fromTop="14" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="68" fromTop="2" />
       <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:DomainEvent.cs" caret="86" fromTop="4" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="353" fromTop="8" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FluentNhibernateMappings.cs" caret="256" fromTop="10" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="458" fromTop="16" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:LoginController.cs" caret="141" fromTop="4" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Views/d:Shared/f:Site.master" caret="657" fromTop="16" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="1695" fromTop="33" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Index.aspx" caret="497" fromTop="15" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FluentNhibernateMappings.cs" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:SchedulerRegistry.cs" caret="463" fromTop="8" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:StructureMapRegistry.cs" caret="673" fromTop="9" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:ScheduledTasks/f:CreateTestData.cs" caret="590" fromTop="13" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:AggregateRoot.cs" caret="268" fromTop="11" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:Repository.cs" caret="490" fromTop="4" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="2226" fromTop="72" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="647" fromTop="24" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:AllMeasures.aspx" caret="368" fromTop="8" />
     </RecentFiles>
     <RecentEdits>
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:LoginController.cs" caret="232" fromTop="7" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Index.aspx" caret="68" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:AllMeasures.aspx" caret="461" fromTop="15" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:AllMeasures.aspx" caret="389" fromTop="10" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="538" fromTop="12" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="645" fromTop="14" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:AllMeasures.aspx" caret="143" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="71" fromTop="2" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="141" fromTop="2" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:LoggedInStatusController.cs" caret="1370" fromTop="49" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Graphs/f:GraphsController.cs" caret="10" fromTop="0" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Diagnostics/f:DiagnosticsController.cs" caret="10" fromTop="0" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Home/f:HomeController.cs" caret="10" fromTop="0" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:ScheduledTasks/f:CreateTestData.cs" caret="277" fromTop="9" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:ScheduledTasks/f:CreateTestData.cs" caret="643" fromTop="23" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:SchedulerRegistry.cs" caret="335" fromTop="10" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:SchedulerRegistry.cs" caret="217" fromTop="9" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:SchedulerRegistry.cs" caret="463" fromTop="19" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="254" fromTop="9" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="335" fromTop="13" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="427" fromTop="18" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="324" fromTop="9" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="405" fromTop="13" />
       <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:Repository.cs" caret="248" fromTop="14" />
       <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:Repository.cs" caret="675" fromTop="26" />
       <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:Repository.cs" caret="599" fromTop="18" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:StructureMapRegistry.cs" caret="645" fromTop="18" />
       <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:DomainEvent.cs" caret="86" fromTop="4" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="1723" fromTop="6" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="439" fromTop="22" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="637" fromTop="27" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="118" fromTop="4" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="458" fromTop="16" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="482" fromTop="13" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:AggregateRoot.cs" caret="408" fromTop="16" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:AggregateRoot.cs" caret="268" fromTop="11" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="1695" fromTop="33" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:ScheduledTasks/f:CreateTestData.cs" caret="774" fromTop="18" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="409" fromTop="11" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Measures/f:User.cs" caret="329" fromTop="14" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="784" fromTop="33" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:MeasuresController.cs" caret="647" fromTop="24" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Measures/f:AllMeasures.aspx" caret="368" fromTop="8" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -85,7 +85,7 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="this" priority="319" />
+      <Item value="this" priority="351" />
       <Item value="x" priority="1151" />
       <Item value="using" priority="61" />
       <Item value="FubuMVC" priority="62" />
@@ -98,7 +98,7 @@
       <Item value="ObjectFactory`0" priority="128" />
       <Item value="Client" priority="26" />
       <Item value="Url" priority="31" />
-      <Item value="string" priority="317" />
+      <Item value="string" priority="375" />
       <Item value="new" priority="576" />
       <Item value="For`1" priority="95" />
       <Item value="DocumentStore`0" priority="63" />
@@ -106,7 +106,7 @@
       <Item value="documentStore" priority="31" />
       <Item value="DocumentSession`0" priority="31" />
       <Item value="c" priority="127" />
-      <Item value="session" priority="223" />
+      <Item value="session" priority="287" />
       <Item value="users" priority="31" />
       <Item value="Length" priority="26" />
       <Item value="Actions" priority="26" />
@@ -129,7 +129,7 @@
       <Item value="Db" priority="26" />
       <Item value="MySQLConfiguration`0" priority="26" />
       <Item value="d" priority="31" />
-      <Item value="var" priority="191" />
+      <Item value="var" priority="223" />
       <Item value="Automapping" priority="27" />
       <Item value="AutoMap`0" priority="27" />
       <Item value="AutoPersistenceModel" priority="28" />
@@ -151,7 +151,7 @@
       <Item value="get" priority="159" />
       <Item value="FormCollection`0" priority="31" />
       <Item value="Html32TextWriter`0" priority="31" />
-      <Item value="Model" priority="31" />
+      <Item value="Model" priority="63" />
       <Item value="Policies" priority="127" />
       <Item value="Urls" priority="31" />
       <Item value="protected" priority="95" />
@@ -160,7 +160,7 @@
       <Item value="WebFormsEngine`0" priority="63" />
       <Item value="TestFixtureSetUp" priority="26" />
       <Item value="sessionFactory" priority="31" />
-      <Item value="prop" priority="127" />
+      <Item value="prop" priority="159" />
       <Item value="Measure`0" priority="62" />
       <Item value="DateTime`0" priority="90" />
       <Item value="AddedMeasure`0" priority="31" />
@@ -190,7 +190,7 @@
       <Item value="MeasureAdded" priority="28" />
       <Item value="Date" priority="31" />
       <Item value="Value" priority="32" />
-      <Item value="user" priority="223" />
+      <Item value="user" priority="255" />
       <Item value="biceps2" priority="31" />
       <Item value="ArgumentException" priority="26" />
       <Item value="AggregateRoot`0" priority="26" />
@@ -215,12 +215,14 @@
       <Item value="Map`0" priority="31" />
       <Item value="UserMap`0" priority="31" />
       <Item value="IEntity`0" priority="63" />
-      <Item value="MeasuresViewModel" priority="28" />
+      <Item value="MeasuresViewModel" priority="57" />
       <Item value="MeasuresController`0" priority="31" />
       <Item value="Registry`0" priority="31" />
       <Item value="Schedule`1" priority="31" />
       <Item value="SchedulerRegistry" priority="26" />
       <Item value="GetUser`0" priority="31" />
+      <Item value="tx" priority="31" />
+      <Item value="viewmodel" priority="63" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuMVC.Core.Registration.DSL.RouteConventionExpression">
       <Item value="HomeIs`1" priority="26" />
@@ -331,6 +333,7 @@
     <ItemStatistics item="Qualified:FluentNHibernate.Automapping.AutoPersistenceModel">
       <Item value="Where`0" priority="111" />
       <Item value="UseOverridesFromAssemblyOf`1" priority="27" />
+      <Item value="AddMappingsFromAssemblyOf`1" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Type">
       <Item value="IsSubclassOf`0" priority="53" />
@@ -342,6 +345,7 @@
     <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.SQLiteConfiguration">
       <Item value="InMemory`0" priority="27" />
       <Item value="ShowSql`0" priority="28" />
+      <Item value="UsingFile`0" priority="28" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@SmartTrack.Web.Configuration.NHibernateConfiguration">
       <Item value="BuildSessionFactory`0" priority="53" />
@@ -356,7 +360,7 @@
       <Item value="Bought`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Model.Measures.Measure">
-      <Item value="Name" priority="107" />
+      <Item value="Name" priority="134" />
       <Item value="Values" priority="49" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
@@ -370,13 +374,13 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="FirstOrDefault`1" priority="50" />
-      <Item value="Add`0" priority="135" />
+      <Item value="Add`0" priority="162" />
       <Item value="RemoveAll`0" priority="26" />
       <Item value="Where`1" priority="26" />
       <Item value="Remove`0" priority="26" />
       <Item value="Count" priority="26" />
       <Item value="Single`1" priority="26" />
-      <Item value="ForEach`0" priority="22" />
+      <Item value="ForEach`0" priority="76" />
       <Item value="Select`2" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Model.TagAdded">
@@ -482,6 +486,7 @@
       <Item value="CreateQuery`0" priority="26" />
       <Item value="QueryOver`1" priority="53" />
       <Item value="Save`0" priority="26" />
+      <Item value="BeginTransaction`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Model.DomainEvent">
       <Item value="UserId" priority="26" />
@@ -497,6 +502,7 @@
       <Item value="Hydrate`0" priority="26" />
       <Item value="Id" priority="81" />
       <Item value="Name" priority="126" />
+      <Item value="Measures" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Newtonsoft.Json.JsonConvert">
       <Item value="DeserializeObject`0" priority="26" />
@@ -506,6 +512,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:NHibernate.Tool.hbm2ddl.SchemaExport">
       <Item value="Create`0" priority="26" />
+      <Item value="Execute`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentScheduler.Model.Schedule">
       <Item value="ToRunNow`0" priority="26" />
@@ -518,6 +525,12 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Model.Repositories.UserRepository">
       <Item value="GetUser`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ITransaction">
+      <Item value="Commit`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Controllers.Measures.MeasuresViewModel">
+      <Item value="Measures" priority="53" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <UnitTestSessions>
