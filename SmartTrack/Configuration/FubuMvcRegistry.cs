@@ -18,15 +18,13 @@ namespace SmartTrack.Web.Configuration
 
             Actions.IncludeClassesSuffixedWithController();
 
-            Policies.WrapBehaviorChainsWith<TransactionBehavior>();
+            //Policies.WrapBehaviorChainsWith<TransactionBehavior>();
             
             Routes
                 .HomeIs<MeasuresController>(x => x.AllMeasures())
                 .IgnoreControllerNamespaceEntirely()
                 .IgnoreClassSuffix("Controller")
                 .IgnoreMethodSuffix("Html")
-                .IgnoreMethodSuffix("Post")
-                .IgnoreMethodSuffix("Get")
                 .ConstrainToHttpMethod(action => action.Method.Name.EndsWith("Command"), "POST")
                 .ConstrainToHttpMethod(action => action.Method.Name.StartsWith("Query"), "GET");
             

@@ -47,13 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AggregateRoot.cs" />
+    <Compile Include="Contexts\Measures\UserAggregateEvents.cs" />
+    <Compile Include="Extensions\MeasureExtensions.cs" />
     <Compile Include="DomainEvent.cs" />
     <Compile Include="Base\IDomainEvent.cs" />
     <Compile Include="Base\IEntity.cs" />
-    <Compile Include="Measures\Group.cs" />
-    <Compile Include="Measures\Measure.cs" />
-    <Compile Include="Measures\Tag.cs" />
-    <Compile Include="Measures\User.cs" />
+    <Compile Include="Contexts\Measures\Group.cs" />
+    <Compile Include="Contexts\Measures\Measure.cs" />
+    <Compile Include="Contexts\Measures\Tag.cs" />
+    <Compile Include="Contexts\Measures\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Repository.cs" />
   </ItemGroup>

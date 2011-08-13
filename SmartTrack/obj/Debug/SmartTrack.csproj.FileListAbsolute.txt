@@ -110,18 +110,14 @@ D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\System.Web.Routing.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\V8Bridge.Interface.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\WebActivator.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Yahoo.Yui.Compressor.dll
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Castle.Core.xml
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\FluentMigrator.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\FluentMigrator.xml
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\FluentNHibernate.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\FluentScheduler.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\HtmlTags.xml
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Iesi.Collections.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Microsoft.Practices.ServiceLocation.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Microsoft.Practices.ServiceLocation.xml
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Newtonsoft.Json.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Newtonsoft.Json.xml
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\NHibernate.ByteCode.Castle.xml
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\StructureMap.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\StructureMap.xml
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\System.Web.Mvc.xml
@@ -132,3 +128,5 @@ D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\SmartTrack.Web.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\SmartTrack.Web.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\obj\Debug\SmartTrack.Web.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\obj\Debug\SmartTrack.Web.pdb
+D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Antlr3.Runtime.dll
+D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\FubuFastPack.dll

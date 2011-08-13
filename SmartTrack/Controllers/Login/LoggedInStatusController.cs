@@ -1,38 +1,31 @@
 ﻿using FubuMVC.Core;
-using SmartTrack.Web.Http;
+using FubuMVC.WebForms;
+using SmartTrack.Model.Measures;
 
 namespace SmartTrack.Web.Controllers.Login
 {
+    public class LoggedInStatus : FubuPage<LoggedInStatusViewModel> { }
+
     public class LoggedInStatusController
     {
-        private readonly IHttpSession _session;
+        private readonly User user;
 
-        public LoggedInStatusController(IHttpSession session)
+        public LoggedInStatusController(User user)
         {
-            _session = session;
+            this.user = user;
         }
 
         [FubuPartial]
         public LoggedInStatusViewModel Status(LoggedInStatusRequest request)
         {
-            var status = _session[CurrentLoginStatus.Key] as CurrentLoginStatus;
-
             return new LoggedInStatusViewModel
             {
-                IsLoggedIn = status != null,
-                UserName = request.UserAgent + "--" + (status == null ? "" : status.UserName)
+                IsLoggedIn = user != null,
+                UserName = user != null ? user.Name : ""
             };
-
         }
     }
-
-    public class CurrentLoginStatus
-    {
-        public const string Key = "CURRENT_LOGIN_STATUS";
-
-        public string UserName { get; set; }
-    }
-
+    
     public class LoggedInStatusRequest
     {
         // Will come in from request headers (i.e. "User-Agent")

@@ -12,8 +12,8 @@ namespace SmartTrack.Web
 	public class MvcApplication : HttpApplication
 	{
 		protected void Application_Start()
-		{
-            ObjectFactory.Initialize(x => x.AddRegistry(new StructureMapRegistry()));
+		{   
+            ObjectFactory.Initialize(x => x.AddRegistry<StructureMapRegistry>());
             
             //TaskManager.Initialize(new SchedulerRegistry());
 

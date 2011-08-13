@@ -68,7 +68,6 @@ D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\SharpTestsEx
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\SharpTestsEx.Mvc.xml
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\StructureMap.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\StructureMap.xml
-D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\FluentNHibernate.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Iesi.Collections.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\HtmlTags.xml
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Microsoft.Practices.ServiceLocation.pdb

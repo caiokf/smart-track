@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using SmartTrack.Model.Extensions;
 
 namespace SmartTrack.Model.Measures
 {
@@ -31,13 +32,30 @@ namespace SmartTrack.Model.Measures
 
         protected void Apply(MeasureAdded e)
         {
-            var measure = Measures.FirstOrDefault(x => x.Name.ToLower() == e.Measure.ToLower());
+            var measure = Measures.WithName(e.Measure);
             if (measure == null)
             {
-                measure = new Measure(e.Measure);
+                measure = new Measure(e.Measure, e.Unit);
                 measures.Add(measure);
             }
-            measure.AddMeasurement(e.Date, e.Value, e.Unit);
+            measure.AddMeasurement(e.Date, e.Value);
+        }
+
+        protected void Apply(MeasureCreated e)
+        {
+            var measure = Measures.WithName(e.Measure);
+            if (measure == null)
+            {
+                measure = new Measure(e.Measure, e.Unit);
+                measures.Add(measure);
+            }
+        }
+
+        protected void Apply(MeasureEdited e)
+        {
+            var measure = Measures.WithName(e.OldMeasure);
+            measure.ChangeNameTo(e.NewMeasure);
+            measure.ChangeUnitTo(e.Unit);
         }
 
         protected void Apply(MeasureDeleted e)
@@ -67,63 +85,17 @@ namespace SmartTrack.Model.Measures
 
         protected void Apply(MeasureAddedToGroup e)
         {
-            var measure = Measures.Where(x => x.Name.ToLower() == e.Measure.ToLower()).Single();
-            var group = Groups.Where(x => x.Name.ToLower() == e.Group.ToLower()).Single();
+            var measure = Measures.WithName(e.Measure);
+            var group = Groups.WithName(e.Group);
             group.AddMeasure(measure);
         }
 
         protected void Apply(MeasureRemovedFromGroup e)
         {
-            var measure = Measures.Where(x => x.Name.ToLower() == e.Measure.ToLower()).Single();
-            var group = Groups.Where(x => x.Name.ToLower() == e.Group.ToLower()).Single();
+            var measure = Measures.WithName(e.Measure);
+            var group = Groups.WithName(e.Group);
             group.RemoveMeasure(measure);
         }
 	}
 
-    public class MeasureAdded : IDomainEvent
-    {
-        public string Measure { get; set; }
-        public DateTime Date { get; set; }
-        public string Value { get; set; }
-        public string Unit { get; set; }
-    }
-
-    public class MeasureDeleted : IDomainEvent
-    {
-        public string Measure { get; set; }
-    }
-
-    public class TagAdded : IDomainEvent
-    {
-        public string Tag { get; set; }
-        public DateTime Date { get; set; }
-    }
-
-    public class TagDeleted : IDomainEvent
-    {
-        public string Tag { get; set; }
-        public DateTime Date { get; set; }
-    }
-
-    public class GroupAdded : IDomainEvent
-    {
-        public string Group { get; set; }
-    }
-
-    public class GroupDeleted : IDomainEvent
-    {
-        public string Group { get; set; }
-    }
-
-    public class MeasureAddedToGroup : IDomainEvent
-    {
-        public string Group { get; set; }
-        public string Measure { get; set; }
-    }
-
-    public class MeasureRemovedFromGroup : IDomainEvent
-    {
-        public string Group { get; set; }
-        public string Measure { get; set; }
-    }
 }

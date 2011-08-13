@@ -7,7 +7,7 @@ using SmartTrack.Model.Measures;
 
 namespace SmartTrack.Tests.Unit.Persistance.Measures
 {
-    public class FakeEvent : IDomainEvent { }
+    public class FakeEvent : IDomainEvent { public bool IsValid() { return true; } }
 
     [TestFixture]
     public class MeasurementEvents

@@ -2,6 +2,6 @@
 {
     public interface IDomainEvent
     {
-         
+        bool IsValid();
     }
 }

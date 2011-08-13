@@ -9,7 +9,7 @@ namespace SmartTrack.Model.Repositories
 {
     public class Repository
     {
-        private ISession session;
+        private readonly ISession session;
 
         public Repository(ISession session)
         {
@@ -18,12 +18,18 @@ namespace SmartTrack.Model.Repositories
 
         public void SaveEvent<T>(T addedEvent, User user) where T : IDomainEvent
         {
+            var eventType = addedEvent.GetType().ToString();
+            var eventJson = JsonConvert.SerializeObject(addedEvent);
+
+            if (!addedEvent.IsValid())
+                throw new ArgumentException(string.Format("Trying to save invalid event '{0}' with value: \r\n {1}", eventType, eventJson));
+
             var e = new DomainEvent
             {
                 DateTime = DateTime.Now,
                 UserId = user.Id,
-                EventType = addedEvent.GetType().ToString(),
-                Event = JsonConvert.SerializeObject(addedEvent)
+                EventType = eventType,
+                Event = eventJson
             };
             session.Save(e);
             session.Flush();
@@ -32,7 +38,7 @@ namespace SmartTrack.Model.Repositories
 
     public class UserRepository
     {
-        private ISession session;
+        private readonly ISession session;
 
         public UserRepository(ISession session)
         {
