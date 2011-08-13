@@ -1,3 +1,21 @@
 ﻿body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, 'Lucida Grande', sans-serif;
+}
+
+input[type=button], input[type=submit]
+{
+    background-color: #9C3;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 14px;
+    color: #666;
+    font-family: Helvetica, 'Lucida Grande', sans-serif;
+    cursor: pointer;   
+}
+.cancel-button {
+    
 }

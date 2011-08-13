@@ -86,3 +86,6 @@ D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Newtonsoft.J
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Newtonsoft.Json.xml
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\FluentScheduler.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\FluentScheduler.pdb
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\WebActivator.dll
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Ionic.Zip.xml

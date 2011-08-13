@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="SmartTrack" Language="C#" MasterPageFile="~/Views/Shared/Site.master" Inherits="SmartTrack.Web.Controllers.Measures.CreateMeasure" %>
 <%@ Import Namespace="SmartTrack.Web.Controllers.Measures" %>
+<%@ Import Namespace="SmartTrack.Web.HtmlTags" %>
 
 <asp:Content ID="PageContent" runat="server" ContentPlaceHolderID="MainContent" >
  
@@ -11,7 +12,8 @@
         Unit: <%= this.TextBoxFor(x => x.Unit).Id("measure-unit") %>
        
     </div>
-    <input type="submit" value="Save"/>
+    <%= this.SubmitButton().Value("Save") %>
+    <%= this.CancelButton() %>
     <%= this.EndForm() %>
 	
 </asp:Content>

@@ -1,6 +1,7 @@
 ﻿using FubuMVC.Core;
 using FubuMVC.WebForms;
 using SmartTrack.Model.Measures;
+using SmartTrack.Web.Utils;
 
 namespace SmartTrack.Web.Controllers.Login
 {
@@ -29,10 +30,10 @@ namespace SmartTrack.Web.Controllers.Login
     public class LoggedInStatusRequest
     {
         // Will come in from request headers (i.e. "User-Agent")
-        public string UserAgent { get; set; }
+        [DefaultRoute] public string UserAgent { get; set; }
 
         // Will come in from request property (i.e. HttpContext.Current.Request.IsLocal)
-        public bool IsLocal { get; set; }
+        [DefaultRoute] public bool IsLocal { get; set; }
     }
 
     public class LoggedInStatusViewModel

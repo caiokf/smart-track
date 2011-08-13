@@ -1,4 +1,5 @@
 ﻿using System;
+using SmartTrack.Model.Extensions;
 
 namespace SmartTrack.Model.Measures
 {
@@ -7,7 +8,7 @@ namespace SmartTrack.Model.Measures
         public string Measure { get; set; }
         public string Unit { get; set; }
 
-        public bool IsValid() { return (Measure != null && Unit != null); }
+        public bool IsValid() { return (!Measure.IsNullOrEmpty() && !Unit.IsNullOrEmpty()); }
     }
 
     public class MeasureEdited : IDomainEvent
@@ -16,14 +17,14 @@ namespace SmartTrack.Model.Measures
         public string NewMeasure { get; set; }
         public string Unit { get; set; }
 
-        public bool IsValid() { return (NewMeasure != null && OldMeasure != null && Unit != null); }
+        public bool IsValid() { return (!NewMeasure.IsNullOrEmpty() && !OldMeasure.IsNullOrEmpty() && !Unit.IsNullOrEmpty()); }
     }
 
     public class MeasureDeleted : IDomainEvent
     {
         public string Measure { get; set; }
 
-        public bool IsValid() { return (Measure != null); }
+        public bool IsValid() { return (!Measure.IsNullOrEmpty()); }
     }
 
     public class MeasureAdded : IDomainEvent
@@ -33,7 +34,7 @@ namespace SmartTrack.Model.Measures
         public string Value { get; set; }
         public string Unit { get; set; }
 
-        public bool IsValid() { return (Measure != null && Unit != null && Value != null); }
+        public bool IsValid() { return (!Measure.IsNullOrEmpty() && !Unit.IsNullOrEmpty() && !Value.IsNullOrEmpty()); }
     }
 
     public class TagAdded : IDomainEvent
@@ -41,7 +42,7 @@ namespace SmartTrack.Model.Measures
         public string Tag { get; set; }
         public DateTime Date { get; set; }
 
-        public bool IsValid() { return (Tag != null); }
+        public bool IsValid() { return (!Tag.IsNullOrEmpty()); }
     }
 
     public class TagDeleted : IDomainEvent
@@ -49,21 +50,21 @@ namespace SmartTrack.Model.Measures
         public string Tag { get; set; }
         public DateTime Date { get; set; }
 
-        public bool IsValid() { return (Tag != null); }
+        public bool IsValid() { return (!Tag.IsNullOrEmpty()); }
     }
 
     public class GroupAdded : IDomainEvent
     {
         public string Group { get; set; }
 
-        public bool IsValid() { return (Group != null); }
+        public bool IsValid() { return (!Group.IsNullOrEmpty()); }
     }
 
     public class GroupDeleted : IDomainEvent
     {
         public string Group { get; set; }
 
-        public bool IsValid() { return (Group != null); }
+        public bool IsValid() { return (!Group.IsNullOrEmpty()); }
     }
 
     public class MeasureAddedToGroup : IDomainEvent
@@ -71,7 +72,7 @@ namespace SmartTrack.Model.Measures
         public string Group { get; set; }
         public string Measure { get; set; }
 
-        public bool IsValid() { return (Group != null && Measure != null); }
+        public bool IsValid() { return (!Group.IsNullOrEmpty() && !Measure.IsNullOrEmpty()); }
     }
 
     public class MeasureRemovedFromGroup : IDomainEvent
@@ -79,6 +80,6 @@ namespace SmartTrack.Model.Measures
         public string Group { get; set; }
         public string Measure { get; set; }
 
-        public bool IsValid() { return (Group != null && Measure != null); }
+        public bool IsValid() { return (!Group.IsNullOrEmpty() && !Measure.IsNullOrEmpty()); }
     }
 }

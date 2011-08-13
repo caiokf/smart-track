@@ -56,6 +56,7 @@
     <Compile Include="Contexts\Measures\Measure.cs" />
     <Compile Include="Contexts\Measures\Tag.cs" />
     <Compile Include="Contexts\Measures\User.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Repository.cs" />
   </ItemGroup>

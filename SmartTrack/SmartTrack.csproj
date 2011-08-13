@@ -218,6 +218,10 @@
     <Compile Include="Controllers\Measures\MeasuresController.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="HtmlTags\ButtonTag.cs" />
+    <Compile Include="HtmlTags\CancelButtonTag.cs" />
+    <Compile Include="HtmlTags\FubuPageExtensions.cs" />
+    <Compile Include="HtmlTags\SubmitButtonTag.cs" />
     <Compile Include="Http\Behaviors\Transactions\ITransactionBoundary.cs" />
     <Compile Include="Http\Behaviors\Transactions\NHibernateTransactionBoundary.cs" />
     <Compile Include="Http\Behaviors\Transactions\TransactionalContainerExtensions.cs" />
@@ -233,6 +237,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Configuration\StructureMapRegistry.cs" />
     <Compile Include="ScheduledTasks\CreateTestData.cs" />
+    <Compile Include="Utils\DefaultRouteAttribute.cs" />
     <Compile Include="Utils\Extensions\SparkExtensions.cs" />
     <Compile Include="Http\Behaviors\Transactions\TransactionBehavior.cs" />
     <None Include="Content\styles\colors.less" />
@@ -243,7 +248,16 @@
     <Content Include="Controllers\Measures\AllMeasures.aspx" />
     <Content Include="Controllers\Measures\EditMeasure.aspx" />
     <Content Include="Controllers\Measures\CreateMeasure.aspx" />
+    <Content Include="Scripts\Measures\allmeasures.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allmeasures.coffee</DependentUpon>
+    </Content>
     <Content Include="Views\Shared\Site.master" />
+    <None Include="Scripts\Measures\allmeasures.coffee">
+      <Generator>CoffeeScriptGenerator</Generator>
+      <LastGenOutput>allmeasures.js</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\scripts\less-1.1.3.min.js" />

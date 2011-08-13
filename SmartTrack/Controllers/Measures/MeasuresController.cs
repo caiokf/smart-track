@@ -6,6 +6,7 @@ using FubuMVC.Core.Continuations;
 using FubuMVC.WebForms;
 using SmartTrack.Model.Measures;
 using SmartTrack.Model.Repositories;
+using SmartTrack.Web.Http.Output;
 
 namespace SmartTrack.Web.Controllers.Measures
 {
@@ -29,21 +30,21 @@ namespace SmartTrack.Web.Controllers.Measures
             return new EditMeasureViewModel();
         }
 
-        public FubuContinuation CreateMeasurePost(CreateMeasureInputModel input)
+        public FubuContinuation CreateMeasurePost(CreateMeasureInput input)
         {
             repository.SaveEvent(new MeasureCreated { Measure = input.Name, Unit = input.Unit }, user);
             
             return FubuContinuation.RedirectTo<MeasuresController>(x => x.AllMeasures());
         }
 
-        public EditMeasureViewModel EditMeasure(EditThisMeasureInputModel input)
+        public EditMeasureViewModel EditMeasure(EditMeasureRequest request)
         {
-            var measure = user.Measures.Single(x => x.Name == input.OriginalName);
+            var measure = user.Measures.Single(x => x.Name == request.OriginalName);
             
             return new EditMeasureViewModel { Name = measure.Name, Unit = measure.Unit };
         }
 
-        public FubuContinuation EditMeasurePost(EditMeasureInputModel input)
+        public FubuContinuation EditMeasurePost(EditMeasureInput input)
         {
             repository.SaveEvent(new MeasureEdited { OldMeasure = input.OriginalName, NewMeasure = input.Name, Unit = input.Unit }, user);
             
@@ -59,18 +60,22 @@ namespace SmartTrack.Web.Controllers.Measures
             return viewmodel;
         }
 
-        public FubuContinuation AddSingleMeasure(AddMeasureInputModel input)
+        public FubuContinuation AddSingleMeasure(AddMeasureInput input)
         {
             repository.SaveEvent(new MeasureAdded
             {
                 Date = DateTime.Now, 
                 Measure = input.Name, 
-                Unit = input.Unit, 
                 Value = input.Value
             }, user);
             
             return FubuContinuation.RedirectTo<MeasuresController>(x => x.AllMeasures());
-        } 
+        }
+
+        public JsonResponse SaveTodaysMeasurements(SaveTodaysMeasurementsInput input)
+        {
+            return new JsonResponse {Success = true};
+        }
     }
 
     public class EditMeasureViewModel
@@ -79,29 +84,39 @@ namespace SmartTrack.Web.Controllers.Measures
         public string Unit { get; set; }
     }
 
-    public class EditMeasureInputModel 
+    public class EditMeasureInput 
     {
         public string OriginalName { get; set; }
         public string Name { get; set; }
         public string Unit { get; set; }
     }
 
-    public class EditThisMeasureInputModel
+    public class EditMeasureRequest
     {
         [QueryString] public string OriginalName { get; set; }
     }
 
-    public class CreateMeasureInputModel
+    public class CreateMeasureInput
     {
         public string Name { get; set; }
         public string Unit { get; set; }
     }
 
-    public class AddMeasureInputModel
+    public class SaveTodaysMeasurementsInput
+    {
+        public SaveSingleTodaysMeasurementInput[] Measurements { get; set; }
+
+        public class SaveSingleTodaysMeasurementInput
+        {
+            public string Name { get; set; }
+            public string Value { get; set; }
+        }
+    }
+
+    public class AddMeasureInput
     {
         public string Name { get; set; }
         public string Value { get; set; }
-        public string Unit { get; set; }
     }
 
     public class MeasuresViewModel
