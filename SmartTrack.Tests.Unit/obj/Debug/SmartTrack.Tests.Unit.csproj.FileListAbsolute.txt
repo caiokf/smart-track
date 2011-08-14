@@ -91,3 +91,5 @@ D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\WebActivator
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Ionic.Zip.xml
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\MigSharp.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\MigSharp.xml
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\FubuMVC.Validation.dll
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\FubuValidation.dll

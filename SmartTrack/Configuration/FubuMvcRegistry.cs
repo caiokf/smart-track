@@ -5,6 +5,7 @@ using FubuMVC.Core.Registration.Nodes;
 using FubuMVC.Core.Registration.Routes;
 using FubuMVC.Core.Urls;
 using FubuMVC.Core.View;
+using FubuMVC.Validation;
 using FubuMVC.WebForms;
 using SmartTrack.Web.Controllers.Measures;
 using SmartTrack.Web.Http.Output;
@@ -21,10 +22,12 @@ namespace SmartTrack.Web.Configuration
 
             Import<WebFormsEngine>();
 
-            Actions.IncludeClassesSuffixedWithController();
+            Actions.IncludeClassesSuffixedWithController().FindWith<JsonActionSource>();
 
             //Policies.WrapBehaviorChainsWith<TransactionBehavior>();
-            
+            Policies
+                .Add(new ValidationConvention(call => call.HasInput && call.InputType().Name.Contains("Input")));
+
             Routes
                 .HomeIs<MeasuresController>(x => x.AllMeasures())
                 .IgnoreControllerNamespaceEntirely()

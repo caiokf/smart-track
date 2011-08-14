@@ -1,13 +1,20 @@
 class Watermark
 	
-	blur: (inputbox, watermarkText) -> 
-		if (inputbox.val().trim().length == 0 || inputbox.val().trim() == watermarkText) 
-			inputbox.val(' ' + watermarkText + ' ').addClass("watermark").removeAttr('type').prop('type', 'text')
+	blurSpan: (span) -> 
+		if (span.siblings('input').val().trim().length == 0)
+			span.show().css('z-index', 100);
 
-	focus: (inputbox, watermarkText) -> 
-		if (inputbox.val() == ' ' + watermarkText + ' ')
-			inputbox.val('').removeClass("watermark").removeAttr('type').prop('type', 'password')
+	focusSpan: (span) -> 
+		span.hide();
+		span.siblings('input').focus();
 	
+	blurInput: (input) -> 
+		if (input.val().trim().length == 0)
+			input.siblings('span').show().css('z-index', 100);
+
+	focusInput: (input) -> 
+		input.siblings('span').hide();
+
 window.Watermark = new Watermark()
 
 $ -> $('.watermark').blur()

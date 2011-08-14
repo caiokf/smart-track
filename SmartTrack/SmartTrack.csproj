@@ -207,6 +207,8 @@
   <ItemGroup>
     <Compile Include="Configuration\FluentNhibernateMappings.cs" />
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
+    <Compile Include="Configuration\JsonActionSource.cs" />
+    <Compile Include="Configuration\JsonValidationFailurePolicy.cs" />
     <Compile Include="Configuration\NHibernateConfiguration.cs" />
     <Compile Include="Configuration\SchedulerRegistry.cs" />
     <Compile Include="Configuration\SparkConfiguration.cs" />

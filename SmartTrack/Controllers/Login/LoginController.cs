@@ -1,5 +1,6 @@
 ﻿using FubuMVC.Core.Continuations;
 using FubuMVC.WebForms;
+using FubuValidation;
 using SmartTrack.Model.Repositories;
 using SmartTrack.Web.Configuration;
 using SmartTrack.Web.Controllers.Measures;
@@ -43,6 +44,7 @@ namespace SmartTrack.Web.Controllers.Login
 
     public class JoinInput
     {
+        [Required]
         public string Username { get; set; }
         public string Email { get; set; }
         public string ConfirmEmail { get; set; }

@@ -5,12 +5,17 @@
 
 Login
 --------------------------------------------------------------------
-	Login of existing user
-	SessionManagement of logged user
+	Login of existing user     
+	SessionManagement of logged user  http://rexflex.net/2011/07/fubumvc-authentication/
 	Create user
 	Login with Secure pwd
 	Forgot password
 	Remember me
 	Validate by mail
 	Login with OpenId
+	Captcha
+
+Donate
+--------------------------------------------------------------------
+	donate link with paypal
 

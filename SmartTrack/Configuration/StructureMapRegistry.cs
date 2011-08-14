@@ -1,4 +1,6 @@
 using FluentNHibernate;
+using FubuMVC.Validation;
+using FubuValidation;
 using NHibernate;
 using SmartTrack.Model.Measures;
 using SmartTrack.Model.Repositories;
@@ -17,6 +19,10 @@ namespace SmartTrack.Web.Configuration
             For<IHttpSession>().Use<CurrentHttpContextSession>();
             
             For<User>().Use(x => x.GetInstance<UserRepository>().GetUser("caiokf"));
+
+            For<IValidator>().Use<Validator>();
+            For<IValidationFailureHandler>().Use<ValidationFailureHandler>();
+            For<IValidationFailurePolicy>().Add<JsonValidationFailurePolicy>();
         }
 
         private void setupNHibernate()

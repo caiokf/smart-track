@@ -2,15 +2,22 @@
   var Watermark;
   Watermark = (function() {
     function Watermark() {}
-    Watermark.prototype.blur = function(inputbox, watermarkText) {
-      if (inputbox.val().trim().length === 0 || inputbox.val().trim() === watermarkText) {
-        return inputbox.val(' ' + watermarkText + ' ').addClass("watermark").removeAttr('type').prop('type', 'text');
+    Watermark.prototype.blurSpan = function(span) {
+      if (span.siblings('input').val().trim().length === 0) {
+        return span.show().css('z-index', 100);
       }
     };
-    Watermark.prototype.focus = function(inputbox, watermarkText) {
-      if (inputbox.val() === ' ' + watermarkText + ' ') {
-        return inputbox.val('').removeClass("watermark").removeAttr('type').prop('type', 'password');
+    Watermark.prototype.focusSpan = function(span) {
+      span.hide();
+      return span.siblings('input').focus();
+    };
+    Watermark.prototype.blurInput = function(input) {
+      if (input.val().trim().length === 0) {
+        return input.siblings('span').show().css('z-index', 100);
       }
+    };
+    Watermark.prototype.focusInput = function(input) {
+      return input.siblings('span').hide();
     };
     return Watermark;
   })();
