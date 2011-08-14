@@ -6,6 +6,7 @@
 Login
 --------------------------------------------------------------------
 	Login of existing user
+	SessionManagement of logged user
 	Create user
 	Login with Secure pwd
 	Forgot password

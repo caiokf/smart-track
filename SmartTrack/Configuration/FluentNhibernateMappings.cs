@@ -9,6 +9,8 @@ namespace SmartTrack.Web.Configuration
         {
             Id(x => x.Id);
             Map(x => x.Name);
+            Map(x => x.Password);
+            Map(x => x.Email);
         }
     }
 }

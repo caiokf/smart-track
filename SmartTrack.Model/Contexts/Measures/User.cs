@@ -14,12 +14,16 @@ namespace SmartTrack.Model.Measures
             groups = new List<Group>();
         }
 
-        public User(string name) : this()
+        public User(string name, string password, string email) : this()
         {
+            Password = password;
+            Email = email;
             Name = name;
         }
-        
+
         public virtual string Name { get; private set; }
+        public virtual string Email { get; private set; }
+        public virtual string Password { get; private set; }
 
         private readonly List<Measure> measures;
         public virtual IEnumerable<Measure> Measures { get { return measures; } }

@@ -10,6 +10,17 @@ namespace SmartTrack.Web.Migrations
             db.Tables[tableName].Drop();
         }
 
+        public static IExistingTable OnTable(this IDatabase db, string tableName)
+        {
+            return db.Tables[tableName];
+        }
+
+        public static IExistingTable DropColumn(this IExistingTable table, string columnName)
+        {
+            table.Columns[columnName].Drop();
+            return table;
+        }
+
         public static void Clear(this SupportedProviders providers)
         {
             var names = providers.Names;
