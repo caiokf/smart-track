@@ -127,11 +127,5 @@ D:\Desenvolvimento\Caio\smart-track\SmartTrack\obj\Debug\SmartTrack.Web.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\obj\Debug\SmartTrack.Web.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Antlr3.Runtime.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\FubuFastPack.dll
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Migrator.dll
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Migrator.Framework.dll
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\Migrator.Providers.dll
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\FluentMigrator.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\MigSharp.dll
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\FluentMigrator.pdb
-D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\FluentMigrator.xml
 D:\Desenvolvimento\Caio\smart-track\SmartTrack\bin\MigSharp.xml

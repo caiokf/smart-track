@@ -247,8 +247,12 @@
     <None Include="Content\styles\colors.less" />
     <None Include="Content\styles\login\login.less" />
     <None Include="Content\styles\site.less" />
+    <Content Include="Backlog.txt" />
     <Content Include="Content\styles\site.css" />
+    <Content Include="Controllers\Login\ForgotPassword.aspx" />
+    <Content Include="Controllers\Login\Join.aspx" />
     <Content Include="Controllers\Login\LoggedInStatus.aspx" />
+    <Content Include="Controllers\Login\LoginWithOpenId.aspx" />
     <Content Include="Controllers\Measures\AllMeasures.aspx" />
     <Content Include="Controllers\Measures\EditMeasure.aspx" />
     <Content Include="Controllers\Measures\CreateMeasure.aspx" />
@@ -333,7 +337,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>login.coffee</DependentUpon>
     </Content>
-    <Content Include="Controllers\Login\Index.aspx" />
+    <Content Include="Controllers\Login\Login.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -4,6 +4,20 @@
   border-radius: 5px;
   padding: 10px;
   overflow: auto;
+  width: 860px;
+  text-align: center;
+}
+#content {
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 860px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  min-height: 450px;
+  padding: 20px;
 }
 #footer {
   background-color: #e7e9df;

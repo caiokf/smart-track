@@ -1,9 +1,36 @@
 ﻿body {
-    font-family: Helvetica, 'Lucida Grande', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #4F4E4E;
+    background-color: #EEE;
+    text-align: center;
+    line-height: 1.05em;
 }
 
-input[type=button], input[type=submit]
+input[type=text]:focus 
 {
+    border-color: rgba(114, 205, 30, 0.85);
+    box-shadow: 0 0 8px rgba(134, 225, 40, 0.5)
+}
+input[type=text] {
+    background-color: white;
+    border-bottom-color: #CCC;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    height: 20px;
+    font-size: 16px;
+    outline-style: none;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 8px;
+    position: static;
+    text-align: -webkit-auto;
+}
+
+input[type=button], input[type=submit] {
     background-color: #9C3;
     height: 50px;
     font-size: 20px;

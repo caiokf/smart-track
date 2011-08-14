@@ -1,0 +1,15 @@
+﻿Persistence
+--------------------------------------------------------------------
+	Debug vs. Prod configs
+	Transactions
+
+Login
+--------------------------------------------------------------------
+	Login of existing user
+	Create user
+	Login with Secure pwd
+	Forgot password
+	Remember me
+	Validate by mail
+	Login with OpenId
+
