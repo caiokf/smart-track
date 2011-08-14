@@ -7,12 +7,17 @@
     line-height: 1.05em;
 }
 
-input[type=text]:focus 
+.watermark {
+    color: rgba(100,100,100,0.6)
+}
+
+input[type=text]:focus, input[type=password]:focus
 {
     border-color: rgba(114, 205, 30, 0.85);
     box-shadow: 0 0 8px rgba(134, 225, 40, 0.5)
 }
-input[type=text] {
+input[type=text], input[type=password] {
+    margin: 5px;
     background-color: white;
     border-bottom-color: #CCC;
     border-radius: 4px;

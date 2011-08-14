@@ -1,5 +1,6 @@
 ﻿using FubuMVC.Core.Continuations;
 using FubuMVC.WebForms;
+using SmartTrack.Model.Repositories;
 using SmartTrack.Web.Configuration;
 using SmartTrack.Web.Controllers.Measures;
 
@@ -12,6 +13,13 @@ namespace SmartTrack.Web.Controllers.Login
 
     public class LoginController
     {
+        private readonly UserRepository userRepository;
+
+        public LoginController(UserRepository userRepository)
+        {
+            this.userRepository = userRepository;
+        }
+
         public LoginViewModel Index()
         {
             return new LoginViewModel();  
@@ -37,6 +45,7 @@ namespace SmartTrack.Web.Controllers.Login
     {
         public string Username { get; set; }
         public string Email { get; set; }
+        public string ConfirmEmail { get; set; }
         public string Password { get; set; }
         public string ConfirmPassword { get; set; }
     }

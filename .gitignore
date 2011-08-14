@@ -1,6 +1,9 @@
 
-/smart-track/bin
-/smart-track-model/obj
-/smart-track-model/bin
-/smart-track-tests-unit/bin
-/smart-track-tests-unit/obj
+/SmartTrack/bin
+/SmartTrack/obj
+/SmartTrack.Model/obj
+/SmartTrack.Model/bin
+/SmartTrack.Tests.Unit/bin
+/SmartTrack.Tests.Unit/obj
+/SmartTrack.Tests.Acceptance/bin
+/SmartTrack.Tests.Acceptance/obj

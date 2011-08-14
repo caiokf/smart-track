@@ -23,6 +23,16 @@ namespace SmartTrack.Web.HtmlTags
             return new ButtonTag();
         }
 
+        public static TextboxTag Textbox(this IFubuPage page)
+        {
+            return new TextboxTag();
+        }
+
+        public static TextboxTag Password(this IFubuPage page)
+        {
+            return new TextboxTag().Attr("type", "password") as TextboxTag;
+        }
+
         public static TextboxTag TextBoxFor<T>(this IFubuPage page, T model, Expression<Func<T, object>> expression)
             where T : class
         {

@@ -223,6 +223,7 @@
     <Compile Include="HtmlTags\CancelButtonTag.cs" />
     <Compile Include="HtmlTags\FubuPageExtensions.cs" />
     <Compile Include="HtmlTags\SubmitButtonTag.cs" />
+    <Compile Include="HtmlTags\TextBoxTag.cs" />
     <Compile Include="Http\Behaviors\Transactions\ITransactionBoundary.cs" />
     <Compile Include="Http\Behaviors\Transactions\NHibernateTransactionBoundary.cs" />
     <Compile Include="Http\Behaviors\Transactions\TransactionalContainerExtensions.cs" />
@@ -257,12 +258,21 @@
     <Content Include="Controllers\Measures\AllMeasures.aspx" />
     <Content Include="Controllers\Measures\EditMeasure.aspx" />
     <Content Include="Controllers\Measures\CreateMeasure.aspx" />
+    <Content Include="Scripts\watermark.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>watermark.coffee</DependentUpon>
+    </Content>
     <Content Include="Scripts\Measures\allmeasures.js">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>allmeasures.coffee</DependentUpon>
     </Content>
     <Content Include="Views\Shared\Site.master" />
+    <None Include="Scripts\watermark.coffee">
+      <Generator>CoffeeScriptGenerator</Generator>
+      <LastGenOutput>watermark.js</LastGenOutput>
+    </None>
     <None Include="Scripts\Measures\allmeasures.coffee">
       <Generator>CoffeeScriptGenerator</Generator>
       <LastGenOutput>allmeasures.js</LastGenOutput>
