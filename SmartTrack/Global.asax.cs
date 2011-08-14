@@ -4,6 +4,8 @@ using FluentScheduler;
 using FubuMVC.Core;
 using FubuMVC.StructureMap;
 using SmartTrack.Web.Configuration;
+using SmartTrack.Web.Migrations;
+using SmartTrack.Web.ScheduledTasks;
 using Spark.Web.Mvc;
 using StructureMap;
 
@@ -13,6 +15,8 @@ namespace SmartTrack.Web
 	{
 		protected void Application_Start()
 		{   
+            new MigrateDatabase().Execute();
+
             ObjectFactory.Initialize(x => x.AddRegistry<StructureMapRegistry>());
             
             //TaskManager.Initialize(new SchedulerRegistry());

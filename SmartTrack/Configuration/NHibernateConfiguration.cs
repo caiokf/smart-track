@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
@@ -45,7 +46,7 @@ namespace SmartTrack.Web.Configuration
 
         public static FluentConfiguration DebugDatabase(this FluentConfiguration config)
         {
-            return config.Database(SQLiteConfiguration.Standard.UsingFile("sqlite.db").ShowSql())
+            return config.Database(SQLiteConfiguration.Standard.ConnectionString(ConfigurationManager.ConnectionStrings["database"].ConnectionString).ShowSql())
                 .ExposeConfiguration(x => new SchemaUpdate(x).Execute(false, true));
         }
     }
