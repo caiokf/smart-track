@@ -9,8 +9,8 @@ namespace SmartTrack.Web.Migrations
         public void Up(IDatabase db)
         {
             db.OnTable("User")
-                .AddNotNullableColumn("Email", DbType.StringFixedLength).OfSize(255).HavingTemporaryDefault("")
-                .AddNotNullableColumn("Password", DbType.String).HavingTemporaryDefault("");
+                .AddNotNullableColumn("Email", DbType.StringFixedLength).OfSize(255).HavingDefault("")
+                .AddNotNullableColumn("Password", DbType.String).HavingDefault("");
         }
 
         public void Down(IDatabase db)

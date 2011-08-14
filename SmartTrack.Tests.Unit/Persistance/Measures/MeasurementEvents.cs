@@ -15,7 +15,7 @@ namespace SmartTrack.Tests.Unit.Persistance.Measures
         [Test]
         public void should_not_receive_events_not_subscribed_to()
         {
-            var user = new User("any");
+            var user = new User("any", "any", "any");
 
             Assert.Throws<ArgumentException>(() => user.Apply(new FakeEvent()));
         }
@@ -23,7 +23,7 @@ namespace SmartTrack.Tests.Unit.Persistance.Measures
         [Test]
         public void add_one_measure()
         {
-            var user = new User("any");
+            var user = new User("any", "any", "any");
 
             user.Apply(new MeasureAdded { Date = DateTime.Today.AddDays(-7), Measure = "Biceps", Value = "39", Unit = "cm" });
             
@@ -35,7 +35,7 @@ namespace SmartTrack.Tests.Unit.Persistance.Measures
         [Test]
         public void add_existing_measure()
         {
-            var user = new User("any");
+            var user = new User("any", "any", "any");
 
             user.Apply(new MeasureAdded { Date = DateTime.Today.AddDays(-7), Measure = "Biceps", Value = "39", Unit = "cm" });
             user.Apply(new MeasureAdded { Date = DateTime.Today, Measure = "Biceps", Value = "40", Unit = "cm" });
@@ -48,7 +48,7 @@ namespace SmartTrack.Tests.Unit.Persistance.Measures
         [Test]
         public void add_more_than_one_measure()
         {
-            var user = new User("any");
+            var user = new User("any", "any", "any");
 
             user.Apply(new MeasureAdded { Date = DateTime.Today.AddDays(-7), Measure = "Biceps", Value = "39", Unit = "cm" });
             user.Apply(new MeasureAdded { Date = DateTime.Today, Measure = "Calf", Value = "38", Unit = "cm" });
@@ -62,7 +62,7 @@ namespace SmartTrack.Tests.Unit.Persistance.Measures
         [Test]
         public void remove_existing_measures()
         {
-            var user = new User("any");
+            var user = new User("any", "any", "any");
 
             user.Apply(new MeasureAdded { Date = DateTime.Today.AddDays(-7), Measure = "Biceps", Value = "39", Unit = "cm" });
             user.Apply(new MeasureDeleted { Measure = "Biceps" });
@@ -73,7 +73,7 @@ namespace SmartTrack.Tests.Unit.Persistance.Measures
         [Test]
         public void remove_non_existing_measures()
         {
-            var user = new User("any");
+            var user = new User("any", "any", "any");
 
             user.Apply(new MeasureDeleted { Measure = "Biceps" });
             

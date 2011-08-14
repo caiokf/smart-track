@@ -23,7 +23,7 @@ namespace SmartTrack.Web.ScheduledTasks
             {
                 using (var tx = session.BeginTransaction())
                 {
-                    session.Save(new User("caiokf"));
+                    session.Save(new User("caiokf", "", "caiokf@gmail.com"));
                     tx.Commit();
                 }
             }

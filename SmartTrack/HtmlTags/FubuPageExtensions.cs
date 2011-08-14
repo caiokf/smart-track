@@ -8,17 +8,17 @@ namespace SmartTrack.Web.HtmlTags
 {
     public static class FubuPageExtensions
     {
-        public static SubmitButtonTag SubmitButton<T>(this IFubuPage<T> page) where T : class
+        public static SubmitButtonTag SubmitButton(this IFubuPage page)
         {
             return new SubmitButtonTag(); 
         }
 
-        public static CancelButtonTag CancelButton<T>(this IFubuPage<T> page) where T : class
+        public static CancelButtonTag CancelButton(this IFubuPage page) 
         {
             return new CancelButtonTag();
         }
 
-        public static ButtonTag Button<T>(this IFubuPage<T> page) where T : class
+        public static ButtonTag Button(this IFubuPage page) 
         {
             return new ButtonTag();
         }
