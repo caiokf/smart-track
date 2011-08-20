@@ -11,6 +11,8 @@
 		<%= Bundle.JavaScript()
 			.Add("~/Content/scripts/jquery/jquery-1.6.2.min.js")
 			.Add("~/Content/scripts/less-1.1.3.min.js")
+		    .Add("~/Scripts/form-ajax-validate-and-submit.js")
+            .Add("~/Scripts/watermark.js")
             .Render("~/Content/scripts/sitemaster_#.js")
 		%>
 		<asp:ContentPlaceHolder id="ScriptsContent" runat="server"></asp:ContentPlaceHolder>

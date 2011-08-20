@@ -24,6 +24,8 @@ namespace SmartTrack.Web.Configuration
 
             Actions.IncludeClassesSuffixedWithController().FindWith<JsonActionSource>();
 
+            this.Validation();
+            
             //Policies.WrapBehaviorChainsWith<TransactionBehavior>();
             Policies
                 .Add(new ValidationConvention(call => call.HasInput && call.InputType().Name.Contains("Input")));

@@ -28,7 +28,7 @@ namespace SmartTrack.Web.Controllers.Login
 
         public FubuContinuation JoinPost(JoinInput input)
         {
-            return FubuContinuation.RedirectTo<MeasuresController>(x => x.AllMeasures());
+            return FubuContinuation.TransferTo<MeasuresController>(x => x.AllMeasures());
         }
 
         public FubuContinuation Login(LoginRequestModel model)

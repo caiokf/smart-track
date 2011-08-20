@@ -16,18 +16,41 @@
 		%>
         <%= Bundle.JavaScript()
 			.Add("~/Content/scripts/jquery/jquery-1.6.2.min.js")
+			.Add("~/Content/scripts/jquery/jquery.form.js")
+			.Add("~/Content/scripts/jquery/jquery.validate.js")
 			.Add("~/Content/scripts/less-1.1.3.min.js")
-                .Add("~/Scripts/watermark.js")
+            .Add("~/Scripts/watermark.js")
+            .Add("~/Scripts/form-ajax-validate-and-submit.js")
             .Render("~/Content/scripts/login_join_#.js")
 		%>
+
     </head>
     <body>
         
         <h2>Join</h2>
 
 	    <div style="text-align: left;">
-            <%= this.FormFor<LoginController>(x => x.JoinPost(null)) %>
+            <%= this.FormFor<LoginController>(x => x.JoinPost(null)).WithAjaxValidation().Id("join-form")%>
             
+             <div class="ui-widget ui-success" style="display: none;">
+              <div class="ui-state-highlight ui-corner-all">
+                <p>
+                  <span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-info"></span>
+                  <span class="ui-text">User has been saved.</span>
+                </p>
+              </div>
+            </div>
+            <div class="ui-widget ui-error" style="display: none;">
+              <div class="ui-state-error ui-corner-all">
+                <p>
+                  <span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span>
+                  <span class="ui-text">An error has occurred. Please contact an administrator.</span>
+                </p>
+                <ul></ul>
+              </div>
+            </div>
+
+
             <div>           
                <%= this.Textbox().Name("Username").Id("join-username").Watermark("Username") %> Username
             </div>

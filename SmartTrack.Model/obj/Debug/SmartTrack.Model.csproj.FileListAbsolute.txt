@@ -12,3 +12,12 @@ D:\Desenvolvimento\Caio\smart-track\SmartTrack.Model\bin\Debug\Newtonsoft.Json.d
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Model\bin\Debug\NHibernate.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Model\bin\Debug\Newtonsoft.Json.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Model\bin\Debug\Newtonsoft.Json.xml
+D:\_Desenvolvimento\smart-track\SmartTrack.Model\bin\Debug\SmartTrack.Model.dll
+D:\_Desenvolvimento\smart-track\SmartTrack.Model\bin\Debug\SmartTrack.Model.pdb
+D:\_Desenvolvimento\smart-track\SmartTrack.Model\bin\Debug\Newtonsoft.Json.dll
+D:\_Desenvolvimento\smart-track\SmartTrack.Model\bin\Debug\NHibernate.dll
+D:\_Desenvolvimento\smart-track\SmartTrack.Model\bin\Debug\Newtonsoft.Json.pdb
+D:\_Desenvolvimento\smart-track\SmartTrack.Model\bin\Debug\Newtonsoft.Json.xml
+D:\_Desenvolvimento\smart-track\SmartTrack.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\_Desenvolvimento\smart-track\SmartTrack.Model\obj\Debug\SmartTrack.Model.dll
+D:\_Desenvolvimento\smart-track\SmartTrack.Model\obj\Debug\SmartTrack.Model.pdb

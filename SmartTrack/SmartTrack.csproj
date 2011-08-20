@@ -223,6 +223,7 @@
     </Compile>
     <Compile Include="HtmlTags\ButtonTag.cs" />
     <Compile Include="HtmlTags\CancelButtonTag.cs" />
+    <Compile Include="HtmlTags\FormTag.cs" />
     <Compile Include="HtmlTags\FubuPageExtensions.cs" />
     <Compile Include="HtmlTags\SubmitButtonTag.cs" />
     <Compile Include="HtmlTags\TextBoxTag.cs" />
@@ -252,6 +253,7 @@
     <None Include="Content\styles\login\login.less" />
     <None Include="Content\styles\site.less" />
     <Content Include="Backlog.txt" />
+    <Content Include="Content\scripts\jquery\jquery.form.js" />
     <Content Include="Content\styles\site.css" />
     <Content Include="Controllers\Login\ForgotPassword.aspx" />
     <Content Include="Controllers\Login\Join.aspx" />
@@ -260,6 +262,7 @@
     <Content Include="Controllers\Measures\AllMeasures.aspx" />
     <Content Include="Controllers\Measures\EditMeasure.aspx" />
     <Content Include="Controllers\Measures\CreateMeasure.aspx" />
+    <Content Include="Scripts\form-ajax-validate-and-submit.js" />
     <Content Include="Scripts\watermark.js">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

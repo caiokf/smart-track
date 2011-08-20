@@ -8,3 +8,8 @@ D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Acceptance\bin\Debug\SmartT
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Acceptance\bin\Debug\SmartTrack.Tests.Acceptance.pdb
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Acceptance\obj\Debug\SmartTrack.Tests.Acceptance.dll
 D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Acceptance\obj\Debug\SmartTrack.Tests.Acceptance.pdb
+D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Acceptance\bin\Debug\SmartTrack.Tests.Acceptance.dll
+D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Acceptance\bin\Debug\SmartTrack.Tests.Acceptance.pdb
+D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Acceptance\obj\Debug\ResolveAssemblyReference.cache
+D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Acceptance\obj\Debug\SmartTrack.Tests.Acceptance.dll
+D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Acceptance\obj\Debug\SmartTrack.Tests.Acceptance.pdb
