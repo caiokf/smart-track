@@ -8,6 +8,7 @@ using FubuMVC.Core.View;
 using FubuMVC.Validation;
 using FubuMVC.WebForms;
 using SmartTrack.Web.Controllers.Measures;
+using SmartTrack.Web.Controllers.Measures.Measures;
 using SmartTrack.Web.Http.Behaviors.ActionlessViews;
 using SmartTrack.Web.Http.Behaviors.Validation;
 using SmartTrack.Web.Http.Output;

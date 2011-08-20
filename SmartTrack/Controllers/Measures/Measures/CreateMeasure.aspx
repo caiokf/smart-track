@@ -1,6 +1,7 @@
-﻿<%@ Page Title="SmartTrack" Language="C#" MasterPageFile="~/Views/Shared/Site.master" Inherits="SmartTrack.Web.Controllers.Measures.CreateMeasure" %>
+﻿<%@ Page Title="SmartTrack" Language="C#" MasterPageFile="~/Views/Shared/Site.master" Inherits="SmartTrack.Web.Controllers.Measures.Measures.CreateMeasure" %>
 <%@ Import Namespace="SmartTrack.Web.Controllers.Measures" %>
 <%@ Import Namespace="SmartTrack.Web.HtmlTags" %>
+<%@ Import Namespace="SmartTrack.Web.Controllers.Measures.Measures" %>
 
 <asp:Content ID="PageContent" runat="server" ContentPlaceHolderID="MainContent" >
  

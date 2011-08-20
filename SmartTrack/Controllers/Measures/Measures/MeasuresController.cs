@@ -8,7 +8,7 @@ using SmartTrack.Model.Measures;
 using SmartTrack.Model.Repositories;
 using SmartTrack.Web.Http.Output;
 
-namespace SmartTrack.Web.Controllers.Measures
+namespace SmartTrack.Web.Controllers.Measures.Measures
 {
     public class AllMeasures : FubuPage<MeasuresViewModel> { }
     public class CreateMeasure : FubuPage<EditMeasureViewModel> { }
@@ -17,12 +17,12 @@ namespace SmartTrack.Web.Controllers.Measures
     public class MeasuresController
     {
         private readonly User user;
-        private readonly Repository repository;
+        private readonly EventRepository _eventRepository;
 
-        public MeasuresController(User loggedUser, Repository repository)
+        public MeasuresController(User loggedUser, EventRepository _eventRepository)
         {
             user = loggedUser;
-            this.repository = repository;
+            this._eventRepository = _eventRepository;
         }
 
         public EditMeasureViewModel CreateMeasure()
@@ -32,7 +32,7 @@ namespace SmartTrack.Web.Controllers.Measures
 
         public FubuContinuation CreateMeasurePost(CreateMeasureInput input)
         {
-            repository.SaveEvent(new MeasureCreated { Measure = input.Name, Unit = input.Unit }, user);
+            _eventRepository.SaveEvent(new MeasureCreated { Measure = input.Name, Unit = input.Unit }, user);
             
             return FubuContinuation.RedirectTo<MeasuresController>(x => x.AllMeasures());
         }
@@ -46,7 +46,7 @@ namespace SmartTrack.Web.Controllers.Measures
 
         public FubuContinuation EditMeasurePost(EditMeasureInput input)
         {
-            repository.SaveEvent(new MeasureEdited { OldMeasure = input.OriginalName, NewMeasure = input.Name, Unit = input.Unit }, user);
+            _eventRepository.SaveEvent(new MeasureEdited { OldMeasure = input.OriginalName, NewMeasure = input.Name, Unit = input.Unit }, user);
             
             return FubuContinuation.RedirectTo<MeasuresController>(x => x.AllMeasures());
         }
@@ -62,7 +62,7 @@ namespace SmartTrack.Web.Controllers.Measures
 
         public FubuContinuation AddSingleMeasure(AddMeasureInput input)
         {
-            repository.SaveEvent(new MeasureAdded
+            _eventRepository.SaveEvent(new MeasureAdded
             {
                 Date = DateTime.Now, 
                 Measure = input.Name, 

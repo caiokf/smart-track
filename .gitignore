@@ -19,7 +19,10 @@ SmartTrack.Tests.Acceptance/obj
 /smart-track.5.1.ReSharper.user
 /SmartTrack.Model/obj
 /SmartTrack.Model/bin
+/SmartTrack.Model/obj/Debug
+/SmartTrack.Model/bin/Debug
 /SmartTrack.Tests.Acceptance/obj
 /SmartTrack.Tests.Acceptance/bin
 /SmartTrack.Tests.Unit/obj
 /SmartTrack.Tests.Unit/bin
+/SmartTrack.Tests.Unit/bin/Debug

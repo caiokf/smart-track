@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
 using MigSharp;
 using SmartTrack.Web.Controllers.Measures;
+using SmartTrack.Web.Controllers.Measures.Measures;
 
 namespace SmartTrack.Web.Migrations
 {

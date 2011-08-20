@@ -58,6 +58,8 @@ namespace SmartTrack.Model.Measures
         protected void Apply(MeasureEdited e)
         {
             var measure = Measures.WithName(e.OldMeasure);
+            if (measure == null)
+                return;
             measure.ChangeNameTo(e.NewMeasure);
             measure.ChangeUnitTo(e.Unit);
         }
@@ -79,7 +81,9 @@ namespace SmartTrack.Model.Measures
 
         protected void Apply(GroupAdded e)
         {
-            groups.Add(new Group(e.Group));
+            var group = groups.WithName(e.Group);
+            if (group == null)
+                groups.Add(new Group(e.Group));
         }
 
         protected void Apply(GroupDeleted e)

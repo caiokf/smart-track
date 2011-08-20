@@ -99,8 +99,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conventions.cs" />
+    <Compile Include="Measures\GroupsEvents.cs" />
+    <Compile Include="Measures\UserAggregateEvents.cs" />
+    <Compile Include="Mother.cs" />
     <Compile Include="Persistance\InMemory\InMemorySetup.cs" />
-    <Compile Include="Persistance\Measures\MeasurementEvents.cs" />
+    <Compile Include="Measures\MeasuresEvents.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,7 +1,8 @@
-﻿<%@ Page Title="SmartTrack" Language="C#" MasterPageFile="~/Views/Shared/Site.master" Inherits="SmartTrack.Web.Controllers.Measures.AllMeasures" %>
+﻿<%@ Page Title="SmartTrack" Language="C#" MasterPageFile="~/Views/Shared/Site.master" Inherits="SmartTrack.Web.Controllers.Measures.Measures.AllMeasures" %>
 <%@ Import Namespace="SmartTrack.Web.Controllers.Measures" %>
 <%@ Import Namespace="SmartTrack.Web.HtmlTags" %>
 <%@ Import Namespace="SquishIt.Framework" %>
+<%@ Import Namespace="SmartTrack.Web.Controllers.Measures.Measures" %>
 
 <asp:Content ID="PageScripts" runat="server" ContentPlaceHolderID="ScriptsContent" >
     <script type="text/javascript">

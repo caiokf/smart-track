@@ -7,11 +7,15 @@ TASKS - Form Validation
 --------------------------------------------------------------------
 	convert js to coffee
 	wrap behavior that if ajax call on validation succeed, do not call action, cause it will call form.submit()
-
+	unique value in collection validation (user.Username)
+	html design
+	clear errors after call
+	field error not only summary
 
 Login
 --------------------------------------------------------------------
-	Login of existing user     
+	Login of existing user
+	Login not needed in dev  
 	SessionManagement of logged user  http://rexflex.net/2011/07/fubumvc-authentication/
 	Create user http://lostechies.com/josharnold/2011/07/05/fubu-spark-diagnostics-and-validation/
 	Login with Secure pwd
@@ -25,12 +29,13 @@ Measures
 --------------------------------------------------------------------
 	Graphs
 	Groups
-	Tags
+	Tags, Categories
 	Supplements (or tag groups with start and end date)
 	Training
 	Goals
 	Correlations (1RM)
 	Totals
+	Default/Built-in measures 
 
 
 Donate

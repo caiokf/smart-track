@@ -207,6 +207,12 @@
   <ItemGroup>
     <Compile Include="Configuration\FluentNhibernateMappings.cs" />
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
+    <Compile Include="Controllers\Measures\Correlations\CorrelationsController.cs" />
+    <Compile Include="Controllers\Measures\Goals\GoalsController.cs" />
+    <Compile Include="Controllers\Measures\Groups\GroupsController.cs" />
+    <Compile Include="Controllers\Measures\TagCategories\TagCategoriesController.cs" />
+    <Compile Include="Controllers\Measures\Tags\TagsController.cs" />
+    <Compile Include="Controllers\Measures\Totals\TotalsController.cs" />
     <Compile Include="Http\Behaviors\ActionlessViews\IAmActionless.cs" />
     <Compile Include="Http\Behaviors\ActionlessViews\RegisterActionlessViews.cs" />
     <Compile Include="Http\Behaviors\Validation\JsonActionSource.cs" />
@@ -220,7 +226,7 @@
     <Compile Include="Controllers\Login\LoggedInStatusController.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Controllers\Measures\MeasuresController.cs">
+    <Compile Include="Controllers\Measures\Measures\MeasuresController.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HtmlTags\ButtonTag.cs" />
@@ -264,9 +270,9 @@
     <Content Include="Controllers\Login\Join.aspx" />
     <Content Include="Controllers\Login\LoggedInStatus.aspx" />
     <Content Include="Controllers\Login\LoginWithOpenId.aspx" />
-    <Content Include="Controllers\Measures\AllMeasures.aspx" />
-    <Content Include="Controllers\Measures\EditMeasure.aspx" />
-    <Content Include="Controllers\Measures\CreateMeasure.aspx" />
+    <Content Include="Controllers\Measures\Measures\AllMeasures.aspx" />
+    <Content Include="Controllers\Measures\Measures\EditMeasure.aspx" />
+    <Content Include="Controllers\Measures\Measures\CreateMeasure.aspx" />
     <Content Include="Scripts\form-ajax-validate-and-submit.js" />
     <Content Include="Scripts\form-ajax-validate-and-submit_.js">
       <AutoGen>True</AutoGen>
@@ -388,6 +394,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\images\" />
+    <Folder Include="Controllers\Help\" />
     <Folder Include="Http\Handlers\" />
     <Folder Include="Http\Modules\" />
   </ItemGroup>
