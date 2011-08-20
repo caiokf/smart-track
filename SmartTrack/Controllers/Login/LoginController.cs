@@ -4,6 +4,8 @@ using FubuValidation;
 using SmartTrack.Model.Repositories;
 using SmartTrack.Web.Configuration;
 using SmartTrack.Web.Controllers.Measures;
+using SmartTrack.Web.Http.Behaviors.ActionlessViews;
+using SmartTrack.Web.Http.Behaviors.Validation.Rules;
 
 namespace SmartTrack.Web.Controllers.Login
 {
@@ -28,7 +30,7 @@ namespace SmartTrack.Web.Controllers.Login
 
         public FubuContinuation JoinPost(JoinInput input)
         {
-            return FubuContinuation.TransferTo<MeasuresController>(x => x.AllMeasures());
+            return FubuContinuation.RedirectTo<MeasuresController>(x => x.AllMeasures());
         }
 
         public FubuContinuation Login(LoginRequestModel model)
@@ -46,9 +48,19 @@ namespace SmartTrack.Web.Controllers.Login
     {
         [Required]
         public string Username { get; set; }
+
+        [Required]
         public string Email { get; set; }
+
+        [Required]
+        [ConfirmEqualsTo("Email")]
         public string ConfirmEmail { get; set; }
+
+        [Required]
         public string Password { get; set; }
+
+        [Required]
+        [ConfirmEqualsTo("Password")]
         public string ConfirmPassword { get; set; }
     }
 

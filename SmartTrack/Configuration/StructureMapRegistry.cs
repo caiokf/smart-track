@@ -6,6 +6,7 @@ using SmartTrack.Model.Measures;
 using SmartTrack.Model.Repositories;
 using SmartTrack.Web.Http;
 using SmartTrack.Web.Http.Behaviors;
+using SmartTrack.Web.Http.Behaviors.Validation;
 using StructureMap.Configuration.DSL;
 
 namespace SmartTrack.Web.Configuration

@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" Inherits="SmartTrack.Web.Controllers.Login.LoggedInStatus" %>
 <%@ Import Namespace="SmartTrack.Web.Configuration" %>
 <%@ Import Namespace="SmartTrack.Web.Controllers.Login" %>
+<%@ Import Namespace="SmartTrack.Web.Http.Behaviors.ActionlessViews" %>
 
 <div id="login-status">
     <% if (Model.IsLoggedIn) { %>

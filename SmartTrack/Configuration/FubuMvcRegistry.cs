@@ -8,7 +8,10 @@ using FubuMVC.Core.View;
 using FubuMVC.Validation;
 using FubuMVC.WebForms;
 using SmartTrack.Web.Controllers.Measures;
+using SmartTrack.Web.Http.Behaviors.ActionlessViews;
+using SmartTrack.Web.Http.Behaviors.Validation;
 using SmartTrack.Web.Http.Output;
+using FubuMVC.Core.Registration;
 
 namespace SmartTrack.Web.Configuration
 {
@@ -27,8 +30,7 @@ namespace SmartTrack.Web.Configuration
             this.Validation();
             
             //Policies.WrapBehaviorChainsWith<TransactionBehavior>();
-            Policies
-                .Add(new ValidationConvention(call => call.HasInput && call.InputType().Name.Contains("Input")));
+            Policies.Add<ValidationPolicy>();
 
             Routes
                 .HomeIs<MeasuresController>(x => x.AllMeasures())
@@ -42,34 +44,6 @@ namespace SmartTrack.Web.Configuration
                 .RegisterWebFormsActionLessViews();
 
             Output.ToJson.WhenTheOutputModelIs<JsonResponse>();
-        }
-    }
-
-    public interface IAmActionless { }
-
-    public static class RegisterActionlessViewsConvention
-    {
-        public static ViewExpression RegisterWebFormsActionLessViews(this ViewExpression views)
-        {
-            Func<IViewToken,bool> filter = x => typeof (IAmActionless).IsAssignableFrom(x.ViewType);
-            Func<BehaviorChain, string> routeFrom = x =>
-            {
-                var route = x.Top.ToString();
-                route = route.Substring(route.IndexOf("/Controllers") + 13);
-                route = route.Replace(".aspx", "");
-                route = route.Replace(".ascx", "");
-                route = route.Replace("'", "");
-                route = route.ToLower();
-                return route;
-            };
-            return views.RegisterActionLessViews(filter, chain => chain.Route = new RouteDefinition(routeFrom(chain)));
-        }
-
-        public static string UrlForActionless<T>(this IUrlRegistry urls) where T : IAmActionless
-        {
-            var type = typeof (T).FullName;
-            var action = type.Replace("SmartTrack.Web.Controllers", "").Replace(".", "/").ToLower();
-            return action;
         }
     }
 }

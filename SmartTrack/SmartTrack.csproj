@@ -207,8 +207,10 @@
   <ItemGroup>
     <Compile Include="Configuration\FluentNhibernateMappings.cs" />
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
-    <Compile Include="Configuration\JsonActionSource.cs" />
-    <Compile Include="Configuration\JsonValidationFailurePolicy.cs" />
+    <Compile Include="Http\Behaviors\ActionlessViews\IAmActionless.cs" />
+    <Compile Include="Http\Behaviors\ActionlessViews\RegisterActionlessViews.cs" />
+    <Compile Include="Http\Behaviors\Validation\JsonActionSource.cs" />
+    <Compile Include="Http\Behaviors\Validation\JsonValidationFailurePolicy.cs" />
     <Compile Include="Configuration\NHibernateConfiguration.cs" />
     <Compile Include="Configuration\SchedulerRegistry.cs" />
     <Compile Include="Configuration\SparkConfiguration.cs" />
@@ -231,6 +233,9 @@
     <Compile Include="Http\Behaviors\Transactions\NHibernateTransactionBoundary.cs" />
     <Compile Include="Http\Behaviors\Transactions\TransactionalContainerExtensions.cs" />
     <Compile Include="Http\Behaviors\Transactions\TransactionProcessor.cs" />
+    <Compile Include="Http\Behaviors\Validation\Rules\ConfirmEqualsFieldRule.cs" />
+    <Compile Include="Http\Behaviors\Validation\ValidationKeys.cs" />
+    <Compile Include="Http\Behaviors\Validation\ValidationPolicy.cs" />
     <Compile Include="Http\IHttpSession.cs" />
     <Compile Include="Http\Output\JsonResponse.cs" />
     <Compile Include="Controllers\Login\LoginController.cs">
