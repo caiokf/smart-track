@@ -268,6 +268,11 @@
     <Content Include="Controllers\Measures\EditMeasure.aspx" />
     <Content Include="Controllers\Measures\CreateMeasure.aspx" />
     <Content Include="Scripts\form-ajax-validate-and-submit.js" />
+    <Content Include="Scripts\form-ajax-validate-and-submit_.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>form-ajax-validate-and-submit_.coffee</DependentUpon>
+    </Content>
     <Content Include="Scripts\watermark.js">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -279,6 +284,10 @@
       <DependentUpon>allmeasures.coffee</DependentUpon>
     </Content>
     <Content Include="Views\Shared\Site.master" />
+    <None Include="Scripts\form-ajax-validate-and-submit_.coffee">
+      <Generator>CoffeeScriptGenerator</Generator>
+      <LastGenOutput>form-ajax-validate-and-submit_.js</LastGenOutput>
+    </None>
     <None Include="Scripts\watermark.coffee">
       <Generator>CoffeeScriptGenerator</Generator>
       <LastGenOutput>watermark.js</LastGenOutput>

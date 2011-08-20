@@ -63,5 +63,10 @@ namespace SmartTrack.Model.Repositories
             user.Hydrate(events);
             return user;
         }
+
+        public void Save(User user)
+        {
+            session.SaveOrUpdate(user);
+        }
     }
 }

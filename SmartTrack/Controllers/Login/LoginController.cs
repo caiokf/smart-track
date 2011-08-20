@@ -1,8 +1,8 @@
 ﻿using FubuMVC.Core.Continuations;
 using FubuMVC.WebForms;
 using FubuValidation;
+using SmartTrack.Model.Measures;
 using SmartTrack.Model.Repositories;
-using SmartTrack.Web.Configuration;
 using SmartTrack.Web.Controllers.Measures;
 using SmartTrack.Web.Http.Behaviors.ActionlessViews;
 using SmartTrack.Web.Http.Behaviors.Validation.Rules;
@@ -30,6 +30,9 @@ namespace SmartTrack.Web.Controllers.Login
 
         public FubuContinuation JoinPost(JoinInput input)
         {
+            var user = new User(input.Username, input.Password, input.Email);
+            userRepository.Save(user);
+
             return FubuContinuation.RedirectTo<MeasuresController>(x => x.AllMeasures());
         }
 
