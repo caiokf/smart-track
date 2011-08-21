@@ -428,6 +428,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>form-ajax-validate-and-submit_.coffee</DependentUpon>
     </Content>
+    <Content Include="Scripts\link-confirmation.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>link-confirmation.coffee</DependentUpon>
+    </Content>
     <Content Include="Scripts\master-ready.js">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -447,6 +452,10 @@
     <None Include="Scripts\form-ajax-validate-and-submit_.coffee">
       <Generator>CoffeeScriptGenerator</Generator>
       <LastGenOutput>form-ajax-validate-and-submit_.js</LastGenOutput>
+    </None>
+    <None Include="Scripts\link-confirmation.coffee">
+      <Generator>CoffeeScriptGenerator</Generator>
+      <LastGenOutput>link-confirmation.js</LastGenOutput>
     </None>
     <None Include="Scripts\master-ready.coffee">
       <Generator>CoffeeScriptGenerator</Generator>

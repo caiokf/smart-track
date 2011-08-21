@@ -47,7 +47,7 @@ namespace SmartTrack.Web.HtmlTags
             var href = link.Attr("href");
             link.Attr("href", " ");
 
-            var onClick = "javascript:jConfirm('" + confirmationMessage + "', 'Confirm', function() { window.location = '" + href + "'}); return false;";
+            var onClick = "javascript:linkConfirmation('" + confirmationMessage + "', '" + href + "'); return false;";
             
             link.Attr("onclick", onClick);
 
