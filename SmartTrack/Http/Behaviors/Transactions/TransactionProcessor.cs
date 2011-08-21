@@ -12,7 +12,7 @@ namespace SmartTrack.Web.Http.Behaviors.Transactions
             this.container = container;
         }
 
-        public void ExecuteITransaction(Action<IContainer> action)
+        public void ExecuteInTransaction(Action<IContainer> action)
         {
             using (var nestedContainer = container.GetNestedContainer())
             using (var boundary = nestedContainer.GetInstance<ITransactionBoundary>())

@@ -146,3 +146,4 @@ D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Unit\bin\Debug\Iesi.Collections
 D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Unit\obj\Debug\ResolveAssemblyReference.cache
 D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Unit\obj\Debug\SmartTrack.Tests.Unit.dll
 D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Unit\obj\Debug\SmartTrack.Tests.Unit.pdb
+D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Unit\bin\Debug\Moq.dll

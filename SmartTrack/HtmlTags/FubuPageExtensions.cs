@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 using FubuCore.Reflection;
+using FubuMVC.Core.UI;
 using FubuMVC.Core.View;
 using HtmlTags;
 
@@ -38,6 +39,19 @@ namespace SmartTrack.Web.HtmlTags
         {
             var value = model.ValueOrDefault(expression);
             return new TextboxTag("", (value == null) ? "" : value.ToString());
+        }
+
+        public static HtmlTag LinkWithConfirmationTo(this IFubuPage page, object inputModel, string confirmationMessage)
+        {
+            var link = page.LinkTo(inputModel);
+            var href = link.Attr("href");
+            link.Attr("href", " ");
+
+            var onClick = "javascript:jConfirm('" + confirmationMessage + "', 'Confirm', function() { window.location = '" + href + "'}); return false;";
+            
+            link.Attr("onclick", onClick);
+
+            return link;
         }
     }
 }

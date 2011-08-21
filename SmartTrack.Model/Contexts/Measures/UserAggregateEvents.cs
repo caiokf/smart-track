@@ -40,15 +40,16 @@ namespace SmartTrack.Model.Measures
     public class TagAdded : IDomainEvent
     {
         public string Tag { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
 
-        public bool IsValid() { return (!Tag.IsNullOrEmpty()); }
+        public bool IsValid() { return (!Tag.IsNullOrEmpty() && StartDate > DateTime.MinValue); }
     }
 
     public class TagDeleted : IDomainEvent
     {
         public string Tag { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime StartDate { get; set; }
 
         public bool IsValid() { return (!Tag.IsNullOrEmpty()); }
     }
@@ -58,6 +59,14 @@ namespace SmartTrack.Model.Measures
         public string Group { get; set; }
 
         public bool IsValid() { return (!Group.IsNullOrEmpty()); }
+    }
+
+    public class GroupEdited : IDomainEvent
+    {
+        public string OldGroup { get; set; }
+        public string NewGroup { get; set; }
+
+        public bool IsValid() { return (!NewGroup.IsNullOrEmpty() && !OldGroup.IsNullOrEmpty()); }
     }
 
     public class GroupDeleted : IDomainEvent
@@ -81,5 +90,23 @@ namespace SmartTrack.Model.Measures
         public string Measure { get; set; }
 
         public bool IsValid() { return (!Group.IsNullOrEmpty() && !Measure.IsNullOrEmpty()); }
+    }
+
+    public class TagAddedToGroup : IDomainEvent
+    {
+        public string Group { get; set; }
+        public string Tag { get; set; }
+        public DateTime TagStartDate { get; set; }
+
+        public bool IsValid() { return (!Group.IsNullOrEmpty() && !Tag.IsNullOrEmpty()) && TagStartDate > DateTime.MinValue; }
+    }
+
+    public class TagRemovedFromGroup : IDomainEvent
+    {
+        public string Group { get; set; }
+        public string Tag { get; set; }
+        public DateTime TagStartDate { get; set; }
+
+        public bool IsValid() { return (!Group.IsNullOrEmpty() && !Tag.IsNullOrEmpty()) && TagStartDate > DateTime.MinValue; }
     }
 }

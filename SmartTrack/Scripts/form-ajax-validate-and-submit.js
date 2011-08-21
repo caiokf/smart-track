@@ -16,6 +16,7 @@
                     else {
                         $(form).find('.ui-error').fadeIn('slow', function () {
                             var list = $(form).find('.ui-state-error > ul');
+                            list.html('');
                             for (var i = 0; i < response.Errors.length; i++) {
                                 // TODO -- use the field/message info
                                 list.append('<li>' + response.Errors[i].message + '</li>');

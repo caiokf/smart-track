@@ -1,7 +1,7 @@
 using System;
 using NHibernate;
 
-namespace SmartTrack.Web.Http.Behaviors
+namespace SmartTrack.Web.Http.Behaviors.Transactions
 {
     public class NHibernateTransactionBoundary : ITransactionBoundary
     {

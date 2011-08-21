@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AggregateRoot.cs" />
+    <Compile Include="Contexts\Measures\TagCategory.cs" />
     <Compile Include="Contexts\Measures\UserAggregateEvents.cs" />
     <Compile Include="Extensions\MeasureExtensions.cs" />
     <Compile Include="DomainEvent.cs" />

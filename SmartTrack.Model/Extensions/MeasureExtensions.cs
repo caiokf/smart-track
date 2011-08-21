@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using SmartTrack.Model.Measures;
@@ -20,6 +21,14 @@ namespace SmartTrack.Model.Extensions
                 return null;
 
             return groups.FirstOrDefault(x => x.Name.ToLower() == name.ToLower());
+        }
+
+        public static Tag WithNameAndDate(this IEnumerable<Tag> tags, string name, DateTime date)
+        {
+            if (name == null || date == DateTime.MinValue)
+                return null;
+
+            return tags.FirstOrDefault(x => x.Name.ToLower() == name.ToLower() && x.StartDate.Date == date.Date);
         }
     }
 }

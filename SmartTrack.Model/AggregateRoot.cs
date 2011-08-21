@@ -30,7 +30,8 @@ namespace SmartTrack.Model
             if (methods.Count() <= 0)
                 throw new ArgumentException(string.Format("Event '{0}' cannot be processed by this aggregate", e.GetType()));
 
-            methods.First().Invoke(this, bindingFlags, null, new[] {castedEvent}, null);
+            if (e.IsValid())
+                methods.First().Invoke(this, bindingFlags, null, new[] {castedEvent}, null);
         } 
     }
 }

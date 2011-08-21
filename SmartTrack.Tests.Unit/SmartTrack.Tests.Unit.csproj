@@ -62,6 +62,9 @@
     <Reference Include="Microsoft.Web.Infrastructure">
       <HintPath>..\packages\FubuMVC.0.9.1.533\lib\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -100,10 +103,13 @@
   <ItemGroup>
     <Compile Include="Conventions.cs" />
     <Compile Include="Measures\GroupsEvents.cs" />
+    <Compile Include="Measures\TagsEvents.cs" />
     <Compile Include="Measures\UserAggregateEvents.cs" />
     <Compile Include="Mother.cs" />
-    <Compile Include="Persistance\InMemory\InMemorySetup.cs" />
+    <Compile Include="Persistance\InMemory\InMemoryPersistenceTestsSetup.cs" />
     <Compile Include="Measures\MeasuresEvents.cs" />
+    <Compile Include="Transactions\TransactionBoundaryTests.cs" />
+    <Compile Include="Transactions\TransactionProcessorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

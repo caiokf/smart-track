@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using SmartTrack.Model.Extensions;
 
 namespace SmartTrack.Model.Measures
 {
@@ -26,12 +27,12 @@ namespace SmartTrack.Model.Measures
 
         public void ChangeUnitTo(string unit)
         {
-            Unit = unit;
+            if (!unit.IsNullOrEmpty()) Unit = unit;
         }
 
         public void ChangeNameTo(string name)
         {
-            Name = name;
+            if (!name.IsNullOrEmpty()) Name = name;
         }
     }
 

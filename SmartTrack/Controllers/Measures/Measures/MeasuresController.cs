@@ -17,12 +17,12 @@ namespace SmartTrack.Web.Controllers.Measures.Measures
     public class MeasuresController
     {
         private readonly User user;
-        private readonly EventRepository _eventRepository;
+        private readonly EventRepository eventRepository;
 
-        public MeasuresController(User loggedUser, EventRepository _eventRepository)
+        public MeasuresController(User loggedUser, EventRepository eventRepository)
         {
             user = loggedUser;
-            this._eventRepository = _eventRepository;
+            this.eventRepository = eventRepository;
         }
 
         public EditMeasureViewModel CreateMeasure()
@@ -32,7 +32,7 @@ namespace SmartTrack.Web.Controllers.Measures.Measures
 
         public FubuContinuation CreateMeasurePost(CreateMeasureInput input)
         {
-            _eventRepository.SaveEvent(new MeasureCreated { Measure = input.Name, Unit = input.Unit }, user);
+            eventRepository.SaveEvent(new MeasureCreated { Measure = input.Name, Unit = input.Unit }, user);
             
             return FubuContinuation.RedirectTo<MeasuresController>(x => x.AllMeasures());
         }
@@ -46,9 +46,20 @@ namespace SmartTrack.Web.Controllers.Measures.Measures
 
         public FubuContinuation EditMeasurePost(EditMeasureInput input)
         {
-            _eventRepository.SaveEvent(new MeasureEdited { OldMeasure = input.OriginalName, NewMeasure = input.Name, Unit = input.Unit }, user);
+            eventRepository.SaveEvent(new MeasureEdited { OldMeasure = input.OriginalName, NewMeasure = input.Name, Unit = input.Unit }, user);
             
             return FubuContinuation.RedirectTo<MeasuresController>(x => x.AllMeasures());
+        }
+
+        public JsonResponse DeleteMeasurePost(DeleteMeasureInput input)
+        {
+            var measure = user.Measures.Single(x => x.Name == input.Measure);
+            if (measure == null)
+                return new JsonResponse {Success = false, Message = "An error occured while deleting this measure."};
+
+            eventRepository.SaveEvent(new MeasureDeleted { Measure = input.Measure }, user);
+
+            return new JsonResponse { Success = true, Message = "Measure deleted successfully." };
         }
 
         public MeasuresViewModel AllMeasures()
@@ -62,7 +73,7 @@ namespace SmartTrack.Web.Controllers.Measures.Measures
 
         public FubuContinuation AddSingleMeasure(AddMeasureInput input)
         {
-            _eventRepository.SaveEvent(new MeasureAdded
+            eventRepository.SaveEvent(new MeasureAdded
             {
                 Date = DateTime.Now, 
                 Measure = input.Name, 
@@ -91,6 +102,11 @@ namespace SmartTrack.Web.Controllers.Measures.Measures
         public string Unit { get; set; }
     }
 
+    public class DeleteMeasureInput 
+    {
+        [QueryString] public string Measure { get; set; }
+    }
+    
     public class EditMeasureRequest
     {
         [QueryString] public string OriginalName { get; set; }

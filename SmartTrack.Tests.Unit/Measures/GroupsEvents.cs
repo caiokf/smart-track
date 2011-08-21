@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using NUnit.Framework;
 using SharpTestsEx;
@@ -68,16 +67,41 @@ namespace SmartTrack.Tests.Unit.Measures
         }
 
         [Test]
-        [Ignore]
         public void edit_an_existing_group()
         {
+            var user = MotherOf.Users.MrEmpty();
+
+            user.Apply(new GroupAdded { Group = "Measures" });
+            user.Apply(new GroupEdited { OldGroup = "Measures", NewGroup = "Edited Measures"});
+
+            user.Groups.Count().Should().Be(1);
+            user.Groups.First().Name.Should().Be("Edited Measures");
         }
 
         [Test]
-        [Ignore]
-        public void add_an_existing_measure_to_a_group()
+        public void edit_an_existing_group_to_an_empty_name()
         {
+            var user = MotherOf.Users.MrEmpty();
+
+            user.Apply(new GroupAdded { Group = "Measures" });
+            user.Apply(new GroupEdited { OldGroup = "Measures", NewGroup = "" });
+
+            user.Groups.Count().Should().Be(1);
+            user.Groups.First().Name.Should().Be("Measures");
         }
 
+        [Test]
+        public void edit_an_existing_group_to_an_existing_group_name_should_have_no_effect()
+        {
+            var user = MotherOf.Users.MrEmpty();
+
+            user.Apply(new GroupAdded { Group = "Chest" });
+            user.Apply(new GroupAdded { Group = "Measures" });
+            user.Apply(new GroupEdited { OldGroup = "Measures", NewGroup = "Chest" });
+
+            user.Groups.Count().Should().Be(2);
+            user.Groups.ToArray()[0].Name.Should().Be("Chest");
+            user.Groups.ToArray()[1].Name.Should().Be("Measures");
+        }
     }
 }

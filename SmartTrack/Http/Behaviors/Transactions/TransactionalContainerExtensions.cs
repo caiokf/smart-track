@@ -7,7 +7,7 @@ namespace SmartTrack.Web.Http.Behaviors.Transactions
     {
         public static void ExecuteInTransaction(this IContainer container, Action<IContainer> action)
         {
-            container.GetInstance<TransactionProcessor>().ExecuteITransaction(action);
+            container.GetInstance<TransactionProcessor>().ExecuteInTransaction(action);
         }
     }
 }

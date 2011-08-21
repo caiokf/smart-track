@@ -4,7 +4,7 @@ using SmartTrack.Web.Configuration;
 
 namespace SmartTrack.Tests.Unit.Persistance.InMemory
 {
-    public class Class1
+    public class InMemoryPersistenceTestsSetup
     {
         protected ISession session;
 

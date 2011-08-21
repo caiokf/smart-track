@@ -1,18 +1,10 @@
-using System;
 using FubuMVC.Core;
-using FubuMVC.Core.Registration.DSL;
-using FubuMVC.Core.Registration.Nodes;
-using FubuMVC.Core.Registration.Routes;
-using FubuMVC.Core.Urls;
-using FubuMVC.Core.View;
 using FubuMVC.Validation;
 using FubuMVC.WebForms;
-using SmartTrack.Web.Controllers.Measures;
 using SmartTrack.Web.Controllers.Measures.Measures;
 using SmartTrack.Web.Http.Behaviors.ActionlessViews;
 using SmartTrack.Web.Http.Behaviors.Validation;
 using SmartTrack.Web.Http.Output;
-using FubuMVC.Core.Registration;
 
 namespace SmartTrack.Web.Configuration
 {
@@ -30,8 +22,9 @@ namespace SmartTrack.Web.Configuration
 
             this.Validation();
             
-            //Policies.WrapBehaviorChainsWith<TransactionBehavior>();
-            Policies.Add<ValidationPolicy>();
+            Policies
+                //.WrapBehaviorChainsWith<TransactionBehavior>()
+                .Add<ValidationPolicy>();
 
             Routes
                 .HomeIs<MeasuresController>(x => x.AllMeasures())

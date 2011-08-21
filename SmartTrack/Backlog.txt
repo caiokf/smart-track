@@ -9,7 +9,6 @@ TASKS - Form Validation
 	wrap behavior that if ajax call on validation succeed, do not call action, cause it will call form.submit()
 	unique value in collection validation (user.Username)
 	html design
-	clear errors after call
 	field error not only summary
 
 Login

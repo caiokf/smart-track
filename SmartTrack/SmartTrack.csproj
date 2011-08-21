@@ -258,13 +258,24 @@
     <Compile Include="ScheduledTasks\CreateTestData.cs" />
     <Compile Include="Migrations\MigrateDatabase.cs" />
     <Compile Include="Utils\DefaultRouteAttribute.cs" />
+    <Compile Include="Utils\Extensions\ObjectExtensions.cs" />
     <Compile Include="Utils\Extensions\SparkExtensions.cs" />
     <Compile Include="Http\Behaviors\Transactions\TransactionBehavior.cs" />
     <None Include="Content\styles\colors.less" />
     <None Include="Content\styles\login\login.less" />
     <None Include="Content\styles\site.less" />
     <Content Include="Backlog.txt" />
+    <Content Include="Content\scripts\jquery\jquery.alerts.js" />
+    <Content Include="Content\scripts\jquery\jquery.autocomplete.min.js" />
+    <Content Include="Content\scripts\jquery\jquery.cookie.js" />
     <Content Include="Content\scripts\jquery\jquery.form.js" />
+    <Content Include="Content\scripts\jquery\jquery.jgrowl_minimized.js" />
+    <Content Include="Content\scripts\jquery\jquery.linq-vsdoc.js" />
+    <Content Include="Content\scripts\jquery\jquery.linq.js" />
+    <Content Include="Content\scripts\jquery\jquery.loading.1.6.4.min.js" />
+    <Content Include="Content\scripts\jquery\jquery.loading.overflow.min.js" />
+    <Content Include="Content\scripts\jquery\jquery.templates-1.0.js" />
+    <Content Include="Content\scripts\jquery\jquery.tools.min.js" />
     <Content Include="Content\styles\site.css" />
     <Content Include="Controllers\Login\ForgotPassword.aspx" />
     <Content Include="Controllers\Login\Join.aspx" />
@@ -394,7 +405,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\images\" />
+    <Folder Include="Controllers\About\" />
     <Folder Include="Controllers\Help\" />
+    <Folder Include="Http\Behaviors\Authentication\" />
+    <Folder Include="Http\Behaviors\Authorization\" />
+    <Folder Include="Http\Behaviors\Logging\" />
     <Folder Include="Http\Handlers\" />
     <Folder Include="Http\Modules\" />
   </ItemGroup>

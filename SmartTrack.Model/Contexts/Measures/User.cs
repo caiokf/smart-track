@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using SmartTrack.Model.Extensions;
 
 namespace SmartTrack.Model.Measures
@@ -60,8 +58,12 @@ namespace SmartTrack.Model.Measures
             var measure = Measures.WithName(e.OldMeasure);
             if (measure == null)
                 return;
-            measure.ChangeNameTo(e.NewMeasure);
-            measure.ChangeUnitTo(e.Unit);
+
+            var emptyName = e.NewMeasure.IsNullOrEmpty();
+            var existingName = Measures.WithName(e.NewMeasure) != null;
+
+            if (!emptyName && !existingName) measure.ChangeNameTo(e.NewMeasure);
+            if (!e.Unit.IsNullOrEmpty()) measure.ChangeUnitTo(e.Unit);
         }
 
         protected void Apply(MeasureDeleted e)
@@ -71,12 +73,14 @@ namespace SmartTrack.Model.Measures
 
         protected void Apply(TagAdded e)
         {
-            tags.Add(new Tag(e.Date, e.Tag));
+            var tag = Tags.WithNameAndDate(e.Tag, e.StartDate);
+            if (tag == null)
+                tags.Add(new Tag(e.Tag, e.StartDate));
         }
 
         protected void Apply(TagDeleted e)
         {
-            tags.RemoveAll(x => x.Name.ToLower() == e.Tag.ToLower() && x.Date.Date == e.Date.Date);
+            tags.RemoveAll(x => x.Name.ToLower() == e.Tag.ToLower() && x.StartDate.Date == e.StartDate.Date);
         }
 
         protected void Apply(GroupAdded e)
@@ -91,18 +95,52 @@ namespace SmartTrack.Model.Measures
             groups.RemoveAll(x => x.Name == e.Group);
         }
 
+        protected void Apply(GroupEdited e)
+        {
+            var group = Groups.WithName(e.OldGroup);
+            if (group == null)
+                return;
+
+            var emptyName = e.NewGroup.IsNullOrEmpty();
+            var existingName = Groups.WithName(e.NewGroup) != null;
+
+            if (!emptyName && !existingName) group.ChangeNameTo(e.NewGroup);
+        }
+
         protected void Apply(MeasureAddedToGroup e)
         {
             var measure = Measures.WithName(e.Measure);
             var group = Groups.WithName(e.Group);
-            group.AddMeasure(measure);
+
+            if (group != null && measure != null)
+                group.AddMeasure(measure);
         }
 
         protected void Apply(MeasureRemovedFromGroup e)
         {
             var measure = Measures.WithName(e.Measure);
             var group = Groups.WithName(e.Group);
-            group.RemoveMeasure(measure);
+
+            if (group != null && measure != null)
+                group.RemoveMeasure(measure);
+        }
+
+        protected void Apply(TagAddedToGroup e)
+        {
+            var tag = Tags.WithNameAndDate(e.Tag, e.TagStartDate);
+            var group = Groups.WithName(e.Group);
+
+            if (group != null && tag != null)
+                group.AddTag(tag);
+        }
+
+        protected void Apply(TagRemovedFromGroup e)
+        {
+            var tag = Tags.WithNameAndDate(e.Tag, e.TagStartDate);
+            var group = Groups.WithName(e.Group);
+
+            if (group != null && tag != null)
+                group.RemoveTag(tag);
         }
 	}
 

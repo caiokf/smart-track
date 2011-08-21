@@ -2,6 +2,8 @@
 <%@ Import Namespace="SmartTrack.Web.Controllers.Login" %>
 <%@ Import Namespace="SmartTrack.Web.HtmlTags" %>
 <%@ Import Namespace="SquishIt.Framework" %>
+<%@ Import Namespace="SquishIt.Framework.Css.Compressors" %>
+<%@ Import Namespace="SquishIt.Framework.JavaScript.Minifiers" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,18 +11,22 @@
     <head runat="server">
         <title>SmartTrack - Join</title>
         <%= Bundle.Css()
-			.Add("~/Content/styles/colors.less")
+            .Add("~/Content/themes/base/jquery.ui.all.css")
+            .Add("~/Content/styles/colors.less")
 			.Add("~/Content/styles/site.less")
 			.Add("~/Content/styles/site.css")
+            .WithCompressor(CssCompressors.YuiCompressor)
 		    .Render("~/Content/styles/login_join_#.css")      
 		%>
         <%= Bundle.JavaScript()
 			.Add("~/Content/scripts/jquery/jquery-1.6.2.min.js")
+            .Add("~/Content/scripts/jquery-ui/jquery-ui-1.8.14.min.js")
 			.Add("~/Content/scripts/jquery/jquery.form.js")
 			.Add("~/Content/scripts/jquery/jquery.validate.js")
 			.Add("~/Content/scripts/less-1.1.3.min.js")
             .Add("~/Scripts/watermark.js")
             .Add("~/Scripts/form-ajax-validate-and-submit.js")
+            .WithMinifier(JavaScriptMinifiers.Yui)
             .Render("~/Content/scripts/login_join_#.js")
 		%>
 
@@ -29,8 +35,11 @@
         
         <h2>Join</h2>
 
-	    <div style="text-align: left;">
-            <%= this.FormFor<LoginController>(x => x.JoinPost(null)).WithAjaxValidation().Id("join-form")%>
+	    <div id="content" style="text-align: left;">
+            <%= this.FormFor<LoginController>(x => x.JoinPost(null))
+                    .WithAjaxValidation()
+                    .Id("join-form")
+            %>
             
              <div class="ui-widget ui-success" style="display: none;">
               <div class="ui-state-highlight ui-corner-all">

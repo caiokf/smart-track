@@ -3,7 +3,6 @@ using FubuMVC.WebForms;
 using FubuValidation;
 using SmartTrack.Model.Measures;
 using SmartTrack.Model.Repositories;
-using SmartTrack.Web.Controllers.Measures;
 using SmartTrack.Web.Controllers.Measures.Measures;
 using SmartTrack.Web.Http.Behaviors.ActionlessViews;
 using SmartTrack.Web.Http.Behaviors.Validation.Rules;
