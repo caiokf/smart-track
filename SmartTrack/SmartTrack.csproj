@@ -265,6 +265,144 @@
     <None Include="Content\styles\login\login.less" />
     <None Include="Content\styles\site.less" />
     <Content Include="Backlog.txt" />
+    <Content Include="Content\images\._fhbg.gif" />
+    <Content Include="Content\images\._wbg.gif" />
+    <Content Include="Content\images\add.png" />
+    <Content Include="Content\images\application_add.png" />
+    <Content Include="Content\images\application_side_expand.png" />
+    <Content Include="Content\images\application_tile_horizontal.png" />
+    <Content Include="Content\images\bg.gif" />
+    <Content Include="Content\images\blankButton.png" />
+    <Content Include="Content\images\breadcrumbs.png" />
+    <Content Include="Content\images\btn-sprite.gif" />
+    <Content Include="Content\images\button_bg.png" />
+    <Content Include="Content\images\button_bg_active.png" />
+    <Content Include="Content\images\button_bg_hover.png" />
+    <Content Include="Content\images\calendar.png" />
+    <Content Include="Content\images\cancel.png" />
+    <Content Include="Content\images\comments.png" />
+    <Content Include="Content\images\comment_add.png" />
+    <Content Include="Content\images\control_fastforward.png" />
+    <Content Include="Content\images\control_fastforward_blue.png" />
+    <Content Include="Content\images\control_rewind.png" />
+    <Content Include="Content\images\control_rewind_blue.png" />
+    <Content Include="Content\images\crumbs.gif" />
+    <Content Include="Content\images\ddn.png" />
+    <Content Include="Content\images\delete-small.png" />
+    <Content Include="Content\images\dn.png" />
+    <Content Include="Content\images\down.gif" />
+    <Content Include="Content\images\dropdown.gif" />
+    <Content Include="Content\images\fhbg.gif" />
+    <Content Include="Content\images\file.gif" />
+    <Content Include="Content\images\first.gif" />
+    <Content Include="Content\images\folder-closed.gif" />
+    <Content Include="Content\images\folder.gif" />
+    <Content Include="Content\images\global.logo.jpg" />
+    <Content Include="Content\images\green_plus.png" />
+    <Content Include="Content\images\grey-key.png" />
+    <Content Include="Content\images\handle-icon.gif" />
+    <Content Include="Content\images\handle_authoring_left.png" />
+    <Content Include="Content\images\handle_authoring_left_collapsed.png" />
+    <Content Include="Content\images\handle_authoring_right.png" />
+    <Content Include="Content\images\handle_authoring_right_collapsed.png" />
+    <Content Include="Content\images\handle_authoring_right_top.png" />
+    <Content Include="Content\images\header-bg.png" />
+    <Content Include="Content\images\help.gif" />
+    <Content Include="Content\images\hl.png" />
+    <Content Include="Content\images\icon-doc.png" />
+    <Content Include="Content\images\icon-pdf.png" />
+    <Content Include="Content\images\icon-xls.png" />
+    <Content Include="Content\images\icon_attachment.gif" />
+    <Content Include="Content\images\icon_popup.png" />
+    <Content Include="Content\images\important.gif" />
+    <Content Include="Content\images\info.gif" />
+    <Content Include="Content\images\input_shadow.png" />
+    <Content Include="Content\images\key.png" />
+    <Content Include="Content\images\last.gif" />
+    <Content Include="Content\images\leaf-section.png" />
+    <Content Include="Content\images\line.gif" />
+    <Content Include="Content\images\list-view.png" />
+    <Content Include="Content\images\load.gif" />
+    <Content Include="Content\images\load.png" />
+    <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\magnifier.png" />
+    <Content Include="Content\images\minus.gif" />
+    <Content Include="Content\images\new-item.png" />
+    <Content Include="Content\images\new-set.png" />
+    <Content Include="Content\images\next.gif" />
+    <Content Include="Content\images\page_copy.png" />
+    <Content Include="Content\images\pencil.png" />
+    <Content Include="Content\images\placeholder.png" />
+    <Content Include="Content\images\plus.gif" />
+    <Content Include="Content\images\prev.gif" />
+    <Content Include="Content\images\save.png" />
+    <Content Include="Content\images\tag_green.png" />
+    <Content Include="Content\images\tag_red.png" />
+    <Content Include="Content\images\text-background.png" />
+    <Content Include="Content\images\thumb-view.png" />
+    <Content Include="Content\images\title.gif" />
+    <Content Include="Content\images\toolbar\arrow_redo.png" />
+    <Content Include="Content\images\toolbar\arrow_undo.png" />
+    <Content Include="Content\images\toolbar\bullet_arrow_down.png" />
+    <Content Include="Content\images\toolbar\control_fastforward.png" />
+    <Content Include="Content\images\toolbar\control_rewind.png" />
+    <Content Include="Content\images\toolbar\cut.png" />
+    <Content Include="Content\images\toolbar\insert_table.png" />
+    <Content Include="Content\images\toolbar\page_copy.png" />
+    <Content Include="Content\images\toolbar\paste_plain.png" />
+    <Content Include="Content\images\toolbar\text_align_center.png" />
+    <Content Include="Content\images\toolbar\text_align_justify.png" />
+    <Content Include="Content\images\toolbar\text_align_left.png" />
+    <Content Include="Content\images\toolbar\text_align_right.png" />
+    <Content Include="Content\images\toolbar\text_allcaps.png" />
+    <Content Include="Content\images\toolbar\text_bold.png" />
+    <Content Include="Content\images\toolbar\text_columns.png" />
+    <Content Include="Content\images\toolbar\text_custom.png" />
+    <Content Include="Content\images\toolbar\text_dropcaps.png" />
+    <Content Include="Content\images\toolbar\text_heading_1.png" />
+    <Content Include="Content\images\toolbar\text_heading_2.png" />
+    <Content Include="Content\images\toolbar\text_heading_3.png" />
+    <Content Include="Content\images\toolbar\text_heading_4.png" />
+    <Content Include="Content\images\toolbar\text_heading_5.png" />
+    <Content Include="Content\images\toolbar\text_heading_6.png" />
+    <Content Include="Content\images\toolbar\text_horizontalrule.png" />
+    <Content Include="Content\images\toolbar\text_indent.png" />
+    <Content Include="Content\images\toolbar\text_indent_remove.png" />
+    <Content Include="Content\images\toolbar\text_italic.png" />
+    <Content Include="Content\images\toolbar\text_kerning.png" />
+    <Content Include="Content\images\toolbar\text_letterspacing.png" />
+    <Content Include="Content\images\toolbar\text_letter_omega.png" />
+    <Content Include="Content\images\toolbar\text_linespacing.png" />
+    <Content Include="Content\images\toolbar\text_list_bullets.png" />
+    <Content Include="Content\images\toolbar\text_list_numbers.png" />
+    <Content Include="Content\images\toolbar\text_lowercase.png" />
+    <Content Include="Content\images\toolbar\text_padding_bottom.png" />
+    <Content Include="Content\images\toolbar\text_padding_left.png" />
+    <Content Include="Content\images\toolbar\text_padding_right.png" />
+    <Content Include="Content\images\toolbar\text_padding_top.png" />
+    <Content Include="Content\images\toolbar\text_paragraph.png" />
+    <Content Include="Content\images\toolbar\text_replace.png" />
+    <Content Include="Content\images\toolbar\text_signature.png" />
+    <Content Include="Content\images\toolbar\text_smallcaps.png" />
+    <Content Include="Content\images\toolbar\text_strikethrough.png" />
+    <Content Include="Content\images\toolbar\text_subscript.png" />
+    <Content Include="Content\images\toolbar\text_superscript.png" />
+    <Content Include="Content\images\toolbar\text_underline.png" />
+    <Content Include="Content\images\toolbar\text_uppercase.png" />
+    <Content Include="Content\images\treeview-black-line.gif" />
+    <Content Include="Content\images\treeview-black.gif" />
+    <Content Include="Content\images\treeview-default-line.gif" />
+    <Content Include="Content\images\treeview-default.gif" />
+    <Content Include="Content\images\treeview-famfamfam-line.gif" />
+    <Content Include="Content\images\treeview-famfamfam.gif" />
+    <Content Include="Content\images\treeview-gray-line.gif" />
+    <Content Include="Content\images\treeview-gray.gif" />
+    <Content Include="Content\images\treeview-red-line.gif" />
+    <Content Include="Content\images\treeview-red.gif" />
+    <Content Include="Content\images\up.png" />
+    <Content Include="Content\images\uup.png" />
+    <Content Include="Content\images\wbg.gif" />
+    <Content Include="Content\jquery.alerts.css" />
     <Content Include="Content\scripts\jquery\jquery.alerts.js" />
     <Content Include="Content\scripts\jquery\jquery.autocomplete.min.js" />
     <Content Include="Content\scripts\jquery\jquery.cookie.js" />
@@ -290,6 +428,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>form-ajax-validate-and-submit_.coffee</DependentUpon>
     </Content>
+    <Content Include="Scripts\master-ready.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>master-ready.coffee</DependentUpon>
+    </Content>
     <Content Include="Scripts\watermark.js">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -304,6 +447,10 @@
     <None Include="Scripts\form-ajax-validate-and-submit_.coffee">
       <Generator>CoffeeScriptGenerator</Generator>
       <LastGenOutput>form-ajax-validate-and-submit_.js</LastGenOutput>
+    </None>
+    <None Include="Scripts\master-ready.coffee">
+      <Generator>CoffeeScriptGenerator</Generator>
+      <LastGenOutput>master-ready.js</LastGenOutput>
     </None>
     <None Include="Scripts\watermark.coffee">
       <Generator>CoffeeScriptGenerator</Generator>
@@ -404,7 +551,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\images\" />
     <Folder Include="Controllers\About\" />
     <Folder Include="Controllers\Help\" />
     <Folder Include="Http\Behaviors\Authentication\" />

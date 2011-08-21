@@ -53,7 +53,7 @@ namespace SmartTrack.Web.Controllers.Measures.Measures
 
         public JsonResponse DeleteMeasurePost(DeleteMeasureInput input)
         {
-            var measure = user.Measures.Single(x => x.Name == input.Measure);
+            var measure = user.Measures.FirstOrDefault(x => x.Name == input.Measure);
             if (measure == null)
                 return new JsonResponse {Success = false, Message = "An error occured while deleting this measure."};
 
