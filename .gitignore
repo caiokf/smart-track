@@ -1,16 +1,26 @@
-**/bin/*
-**/obj/*
+/*/**/bin/**/*
+/*/**/obj/**/*
 
 _ReSharper.smart-track
 
+
+
 SmartTrack/bin/*
+
 SmartTrack/obj/*
+
 SmartTrack.Model/obj/*
+
 SmartTrack.Model/bin/*
+
 SmartTrack.Tests.Unit/bin
+
 SmartTrack.Tests.Unit/obj
+
 SmartTrack.Tests.Acceptance/bin
+
 SmartTrack.Tests.Acceptance/obj
+
 
 /SmartTrack/bin
 /SmartTrack/obj
