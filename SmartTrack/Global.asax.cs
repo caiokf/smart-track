@@ -4,8 +4,8 @@ using FluentScheduler;
 using FubuMVC.Core;
 using FubuMVC.StructureMap;
 using SmartTrack.Web.Configuration;
+using SmartTrack.Web.Http.Behaviors.Transactions;
 using SmartTrack.Web.Migrations;
-using SmartTrack.Web.ScheduledTasks;
 using Spark.Web.Mvc;
 using StructureMap;
 
@@ -22,7 +22,7 @@ namespace SmartTrack.Web
             TaskManager.Initialize(new SchedulerRegistry());
 
 		    FubuApplication.For<FubuMvcRegistry>()
-                .ContainerFacility(new StructureMapContainerFacility(ObjectFactory.Container))
+                .StructureMapObjectFactory()
 		        .Bootstrap(RouteTable.Routes);
             
             SparkEngineStarter.RegisterViewEngine(new SparkConfiguration());

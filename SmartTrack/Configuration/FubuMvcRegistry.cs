@@ -24,7 +24,7 @@ namespace SmartTrack.Web.Configuration
             this.Validation();
             
             Policies
-                .WrapBehaviorChainsWith<TransactionBehavior>()
+                //.WrapBehaviorChainsWith<TransactionBehavior>()
                 .Add<ValidationPolicy>();
 
             Routes
