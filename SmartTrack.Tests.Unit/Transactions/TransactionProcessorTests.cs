@@ -2,11 +2,10 @@ using System;
 using Moq;
 using NUnit.Framework;
 using SharpTestsEx;
-using SmartTrack.Web.Http.Behaviors;
 using SmartTrack.Web.Http.Behaviors.Transactions;
 using StructureMap;
 
-namespace SmartTrack.Tests.Unit.Persistance
+namespace SmartTrack.Tests.Unit.Transactions
 {
     [TestFixture]
     public class TransactionProcessorTests

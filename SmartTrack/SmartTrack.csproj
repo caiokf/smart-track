@@ -235,9 +235,7 @@
     <Compile Include="HtmlTags\FubuPageExtensions.cs" />
     <Compile Include="HtmlTags\SubmitButtonTag.cs" />
     <Compile Include="HtmlTags\TextBoxTag.cs" />
-    <Compile Include="Http\Behaviors\Transactions\ITransactionBoundary.cs" />
-    <Compile Include="Http\Behaviors\Transactions\NHibernateTransactionBoundary.cs" />
-    <Compile Include="Http\Behaviors\Transactions\TransactionalContainerExtensions.cs" />
+    <Compile Include="Http\Behaviors\Transactions\TransactionBoundary.cs" />
     <Compile Include="Http\Behaviors\Transactions\TransactionProcessor.cs" />
     <Compile Include="Http\Behaviors\Validation\Rules\ConfirmEqualsFieldRule.cs" />
     <Compile Include="Http\Behaviors\Validation\ValidationKeys.cs" />

@@ -3,6 +3,7 @@ using FubuMVC.Validation;
 using FubuMVC.WebForms;
 using SmartTrack.Web.Controllers.Measures.Measures;
 using SmartTrack.Web.Http.Behaviors.ActionlessViews;
+using SmartTrack.Web.Http.Behaviors.Transactions;
 using SmartTrack.Web.Http.Behaviors.Validation;
 using SmartTrack.Web.Http.Output;
 
@@ -23,7 +24,7 @@ namespace SmartTrack.Web.Configuration
             this.Validation();
             
             Policies
-                //.WrapBehaviorChainsWith<TransactionBehavior>()
+                .WrapBehaviorChainsWith<TransactionBehavior>()
                 .Add<ValidationPolicy>();
 
             Routes

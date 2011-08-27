@@ -22,7 +22,7 @@ namespace SmartTrack.Web
             TaskManager.Initialize(new SchedulerRegistry());
 
 		    FubuApplication.For<FubuMvcRegistry>()
-                .StructureMapObjectFactory()
+                .ContainerFacility(new StructureMapContainerFacility(ObjectFactory.Container))
 		        .Bootstrap(RouteTable.Routes);
             
             SparkEngineStarter.RegisterViewEngine(new SparkConfiguration());

@@ -1,27 +1,49 @@
-﻿using FubuMVC.Core.Behaviors;
+﻿using System;
+using FubuCore.Binding;
+using FubuMVC.Core.Behaviors;
+using FubuMVC.StructureMap;
 using StructureMap;
 
 namespace SmartTrack.Web.Http.Behaviors.Transactions
 {
+    //public class TransactionalStructureMapContainerFacility : StructureMapContainerFacility
+    //{
+    //    private readonly IContainer container;
+
+    //    public TransactionalStructureMapContainerFacility(IContainer container) : base(container)
+    //    {
+    //        this.container = container;
+    //    }
+
+    //    public override IActionBehavior BuildBehavior(ServiceArguments arguments, Guid behaviorId)
+    //    {
+    //        return new TransactionBehavior(container, arguments, behaviorId);
+    //    }
+    //}
+
     public class TransactionBehavior : IActionBehavior
     {
         private readonly IContainer container;
-        private readonly IActionBehavior innerBehavior;
+        public IActionBehavior InnerBehavior { get; set; }
 
-        public TransactionBehavior(IContainer container, IActionBehavior innerBehavior)
+        public TransactionBehavior(IContainer container)
         {
             this.container = container;
-            this.innerBehavior = innerBehavior;
         }
 
         public void Invoke()
         {
-            container.ExecuteInTransaction(c => innerBehavior.Invoke());
+            container.ExecuteInTransaction(InvokeRequestedBehavior);
         }
 
         public void InvokePartial()
         {
-            container.ExecuteInTransaction(c => innerBehavior.InvokePartial());
+            InvokeRequestedBehavior(container);
+        }
+
+        private void InvokeRequestedBehavior(IContainer c)
+        {
+            InnerBehavior.Invoke();
         }
     }
 }
