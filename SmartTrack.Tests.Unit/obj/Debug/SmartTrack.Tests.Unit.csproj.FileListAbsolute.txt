@@ -147,3 +147,6 @@ D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Unit\obj\Debug\ResolveAssemblyR
 D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Unit\obj\Debug\SmartTrack.Tests.Unit.dll
 D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Unit\obj\Debug\SmartTrack.Tests.Unit.pdb
 D:\_Desenvolvimento\smart-track\SmartTrack.Tests.Unit\bin\Debug\Moq.dll
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Moq.dll
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Moq.pdb
+D:\Desenvolvimento\Caio\smart-track\SmartTrack.Tests.Unit\bin\Debug\Moq.xml
