@@ -19,10 +19,10 @@
 		    .Render("~/Content/styles/login_join_#.css")      
 		%>
         <%= Bundle.JavaScript()
-			.Add("~/Content/scripts/jquery/jquery-1.6.2.min.js")
-            .Add("~/Content/scripts/jquery-ui/jquery-ui-1.8.14.min.js")
-			.Add("~/Content/scripts/jquery/jquery.form.js")
-			.Add("~/Content/scripts/jquery/jquery.validate.js")
+            .Add_JQuery()
+            .Add_JQueryUi()
+            .Add_LinqJs()
+			.Add_LessHandler()
 			.Add("~/Content/scripts/less-1.1.3.min.js")
             .Add("~/Scripts/watermark.js")
             .Add("~/Scripts/form-ajax-validate-and-submit.js")
@@ -45,18 +45,23 @@
 
             <div>           
                <%= this.Textbox().Name("Username").Id("join-username").Watermark("Username") %> Username
+               <%= this.ValidationFor("join-username") %>
             </div>
             <div>       
                 <%= this.Textbox().Name("Email").Id("join-email").Watermark("Email") %> Email  
+                <%= this.ValidationFor("join-email")%>
             </div>
             <div>           
                 <%= this.Textbox().Name("ConfirmEmail").Id("join-confirm-email").Watermark("Confirm your Email") %> Confirm your Email
+                <%= this.ValidationFor("join-confirm-email")%>
             </div>
             <div>           
                 <%= this.Password().Name("Password").Id("join-password").Watermark("Password") %> Password
+                <%= this.ValidationFor("join-password")%>
             </div>
             <div>           
-            <%= this.Password().Name("ConfirmPassword").Id("join-confirm-password").Watermark("Confirm your password") %> Confirm your Password
+                <%= this.Password().Name("ConfirmPassword").Id("join-confirm-password").Watermark("Confirm your password") %> Confirm your Password
+                <%= this.ValidationFor("join-confirm-password")%>
             </div>
 
             <%= this.SubmitButton().Value("Join") %>
