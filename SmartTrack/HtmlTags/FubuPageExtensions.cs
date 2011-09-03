@@ -29,6 +29,11 @@ namespace SmartTrack.Web.HtmlTags
             return new TextboxTag();
         }
 
+        public static ErrorSummaryTag ErrorSummary(this IFubuPage page)
+        {
+            return new ErrorSummaryTag();
+        }
+
         public static TextboxTag Password(this IFubuPage page)
         {
             return new TextboxTag().Attr("type", "password") as TextboxTag;

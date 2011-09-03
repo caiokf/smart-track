@@ -233,6 +233,7 @@
     </Compile>
     <Compile Include="HtmlTags\ButtonTag.cs" />
     <Compile Include="HtmlTags\CancelButtonTag.cs" />
+    <Compile Include="HtmlTags\ErrorSummaryTag.cs" />
     <Compile Include="HtmlTags\FormTag.cs" />
     <Compile Include="HtmlTags\FubuPageExtensions.cs" />
     <Compile Include="HtmlTags\SubmitButtonTag.cs" />
