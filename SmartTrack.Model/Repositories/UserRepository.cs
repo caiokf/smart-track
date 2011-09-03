@@ -16,16 +16,16 @@ namespace SmartTrack.Model.Repositories
             this.session = session;
         }
 
-        public IQueryable<User> Users { get { return session.Query<User>(); } }
+        public virtual IQueryable<User> Users { get { return session.Query<User>(); } }
 
-        public User GetUser(string name)
+        public virtual User GetUser(string name)
         {
             var user = session.Query<User>()
                 .Where(x => x.Name == name).FirstOrDefault();
             return user == null ? null : GetUser(user.Id);
         }
 
-        public User GetUser(Guid id)
+        public virtual User GetUser(Guid id)
         {
             var user = session.Load<User>(id);
             var events = session.Query<DomainEvent>()
@@ -37,7 +37,7 @@ namespace SmartTrack.Model.Repositories
             return user;
         }
 
-        public void Save(User user)
+        public virtual void Save(User user)
         {
             session.SaveOrUpdate(user);
         }

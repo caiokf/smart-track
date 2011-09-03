@@ -49,6 +49,7 @@
     <Reference Include="FubuMVC.WebForms, Version=0.9.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FubuMVC.WebForms.0.9.1.533\lib\FubuMVC.WebForms.dll</HintPath>
     </Reference>
+    <Reference Include="FubuValidation, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="HtmlTags, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\HtmlTags.1.0.0.23\lib\4.0\HtmlTags.dll</HintPath>
     </Reference>
@@ -111,6 +112,7 @@
     <Compile Include="Transactions\TransactionBoundaryTests.cs" />
     <Compile Include="Transactions\TransactionProcessorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validations\LoginJoinInputValidationTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
