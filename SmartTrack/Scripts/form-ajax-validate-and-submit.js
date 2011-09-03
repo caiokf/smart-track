@@ -21,8 +21,9 @@
                             });
                         });
                         $(form).find('.ui-error-field').fadeIn('slow', function () {
+                            var validating = $('#' + $(this).attr('id').replace('validation-for-', ''));
                             var list = $(form).find('ul').html('');
-                            $(response.Errors).each(function () {
+                            $(response.Errors.filter(function (x) { return x.field === validating.attr('name'); })).each(function () {
                                 list.append('<li>' + this.message + '</li>');
                             });
                         });

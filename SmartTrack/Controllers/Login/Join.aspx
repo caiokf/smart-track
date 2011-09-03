@@ -23,6 +23,7 @@
             .Add_JQueryUi()
             .Add_LinqJs()
 			.Add_LessHandler()
+            .Add_Underscore()
 			.Add("~/Content/scripts/less-1.1.3.min.js")
             .Add("~/Scripts/watermark.js")
             .Add("~/Scripts/form-ajax-validate-and-submit.js")

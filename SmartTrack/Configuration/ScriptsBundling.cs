@@ -35,6 +35,12 @@ namespace SquishIt.Framework
             return bundle;
         }
 
+        public static IJavaScriptBundle Add_Underscore(this IJavaScriptBundle bundle)
+        {
+            bundle.Add("~/Content/scripts/underscore/underscore.js");
+            return bundle;
+        }
+
         public static IJavaScriptBundle Add_LessHandler(this IJavaScriptBundle bundle)
         {
             bundle.Add("~/Content/scripts/less-1.1.3.min.js");

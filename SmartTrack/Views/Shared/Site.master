@@ -16,6 +16,7 @@
 		    .Add_JQueryUi()      
 		    .Add_LinqJs()
             .Add_LessHandler()
+            .Add_Underscore()      
 		    .Add("~/Scripts/master-ready.js")
 		    .Add("~/Scripts/form-ajax-validate-and-submit.js")
 		    .Add("~/Scripts/link-confirmation.js")
