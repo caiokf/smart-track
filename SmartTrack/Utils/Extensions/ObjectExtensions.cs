@@ -8,5 +8,10 @@ namespace SmartTrack.Web.Utils.Extensions
         {
             return JsonUtil.ToJson(toSerialize);
         }
+
+        public static bool IsEmpty(this object obj)
+        {
+            return (obj == null) || (string.IsNullOrWhiteSpace((string)obj));
+        }
     }
 }

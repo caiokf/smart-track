@@ -205,6 +205,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behaviors\Validation\ConventionalValidator.cs" />
+    <Compile Include="Behaviors\Validation\IValidate.cs" />
     <Compile Include="Configuration\FluentNhibernateMappings.cs" />
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
     <Compile Include="Controllers\Measures\Correlations\CorrelationsController.cs" />
@@ -213,10 +215,10 @@
     <Compile Include="Controllers\Measures\TagCategories\TagCategoriesController.cs" />
     <Compile Include="Controllers\Measures\Tags\TagsController.cs" />
     <Compile Include="Controllers\Measures\Totals\TotalsController.cs" />
-    <Compile Include="Http\Behaviors\ActionlessViews\IAmActionless.cs" />
-    <Compile Include="Http\Behaviors\ActionlessViews\RegisterActionlessViews.cs" />
-    <Compile Include="Http\Behaviors\Validation\JsonActionSource.cs" />
-    <Compile Include="Http\Behaviors\Validation\JsonValidationFailurePolicy.cs" />
+    <Compile Include="Behaviors\ActionlessViews\IAmActionless.cs" />
+    <Compile Include="Behaviors\ActionlessViews\RegisterActionlessViews.cs" />
+    <Compile Include="Behaviors\Validation\JsonActionSource.cs" />
+    <Compile Include="Behaviors\Validation\JsonValidationFailurePolicy.cs" />
     <Compile Include="Configuration\NHibernateConfiguration.cs" />
     <Compile Include="Configuration\SchedulerRegistry.cs" />
     <Compile Include="Configuration\SparkConfiguration.cs" />
@@ -235,11 +237,10 @@
     <Compile Include="HtmlTags\FubuPageExtensions.cs" />
     <Compile Include="HtmlTags\SubmitButtonTag.cs" />
     <Compile Include="HtmlTags\TextBoxTag.cs" />
-    <Compile Include="Http\Behaviors\Transactions\TransactionBoundary.cs" />
-    <Compile Include="Http\Behaviors\Transactions\TransactionProcessor.cs" />
-    <Compile Include="Http\Behaviors\Validation\Rules\ConfirmEqualsFieldRule.cs" />
-    <Compile Include="Http\Behaviors\Validation\ValidationKeys.cs" />
-    <Compile Include="Http\Behaviors\Validation\ValidationPolicy.cs" />
+    <Compile Include="Behaviors\Transactions\TransactionBoundary.cs" />
+    <Compile Include="Behaviors\Transactions\TransactionProcessor.cs" />
+    <Compile Include="Validation\LoginJoinValidator.cs" />
+    <Compile Include="Behaviors\Validation\ValidationPolicy.cs" />
     <Compile Include="Http\IHttpSession.cs" />
     <Compile Include="Http\Output\JsonResponse.cs" />
     <Compile Include="Controllers\Login\LoginController.cs">
@@ -258,7 +259,9 @@
     <Compile Include="Utils\DefaultRouteAttribute.cs" />
     <Compile Include="Utils\Extensions\ObjectExtensions.cs" />
     <Compile Include="Utils\Extensions\SparkExtensions.cs" />
-    <Compile Include="Http\Behaviors\Transactions\TransactionBehavior.cs" />
+    <Compile Include="Behaviors\Transactions\TransactionBehavior.cs" />
+    <Compile Include="Behaviors\Validation\NotificationMessageErrors.cs" />
+    <Compile Include="Validation\Rules\StringExtensions.cs" />
     <None Include="Content\styles\colors.less" />
     <None Include="Content\styles\login\login.less" />
     <None Include="Content\styles\site.less" />
@@ -558,11 +561,11 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Behaviors\Authentication\" />
+    <Folder Include="Behaviors\Authorization\" />
+    <Folder Include="Behaviors\Logging\" />
     <Folder Include="Controllers\About\" />
     <Folder Include="Controllers\Help\" />
-    <Folder Include="Http\Behaviors\Authentication\" />
-    <Folder Include="Http\Behaviors\Authorization\" />
-    <Folder Include="Http\Behaviors\Logging\" />
     <Folder Include="Http\Handlers\" />
     <Folder Include="Http\Modules\" />
   </ItemGroup>

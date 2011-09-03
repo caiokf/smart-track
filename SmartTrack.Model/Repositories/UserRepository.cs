@@ -16,6 +16,8 @@ namespace SmartTrack.Model.Repositories
             this.session = session;
         }
 
+        public IQueryable<User> Users { get { return session.Query<User>(); } }
+
         public User GetUser(string name)
         {
             var user = session.Query<User>()
@@ -38,6 +40,19 @@ namespace SmartTrack.Model.Repositories
         public void Save(User user)
         {
             session.SaveOrUpdate(user);
+        }
+    }
+
+    public static class UserQueries
+    {
+        public static IQueryable<User> Named(this IQueryable<User> users, string name)
+        {
+            return users.Where(x => x.Name == name);
+        }
+
+        public static IQueryable<User> WithEmail(this IQueryable<User> users, string email)
+        {
+            return users.Where(x => x.Email.Replace(".","") == email.Replace(".", ""));
         }
     }
 }
