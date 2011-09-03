@@ -29,9 +29,14 @@ namespace SmartTrack.Web.HtmlTags
             return new TextboxTag();
         }
 
-        public static ErrorSummaryTag ErrorSummary(this IFubuPage page)
+        public static HtmlTag ValidationFor(this IFubuPage page, string id)
         {
-            return new ErrorSummaryTag();
+            return new ValidationErrorTag(id);
+        }
+
+        public static ValidationErrorSummaryTag ErrorSummary(this IFubuPage page)
+        {
+            return new ValidationErrorSummaryTag();
         }
 
         public static TextboxTag Password(this IFubuPage page)

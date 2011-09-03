@@ -5,7 +5,7 @@ namespace SmartTrack.Web.HtmlTags
 {
     public static class TextboxTagExtensions
     {
-        public static string Watermark(this HtmlTag textbox, string watermark)
+        public static HtmlTag Watermark(this HtmlTag textbox, string watermark)
         {
             return textbox
                 .Attr("onfocus", "javascript:Watermark.focusInput($(this));")
@@ -22,7 +22,7 @@ namespace SmartTrack.Web.HtmlTags
                     .Attr("onclick", "javascript:Watermark.focusSpan($(this));")
                     .Attr("onfocus", "javascript:Watermark.focusSpan($(this));")
                     .Attr("onblur", "javascript:Watermark.blurSpan($(this));")
-                ).ToString();
+                );
         }
     }
 }

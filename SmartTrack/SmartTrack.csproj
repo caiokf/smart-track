@@ -209,6 +209,7 @@
     <Compile Include="Behaviors\Validation\IValidate.cs" />
     <Compile Include="Configuration\FluentNhibernateMappings.cs" />
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
+    <Compile Include="Configuration\ScriptsBundling.cs" />
     <Compile Include="Controllers\Measures\Correlations\CorrelationsController.cs" />
     <Compile Include="Controllers\Measures\Goals\GoalsController.cs" />
     <Compile Include="Controllers\Measures\Groups\GroupsController.cs" />
@@ -233,13 +234,15 @@
     </Compile>
     <Compile Include="HtmlTags\ButtonTag.cs" />
     <Compile Include="HtmlTags\CancelButtonTag.cs" />
-    <Compile Include="HtmlTags\ErrorSummaryTag.cs" />
+    <Compile Include="HtmlTags\ValidationErrorSummaryTag.cs" />
     <Compile Include="HtmlTags\FormTag.cs" />
     <Compile Include="HtmlTags\FubuPageExtensions.cs" />
+    <Compile Include="HtmlTags\HtmlTagExtensions.cs" />
     <Compile Include="HtmlTags\SubmitButtonTag.cs" />
     <Compile Include="HtmlTags\TextBoxTag.cs" />
     <Compile Include="Behaviors\Transactions\TransactionBoundary.cs" />
     <Compile Include="Behaviors\Transactions\TransactionProcessor.cs" />
+    <Compile Include="HtmlTags\ValidationErrorTag.cs" />
     <Compile Include="Validation\LoginJoinValidator.cs" />
     <Compile Include="Behaviors\Validation\ValidationPolicy.cs" />
     <Compile Include="Http\IHttpSession.cs" />
@@ -435,6 +438,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>link-confirmation.coffee</DependentUpon>
     </Content>
+    <Content Include="Content\scripts\linq-js\linq-vsdoc.js" />
+    <Content Include="Content\scripts\linq-js\linq.js" />
+    <Content Include="Content\scripts\linq-js\linq.min.js" />
     <Content Include="Scripts\master-ready.js">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

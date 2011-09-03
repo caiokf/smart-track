@@ -2,13 +2,14 @@
 
 namespace SmartTrack.Web.HtmlTags
 {
-    public class ErrorSummaryTag : HtmlTag
+    public class ValidationErrorSummaryTag : HtmlTag
     {
-        public ErrorSummaryTag() : base("div")
+        public ValidationErrorSummaryTag() : base("div")
         {
             this.AddClass("ui-widget")
                 .AddClass("ui-error")
-                .Style("display", "none")
+                .AddClass("ui-error-summary")
+                .Hide()
                 .Append(new HtmlTag("div")
                     .AddClass("ui-state-error")
                     .AddClass("ui-corner-all")

@@ -14,19 +14,21 @@
                         form.submit();
                     }
                     else {
-                        $(form).find('.ui-error').fadeIn('slow', function () {
-                            var list = $(form).find('.ui-state-error > ul');
-                            list.html('');
-                            for (var i = 0; i < response.Errors.length; i++) {
-                                // TODO -- use the field/message info
-                                list.append('<li>' + response.Errors[i].message + '</li>');
-                            }
+                        $(form).find('.ui-error-summary').fadeIn('slow', function () {
+                            var list = $(form).find('.ui-state-error > ul').html('');
+                            $(response.Errors).each(function () {
+                                list.append('<li>' + this.message + '</li>');
+                            });
+                        });
+                        $(form).find('.ui-error-field').fadeIn('slow', function () {
+                            var list = $(form).find('ul').html('');
+                            $(response.Errors).each(function () {
+                                list.append('<li>' + this.message + '</li>');
+                            });
                         });
                     }
                 },
-                error: function (responseObj, textError, errorCode) {
-                    form.submit();
-                }
+                error: function () { form.submit(); }
             });
             return true;
         }
