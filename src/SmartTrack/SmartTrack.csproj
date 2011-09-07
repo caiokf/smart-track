@@ -238,6 +238,11 @@
   <ItemGroup>
     <Compile Include="Behaviors\Validation\ConventionalValidator.cs" />
     <Compile Include="Behaviors\Validation\IValidate.cs" />
+    <Compile Include="CodeTemplates\AppSettingsWrapper.gen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppSettingsWrapper.tt</DependentUpon>
+    </Compile>
     <Compile Include="Configuration\FluentNhibernateMappings.cs" />
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
     <Compile Include="Configuration\ScriptsBundling.cs" />
@@ -297,6 +302,10 @@
     <Compile Include="Behaviors\Transactions\TransactionBehavior.cs" />
     <Compile Include="Behaviors\Validation\NotificationMessageErrors.cs" />
     <Compile Include="Validation\Rules\StringExtensions.cs" />
+    <None Include="CodeTemplates\AppSettingsWrapper.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AppSettingsWrapper.gen.cs</LastGenOutput>
+    </None>
     <None Include="Content\styles\colors.less" />
     <None Include="Content\styles\login\login.less" />
     <None Include="Content\styles\site.less" />
@@ -631,6 +640,9 @@
       <Generator>CoffeeScriptGenerator</Generator>
       <LastGenOutput>login.js</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

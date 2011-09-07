@@ -1,0 +1,51 @@
+﻿<#@ template language="C#" debug="true" hostspecific="True"#>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Xml.Linq" #>
+<#@ assembly name="System.Configuration" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ import namespace="System.Linq" #>
+<#@ output extension=".gen.cs" #>
+using System.Configuration;
+
+public interface IAppSettings 
+{
+<# 
+
+    string configFilePath = Host.ResolvePath("../web.Config");
+
+            XDocument xmlDoc = XDocument.Load(configFilePath);
+
+            List<XElement> elements = (from settings in xmlDoc.Descendants("appSettings")
+                                      select settings.Element("add")).ToList();
+
+            var attributes = (from settings in xmlDoc.Descendants("appSettings")
+                             from add in settings.Elements("add")
+                             from atts in add.Attributes("key")
+                             select atts.Value);
+
+foreach (var attribute in attributes)
+{
+#>
+    string <#= attribute #> { get; }
+<#
+}
+#>
+}
+
+public class AppSettingsWrapper : IAppSettings
+{
+<# 
+
+foreach (var attribute in attributes)
+{
+#>
+    public virtual string <#= attribute #> { get { return ConfigurationManager.AppSettings["<#= attribute #>"]; } }
+<#
+}
+#>
+}

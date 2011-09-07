@@ -24,6 +24,7 @@ namespace SmartTrack.Web.Configuration
     {
         public WebLayerRegistry()
         {
+            For<IAppSettings>().Use<AppSettingsWrapper>();
             For<IHttpSession>().Use<CurrentHttpContextSession>();
             For<User>().Use(x => x.GetInstance<UserRepository>().GetUser("caiokf"));
             //For<User>().Use(x => new User("caiokf", "", "email"));
