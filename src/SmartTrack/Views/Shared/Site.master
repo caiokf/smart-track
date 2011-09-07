@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" Inherits="FubuMVC.WebForms.FubuMasterPage"%>
+<%@ Import Namespace="SmartTrack.Web.Configuration" %>
+<%@ Import Namespace="SmartTrack.Web.Controllers.Login" %>
+<%@ Import Namespace="SquishIt.Framework" %>
+<%@ Import Namespace="SquishIt.Framework.JavaScript.Minifiers" %>
+<%@ Import Namespace="SquishIt.Framework.Css.Compressors" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head runat="server">
+		<title>Smart Track</title>
+				
+		<%= Bundle.JavaScript()
+            .Add_JQuery()
+		    .Add_JQueryUi()      
+		    .Add_LinqJs()
+            .Add_LessHandler()
+            .Add_Underscore()      
+		    .Add("~/Scripts/master-ready.js")
+		    .Add("~/Scripts/form-ajax-validate-and-submit.js")
+		    .Add("~/Scripts/link-confirmation.js")
+            .Add("~/Scripts/watermark.js")
+		    .WithMinifier(JavaScriptMinifiers.Yui)      
+            .Render("~/Content/scripts/sitemaster_#.js")
+		%>
+
+		<asp:ContentPlaceHolder id="ScriptsContent" runat="server"></asp:ContentPlaceHolder>
+        
+		<%= Bundle.Css()
+            .Add("~/Content/themes/base/minified/jquery-ui.all.min.css")
+			.Add("~/Content/styles/colors.less")
+			.Add("~/Content/styles/site.less")
+			.Add("~/Content/styles/site.css")
+			.Add("~/Content/jquery.alerts.css")
+		    .WithCompressor(CssCompressors.YuiCompressor)      
+		    .Render("~/Content/styles/sitemaster_#.css")      
+		%>
+		<asp:ContentPlaceHolder id="StylesContent" runat="server"></asp:ContentPlaceHolder>
+
+	</head>
+	<body>
+        <div id="header">
+            <div id="site-logo">SMART TRACK!!</div>
+		    <div id="login-status">
+                <% this.Partial<LoggedInStatusRequest>(); %>
+            </div>
+	    </div>
+
+	    <div id="content">
+		    <asp:ContentPlaceHolder id="MainContent" runat="server"></asp:ContentPlaceHolder>
+	    </div>
+	    
+        <div id="footer">
+		    
+	    </div>
+
+	</body>
+</html>

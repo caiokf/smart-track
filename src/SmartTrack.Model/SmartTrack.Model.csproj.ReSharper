@@ -1,0 +1,5 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts</SkipFolder>
+  </NamespaceFolders>
+</Configuration>

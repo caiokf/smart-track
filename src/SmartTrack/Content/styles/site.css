@@ -1,0 +1,59 @@
+﻿body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #4F4E4E;
+    background-color: #EEE;
+    text-align: center;
+    line-height: 1.05em;
+}
+
+.watermark {
+    color: rgba(100, 100, 100, 0.6);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    left: 8px;
+    white-space: nowrap;
+}
+
+input[type=text]:focus, input[type=password]:focus
+{
+    border-color: rgba(114, 205, 30, 0.85);
+    box-shadow: 0 0 8px rgba(134, 225, 40, 0.5)
+}
+input[type=text], input[type=password] {
+    margin: 5px;
+    background-color: white;
+    border-bottom-color: #CCC;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    height: 20px;
+    font-size: 16px;
+    outline-style: none;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 8px;
+    position: static;
+    text-align: -webkit-auto;
+}
+
+input[type=button], input[type=submit] {
+    background-color: #9C3;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 14px;
+    color: #666;
+    font-family: Helvetica, 'Lucida Grande', sans-serif;
+    cursor: pointer;   
+}
+.cancel-button {
+    
+}

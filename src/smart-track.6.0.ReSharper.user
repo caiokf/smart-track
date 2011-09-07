@@ -1,0 +1,352 @@
+<Configuration>
+  <UnitTestSessions>
+    <Session>
+      <Name>Session #1</Name>
+      <Elements>
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Conventions" type="NUnitTestFixtureElement" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestFixtureElement" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" type="NUnitTestFixtureElement" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestFixtureElement" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestFixtureElement" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests" type="NUnitTestFixtureElement" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Transactions.TransactionProcessorTests" type="NUnitTestFixtureElement" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.UserAggregateEvents" type="NUnitTestFixtureElement" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.add_a_non_existing_measure_to_a_group" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="add_a_non_existing_measure_to_a_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.add_a_non_existing_measure_to_a_non_existing_group" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="add_a_non_existing_measure_to_a_non_existing_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.add_a_non_existing_tag_to_a_group" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="add_a_non_existing_tag_to_a_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.add_a_non_existing_tag_to_a_non_existing_group" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="add_a_non_existing_tag_to_a_non_existing_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.add_an_existing_measure_to_a_group" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="add_an_existing_measure_to_a_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.add_an_existing_measure_to_a_non_existing_group" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="add_an_existing_measure_to_a_non_existing_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.add_an_existing_tag_to_a_group" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="add_an_existing_tag_to_a_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.add_an_existing_tag_to_a_non_existing_group" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="add_an_existing_tag_to_a_non_existing_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.add_existing_measure" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="add_existing_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.add_more_than_one_measure" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="add_more_than_one_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.add_one_measure" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="add_one_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests.commit_should_call_on_transaction" ParentId="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests" MethodName="commit_should_call_on_transaction" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.create_new_group" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="create_new_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.create_new_group_with_name_of_existing_group_should_have_no_effect" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="create_new_group_with_name_of_existing_group_should_have_no_effect" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.create_new_measure" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="create_new_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.create_new_measure_with_same_name_should_not_create_new_one" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="create_new_measure_with_same_name_should_not_create_new_one" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.create_new_tag" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="create_new_tag" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.create_new_tag_null_start_date_should_have_no_effect" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="create_new_tag_null_start_date_should_have_no_effect" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.create_new_tag_with_empty_name_should_have_no_effect" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="create_new_tag_with_empty_name_should_have_no_effect" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.create_new_tag_with_same_name_and_start_date_as_existing_tag_should_have_no_effect" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="create_new_tag_with_same_name_and_start_date_as_existing_tag_should_have_no_effect" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.create_new_tag_with_whitespace_name_should_have_no_effect" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="create_new_tag_with_whitespace_name_should_have_no_effect" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.create_two_groups" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="create_two_groups" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.delete_a_group" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="delete_a_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.delete_a_non_existing_group" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="delete_a_non_existing_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.edit_an_existing_group" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="edit_an_existing_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.edit_an_existing_group_to_an_empty_name" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="edit_an_existing_group_to_an_empty_name" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.edit_an_existing_group_to_an_existing_group_name_should_have_no_effect" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="edit_an_existing_group_to_an_existing_group_name_should_have_no_effect" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.edit_existing_measure" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="edit_existing_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.edit_measure_name_to_be_empty_should_have_no_effect" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="edit_measure_name_to_be_empty_should_have_no_effect" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.edit_measure_name_to_be_same_as_other_existing_measure_should_have_no_effect_on_name" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="edit_measure_name_to_be_same_as_other_existing_measure_should_have_no_effect_on_name" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.edit_non_existing_measure_have_no_effect" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="edit_non_existing_measure_have_no_effect" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_confirmation_should_match_email" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" MethodName="email_confirmation_should_match_email" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_is_required" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" MethodName="email_is_required" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_unique" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" MethodName="email_should_be_unique" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" MethodName="email_should_be_valid" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Conventions.every_request_model_should_specify_how_values_are_routed" ParentId="SmartTrack.Tests.Unit.Conventions" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Conventions" MethodName="every_request_model_should_specify_how_values_are_routed" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.existing_tag_deleted" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="existing_tag_deleted" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.non_existing_tag_deleted_with_different_date" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="non_existing_tag_deleted_with_different_date" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.non_existing_tag_deleted_with_different_name" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="non_existing_tag_deleted_with_different_name" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.password_confirmation_should_match_password" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" MethodName="password_confirmation_should_match_password" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.password_is_required" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" MethodName="password_is_required" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.remove_a_measure_from_a_group" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="remove_a_measure_from_a_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.TagsEvents.remove_a_tag_from_a_group" ParentId="SmartTrack.Tests.Unit.Measures.TagsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.TagsEvents" MethodName="remove_a_tag_from_a_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.remove_existing_measures" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="remove_existing_measures" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.remove_non_existing_measures" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="remove_non_existing_measures" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Transactions.TransactionProcessorTests.should_commit_in_the_end_of_execution" ParentId="SmartTrack.Tests.Unit.Transactions.TransactionProcessorTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Transactions.TransactionProcessorTests" MethodName="should_commit_in_the_end_of_execution" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.UserAggregateEvents.should_not_receive_events_not_subscribed_to" ParentId="SmartTrack.Tests.Unit.Measures.UserAggregateEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.UserAggregateEvents" MethodName="should_not_receive_events_not_subscribed_to" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Transactions.TransactionProcessorTests.should_rollback_in_case_of_exception_and_rethrow" ParentId="SmartTrack.Tests.Unit.Transactions.TransactionProcessorTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Transactions.TransactionProcessorTests" MethodName="should_rollback_in_case_of_exception_and_rethrow" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.username_is_required" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" MethodName="username_is_required" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.username_should_be_unique" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests" MethodName="username_should_be_unique" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests.when_started_should_open_session_and_begin_transaction" ParentId="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests" MethodName="when_started_should_open_session_and_begin_transaction" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid(&quot;@domain.com&quot;,False)" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid(&quot;user.domain&quot;,False)" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid(&quot;user@.com&quot;,False)" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid(&quot;user@domain&quot;,False)" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid(&quot;user@domain.com&quot;,True)" ParentId="SmartTrack.Tests.Unit.Validations.LoginJoinInputValidationTests.email_should_be_valid" type="NUnitRowTestElement" />
+      </Elements>
+    </Session>
+  </UnitTestSessions>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts/d:Measures/f:Tag.cs" caret="201" fromTop="9" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Transactions/f:TransactionProcessorTests.cs" caret="421" fromTop="10" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts/d:Measures/f:UserAggregateEvents.cs" caret="518" fromTop="18" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="1176" fromTop="19" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:UserRepository.cs" caret="1568" fromTop="16" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Login.aspx" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Join.aspx" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit.js" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Views/d:Shared/f:Site.master" caret="675" fromTop="15" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="IActionBehavior`0" priority="31" />
+      <Item value="ctor" priority="127" />
+      <Item value="this" priority="287" />
+      <Item value="x" priority="287" />
+      <Item value="IModelBinder`0" priority="31" />
+      <Item value="Models" priority="31" />
+      <Item value="public" priority="284" />
+      <Item value="class" priority="93" />
+      <Item value="Registry`0" priority="31" />
+      <Item value="var" priority="94" />
+      <Item value="new" priority="384" />
+      <Item value="NotificationMessage" priority="29" />
+      <Item value="container" priority="31" />
+      <Item value="IValidate" priority="127" />
+      <Item value="typeof" priority="63" />
+      <Item value="validatedType" priority="63" />
+      <Item value="validators" priority="63" />
+      <Item value="notificationMessages" priority="58" />
+      <Item value="context" priority="31" />
+      <Item value="Scan`0" priority="31" />
+      <Item value="ConventionalValidator`0" priority="63" />
+      <Item value="NhibernateRegistry`0" priority="31" />
+      <Item value="LoginJoinValidationKeys`0" priority="26" />
+      <Item value="ObjectFactory`0" priority="31" />
+      <Item value="Services`0" priority="31" />
+      <Item value="interface" priority="30" />
+      <Item value="IValidate`0" priority="31" />
+      <Item value="T`0" priority="95" />
+      <Item value="NotificationMessage`0" priority="58" />
+      <Item value="Enumerable`0" priority="31" />
+      <Item value="static" priority="158" />
+      <Item value="void" priority="31" />
+      <Item value="Transactions" priority="30" />
+      <Item value="where" priority="31" />
+      <Item value="message" priority="31" />
+      <Item value="property" priority="32" />
+      <Item value="return" priority="223" />
+      <Item value="notification" priority="58" />
+      <Item value="bool" priority="63" />
+      <Item value="object" priority="31" />
+      <Item value="obj" priority="31" />
+      <Item value="default" priority="31" />
+      <Item value="string" priority="96" />
+      <Item value="IQueryable`0" priority="63" />
+      <Item value="get" priority="31" />
+      <Item value="session" priority="31" />
+      <Item value="IQueryable" priority="31" />
+      <Item value="users" priority="31" />
+      <Item value="test" priority="191" />
+      <Item value="LoginJoinRequiredFields" priority="16" />
+      <Item value="validator" priority="63" />
+      <Item value="JoinInput" priority="57" />
+      <Item value="errors" priority="63" />
+      <Item value="Email" priority="63" />
+      <Item value="ConfirmEmail" priority="65" />
+      <Item value="LoginJoinEmailShouldMatchConfirmation" priority="29" />
+      <Item value="LoginJoinPasswordShouldMatchConfirmation" priority="26" />
+      <Item value="Password" priority="31" />
+      <Item value="ConfirmPassword" priority="27" />
+      <Item value="LoginJoinEmailShouldBeInCorrectFormat" priority="29" />
+      <Item value="TestCase" priority="31" />
+      <Item value="if" priority="31" />
+      <Item value="shouldBeValid" priority="31" />
+      <Item value="UserRepository" priority="16" />
+      <Item value="repository" priority="63" />
+      <Item value="Func&lt;IQueryable&lt;User&gt;&gt;" priority="28" />
+      <Item value="AsQueryable`1" priority="27" />
+      <Item value="LoginJoinUsernameShouldBeUnique" priority="28" />
+      <Item value="Username" priority="31" />
+      <Item value="base" priority="63" />
+      <Item value="HtmlTag" priority="173" />
+      <Item value="HtmlTagExtensions`0" priority="31" />
+      <Item value="tag" priority="63" />
+      <Item value="DivTag" priority="28" />
+      <Item value="HtmlTag`0" priority="62" />
+      <Item value="IJavaScriptBundle`0" priority="31" />
+      <Item value="bundle" priority="96" />
+      <Item value="SquishIt.Framework" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Configuration.FubuMvcRegistry">
+      <Item value="Views" priority="26" />
+      <Item value="Services`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuMVC.Core.Registration.IServiceRegistry">
+      <Item value="DefaultServiceFor`1" priority="53" />
+      <Item value="ReplaceService`2" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Configuration.DSL.Expressions.CreatePluginFamilyExpression`1">
+      <Item value="HybridHttpOrThreadLocalScoped`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuMVC.Core.Registration.DSL.ModelsExpression">
+      <Item value="BindModelsWith`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.IContainer">
+      <Item value="GetAllInstances`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="MakeGenericType`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.IList">
+      <Item value="OfType`1" priority="26" />
+      <Item value="Cast`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Http.Behaviors.Validation.IValidate`1">
+      <Item value="Validate`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Each`1" priority="26" />
+      <Item value="SelectMany`2" priority="27" />
+      <Item value="Select`2" priority="26" />
+      <Item value="Count`1" priority="107" />
+      <Item value="Where`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuValidation.ValidationContext">
+      <Item value="Notification" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuValidation.Notification">
+      <Item value="RegisterMessage`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Graph.IAssemblyScanner">
+      <Item value="AssemblyContainingType`1" priority="26" />
+      <Item value="ConnectImplementationsToTypesClosing`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Configuration.StructureMapRegistry">
+      <Item value="IncludeRegistry`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Controllers.Login.JoinInput">
+      <Item value="Username" priority="45" />
+      <Item value="Email" priority="45" />
+      <Item value="Password" priority="68" />
+      <Item value="ConfirmEmail" priority="68" />
+      <Item value="ConfirmPassword" priority="91" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrWhiteSpace`0" priority="49" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="45" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuValidation.NotificationMessage">
+      <Item value="AddSubstitution`0" priority="22" />
+      <Item value="AddAccessor`0" priority="26" />
+      <Item value="GetMessage`0" priority="26" />
+      <Item value="ToValidationErrors`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@StructureMap.ObjectFactory">
+      <Item value="Container" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ChangeType`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Linq.Enumerable">
+      <Item value="SelectMany`2" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Http.Behaviors.Validation.Rules.LoginJoinRequiredFields">
+      <Item value="RegisterError`1" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Http.Behaviors.Validation.Rules.NotificationMessageErrors`1">
+      <Item value="ToList`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="GetType`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="IsEmpty`0" priority="22" />
+      <Item value="Replace`0" priority="54" />
+      <Item value="Contains`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISession">
+      <Item value="Query`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="Where`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.Measures.User">
+      <Item value="Name" priority="26" />
+      <Item value="Email" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Validation.LoginJoinRequiredFields">
+      <Item value="Validate`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IEnumerableConstraints`1">
+      <Item value="Contain`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuValidation.ValidationError">
+      <Item value="message" priority="53" />
+      <Item value="field" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="Should`0" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IComparableConstraints`1">
+      <Item value="Be" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IComparableBeConstraints`1">
+      <Item value="AssertionInfo" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Mock`1">
+      <Item value="SetupGet`1" priority="26" />
+      <Item value="Object" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Model.Repositories.UserRepository">
+      <Item value="Users" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetupGetter`2">
+      <Item value="Returns`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Validation.LoginJoinUsernameShouldBeUnique">
+      <Item value="Validate`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.HtmlTags.ErrorSummaryTag">
+      <Item value="AddClass`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlTags.HtmlTag">
+      <Item value="AddClass`0" priority="162" />
+      <Item value="Style`0" priority="53" />
+      <Item value="Append`0" priority="189" />
+      <Item value="Text`0" priority="26" />
+      <Item value="WrapWith`0" priority="26" />
+      <Item value="Id`0" priority="26" />
+      <Item value="Hide`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ASP.controllers_login_join_aspx">
+      <Item value="ErrorSummary`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.HtmlTags.ValidationErrorTag">
+      <Item value="AddClass`0" priority="26" />
+      <Item value="Id`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContext">
+      <Item value="if" priority="10" />
+      <Item value="$" priority="9" />
+      <Item value="response" priority="10" />
+      <Item value="function" priority="21" />
+      <Item value="return" priority="10" />
+      <Item value="x" priority="10" />
+      <Item value="var" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SquishIt.Framework.JavaScript.IJavaScriptBundle">
+      <Item value="Add`0" priority="80" />
+      <Item value="Add_JQueryUi`0" priority="54" />
+      <Item value="Add_LinqJs`0" priority="53" />
+      <Item value="Add_LessHandler`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>
