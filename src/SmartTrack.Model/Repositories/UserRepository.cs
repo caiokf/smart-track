@@ -52,6 +52,9 @@ namespace SmartTrack.Model.Repositories
 
         public static IQueryable<User> WithEmail(this IQueryable<User> users, string email)
         {
+            if (email == null)
+                return new User[] {}.AsQueryable();
+
             return users.Where(x => x.Email.Replace(".","") == email.Replace(".", ""));
         }
     }

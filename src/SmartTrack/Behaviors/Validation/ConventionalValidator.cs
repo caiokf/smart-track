@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using FluentValidation;
 using FubuCore;
 using FubuValidation;
 using StructureMap;
+using IValidator = FubuValidation.IValidator;
+using ValidationContext = FubuValidation.ValidationContext;
 
 namespace SmartTrack.Web.Behaviors.Validation
 {
@@ -34,7 +37,7 @@ namespace SmartTrack.Web.Behaviors.Validation
                 Resolver = typeResolver
             };
             
-            var validatorType = typeof (IValidate<>).MakeGenericType(validatedType);
+            var validatorType = typeof (IValidator<>).MakeGenericType(validatedType);
             var validators = container.GetAllInstances(validatorType).Cast<dynamic>();
             var notificationMessages = validators.SelectMany<dynamic, NotificationMessage>(x => x.Validate((dynamic)target));
             notificationMessages.Each(x => context.Notification.RegisterMessage(x));

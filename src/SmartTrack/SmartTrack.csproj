@@ -91,6 +91,9 @@
     <Reference Include="FluentScheduler">
       <HintPath>..\packages\FluentScheduler.1.0.6\lib\FluentScheduler.dll</HintPath>
     </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>..\..\packages\FluentValidation.3.1.0.0\lib\Net40\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="FubuCore, Version=0.9.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FubuCore.0.9.1.37\lib\FubuCore.dll</HintPath>
     </Reference>
@@ -237,7 +240,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Behaviors\Validation\ConventionalValidator.cs" />
-    <Compile Include="Behaviors\Validation\IValidate.cs" />
     <Compile Include="CodeTemplates\AppSettingsWrapper.gen.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

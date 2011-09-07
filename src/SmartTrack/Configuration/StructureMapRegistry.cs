@@ -1,5 +1,5 @@
+using FluentValidation;
 using FubuMVC.Validation;
-using FubuValidation;
 using NHibernate;
 using SmartTrack.Model.Measures;
 using SmartTrack.Model.Repositories;
@@ -7,6 +7,7 @@ using SmartTrack.Web.Behaviors.Validation;
 using SmartTrack.Web.Http;
 using SmartTrack.Web.Http.Behaviors.Transactions;
 using StructureMap.Configuration.DSL;
+using IValidator = FubuValidation.IValidator;
 
 namespace SmartTrack.Web.Configuration
 {
@@ -56,7 +57,7 @@ namespace SmartTrack.Web.Configuration
             Scan(x =>
             {
                 x.AssemblyContainingType<ConventionalValidator>();
-                x.ConnectImplementationsToTypesClosing(typeof (IValidate<>));
+                x.ConnectImplementationsToTypesClosing(typeof (IValidator<>));
             });
             For<IValidator>().Use<ConventionalValidator>();
             For<IValidationFailureHandler>().Use<ValidationFailureHandler>();

@@ -12,40 +12,43 @@ namespace SmartTrack.Tests.Unit.Validations
     [TestFixture]
     public class LoginJoinInputValidationTests
     {
+        private Mock<UserRepository> repository;
+        private LoginJoinValidator validator;
+
+        [SetUp]
+        public void SetUp()
+        {
+            repository = new Mock<UserRepository>(null);
+            validator = new LoginJoinValidator(repository.Object);
+        }
+
         [Test]
         public void email_is_required()
         {
-            var input = new JoinInput();
+            var errors = validator.Validate(new JoinInput()).Errors;
 
-            var errors = new LoginJoinRequiredFields().Validate(input);
-
-            errors.SelectMany(x => x.ToValidationErrors())
-                .Where(x => x.field == "Email")
-                .Where(x => x.message.Contains("required"))
+            errors.Where(x => x.PropertyName == "Email")
+                .Where(x => x.ErrorMessage.Contains("required"))
                 .Count().Should().Be(1);
         }
 
         [Test]
         public void username_is_required()
         {
-            var input = new JoinInput();
+            var errors = validator.Validate(new JoinInput()).Errors;
 
-            var errors = new LoginJoinRequiredFields().Validate(input);
-
-            errors.SelectMany(x => x.ToValidationErrors())
-                .Where(x => x.field == "Username")
-                .Where(x => x.message.Contains("required"))
+            errors.Where(x => x.PropertyName == "Username")
+                .Where(x => x.ErrorMessage.Contains("required"))
                 .Count().Should().Be(1);
         }
 
         [Test]
         public void password_is_required()
         {
-            var errors = new LoginJoinRequiredFields().Validate(new JoinInput());
+            var errors = validator.Validate(new JoinInput()).Errors;
 
-            errors.SelectMany(x => x.ToValidationErrors())
-                .Where(x => x.field == "Password")
-                .Where(x => x.message.Contains("required"))
+            errors.Where(x => x.PropertyName == "Password")
+                .Where(x => x.ErrorMessage.Contains("required"))
                 .Count().Should().Be(1);
         }
 
@@ -54,11 +57,10 @@ namespace SmartTrack.Tests.Unit.Validations
         {
             var input = new JoinInput {Email = "any", ConfirmEmail = "any other"};
 
-            var errors = new LoginJoinEmailShouldMatchConfirmation().Validate(input);
+            var errors = validator.Validate(input).Errors;
 
-            errors.SelectMany(x => x.ToValidationErrors())
-                .Where(x => x.field == "ConfirmEmail")
-                .Where(x => x.message.Contains("should match Email"))
+            errors.Where(x => x.PropertyName == "ConfirmEmail")
+                .Where(x => x.ErrorMessage.Contains("should match Email"))
                 .Count().Should().Be(1);
         }
 
@@ -67,11 +69,10 @@ namespace SmartTrack.Tests.Unit.Validations
         {
             var input = new JoinInput { Password = "any", ConfirmPassword = "any other" };
 
-            var errors = new LoginJoinPasswordShouldMatchConfirmation().Validate(input);
+            var errors = validator.Validate(input).Errors;
 
-            errors.SelectMany(x => x.ToValidationErrors())
-                .Where(x => x.field == "ConfirmPassword")
-                .Where(x => x.message.Contains("should match Password"))
+            errors.Where(x => x.PropertyName == "ConfirmPassword")
+                .Where(x => x.ErrorMessage.Contains("should match Password"))
                 .Count().Should().Be(1);
         }
 
@@ -85,42 +86,46 @@ namespace SmartTrack.Tests.Unit.Validations
         {
             var input = new JoinInput { Email = email };
 
-            var errors = new LoginJoinEmailShouldBeInCorrectFormat().Validate(input);
-
-            if (shouldBeValid)
-            {
-                errors.Count().Should().Be(0);
-                return;
-            }
-
-            errors.SelectMany(x => x.ToValidationErrors())
-                .Where(x => x.field == "Email")
-                .Where(x => x.message.Contains("not valid"))
-                .Count().Should().Be(1);
+            validator.Validate(input).Errors
+                .Where(x => x.PropertyName == "Email")
+                .Where(x => x.ErrorMessage.Contains("not a valid"))
+                .Count().Should().Be(shouldBeValid ? 0 : 1);
         }
 
         [Test]
         public void email_should_be_unique()
         {
-            var repository = new Mock<UserRepository>(null);
             repository.SetupGet(x => x.Users).Returns(new[] { new User("", "", "email") }.AsQueryable);
 
-            var validator = new LoginJoinEmailShouldBeUnique(repository.Object);
+            var unavailableEmail = new JoinInput { Email = "email" };
+            validator.Validate(unavailableEmail).Errors
+                .Where(x => x.PropertyName == "Email")
+                .Where(x => x.ErrorMessage.Contains("already"))
+                .Count().Should().Be(1);
 
-            validator.Validate(new JoinInput { Email = "email" }).Count().Should().Be(1);
-            validator.Validate(new JoinInput { Email = "otherEmail" }).Count().Should().Be(0);
+            var availableEmail = new JoinInput { Email = "otherEmail" };
+            validator.Validate(availableEmail).Errors
+                .Where(x => x.PropertyName == "Email")
+                .Where(x => x.ErrorMessage.Contains("already"))
+                .Count().Should().Be(0);
         }
 
         [Test]
         public void username_should_be_unique()
         {
-            var repository = new Mock<UserRepository>(null);
             repository.SetupGet(x => x.Users).Returns(new[] {new User("user", "", "")}.AsQueryable);
 
-            var validator = new LoginJoinUsernameShouldBeUnique(repository.Object);
+            var unavailableUsername = new JoinInput { Username = "user" };
+            validator.Validate(unavailableUsername).Errors
+                .Where(x => x.PropertyName == "Username")
+                .Where(x => x.ErrorMessage.Contains("already"))
+                .Count().Should().Be(1);
 
-            validator.Validate(new JoinInput { Username = "user" }).Count().Should().Be(1);
-            validator.Validate(new JoinInput { Username = "otherUser" }).Count().Should().Be(0);
+            var availableUsername = new JoinInput {Username = "otherUser"};
+            validator.Validate(availableUsername).Errors
+                .Where(x => x.PropertyName == "Username")
+                .Where(x => x.ErrorMessage.Contains("already"))
+                .Count().Should().Be(0);
         }
     }
 }
