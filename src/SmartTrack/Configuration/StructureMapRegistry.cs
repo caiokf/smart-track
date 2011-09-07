@@ -35,9 +35,16 @@ namespace SmartTrack.Web.Configuration
     {
         public NhibernateRegistry()
         {
-            For<ISessionFactory>().Singleton().Use(c => c.GetInstance<NHibernateConfiguration>().BuildSessionFactory());
+            For<IPersistenceConfiguration>().Use<NHibernateConfiguration>();
+            
+            For<ISessionFactory>().Singleton().Use(c => 
+                c.GetInstance<IPersistenceConfiguration>().BuildSessionFactory());
+
             //For<ISession>().Use(c => c.GetInstance<ITransactionBoundary>().Session);
-            For<ISession>().HybridHttpOrThreadLocalScoped().Use(c => c.GetInstance<ISessionFactory>().OpenSession());
+
+            For<ISession>().HybridHttpOrThreadLocalScoped().Use(c => 
+                c.GetInstance<ISessionFactory>().OpenSession());
+            
             For<ITransactionBoundary>().Use<NHibernateTransactionBoundary>();
         }
     }

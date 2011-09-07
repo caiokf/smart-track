@@ -11,6 +11,7 @@ namespace SmartTrack.Web.Configuration
 
         public SchedulerRegistry()
         {
+            Schedule<RefreshDatabase>().ToRunNow();
             Schedule<CreateTestData>().ToRunNow();
         }
 

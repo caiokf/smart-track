@@ -1,5 +1,4 @@
-﻿using System;
-using System.Configuration;
+﻿using System.Configuration;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
@@ -9,9 +8,17 @@ using SmartTrack.Model;
 
 namespace SmartTrack.Web.Configuration
 {
-    public class NHibernateConfiguration
+    public interface IPersistenceConfiguration
+    {
+        ISessionFactory BuildSessionFactory();
+        void RecreateDatabase();
+    }
+
+    public class NHibernateConfiguration : IPersistenceConfiguration
     {
         private readonly IAppSettings appSettings;
+        private NHibernate.Cfg.Configuration configuration;
+        private bool configurationCreated;
 
         public NHibernateConfiguration(IAppSettings appSettings)
         {
@@ -26,11 +33,23 @@ namespace SmartTrack.Web.Configuration
                 .UseOverridesFromAssemblyOf<UserMap>()
                 .Where(x => typeof (IEntity).IsAssignableFrom(x) && x.IsClass && !x.IsAbstract);
 
-            return Fluently.Configure()
+            var sessionFactory = Fluently.Configure()
                 .Mappings(x => x.AutoMappings.Add(automap))
                 .ConfigureDatabase(appSettings)
                 .Diagnostics(x => x.OutputToConsole())
+                .ExposeConfiguration(x => configuration = x)
                 .BuildSessionFactory();
+
+            configurationCreated = true;
+            return sessionFactory;
+        }
+
+        public void RecreateDatabase()
+        {
+            if (!configurationCreated)
+                BuildSessionFactory();
+
+            new SchemaUpdate(configuration).Execute(false, true);
         }
     }
 
@@ -53,8 +72,7 @@ namespace SmartTrack.Web.Configuration
 
         public static FluentConfiguration DebugDatabase(this FluentConfiguration config)
         {
-            return config.Database(SQLiteConfiguration.Standard.ConnectionString(ConfigurationManager.ConnectionStrings["database"].ConnectionString).ShowSql())
-                .ExposeConfiguration(x => new SchemaUpdate(x).Execute(false, true));
+            return config.Database(SQLiteConfiguration.Standard.ConnectionString(ConfigurationManager.ConnectionStrings["database"].ConnectionString).ShowSql());
         }
     }
 }
