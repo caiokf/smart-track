@@ -11,7 +11,14 @@ namespace SmartTrack.Web.Configuration
 {
     public class NHibernateConfiguration
     {
-        public static ISessionFactory BuildSessionFactory()
+        private readonly IAppSettings appSettings;
+
+        public NHibernateConfiguration(IAppSettings appSettings)
+        {
+            this.appSettings = appSettings;
+        }
+
+        public ISessionFactory BuildSessionFactory()
         {
             var automap = AutoMap
                 .AssemblyOf<IEntity>()
@@ -21,7 +28,7 @@ namespace SmartTrack.Web.Configuration
 
             return Fluently.Configure()
                 .Mappings(x => x.AutoMappings.Add(automap))
-                .ConfigureDatabase()
+                .ConfigureDatabase(appSettings)
                 .Diagnostics(x => x.OutputToConsole())
                 .BuildSessionFactory();
         }
@@ -29,7 +36,7 @@ namespace SmartTrack.Web.Configuration
 
     public static class DatabaseConfigurations
     {
-        public static FluentConfiguration ConfigureDatabase(this FluentConfiguration config)
+        public static FluentConfiguration ConfigureDatabase(this FluentConfiguration config, IAppSettings appSettings)
         {
             #if DEBUG
                 return config.DebugDatabase();

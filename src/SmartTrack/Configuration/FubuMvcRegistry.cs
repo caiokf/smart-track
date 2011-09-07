@@ -14,7 +14,7 @@ namespace SmartTrack.Web.Configuration
         public FubuMvcRegistry()
         {
             IncludeDiagnostics(true);
-            
+                      
             Applies.ToThisAssembly();
 
             Import<WebFormsEngine>();

@@ -11,8 +11,7 @@ namespace SmartTrack.Tests.Unit.Persistance.InMemory
         [TestFixtureSetUp]
         public void setup()
         {
-            var sessionFactory = NHibernateConfiguration.BuildSessionFactory();
-            session = sessionFactory.OpenSession();
+            
         }
 	}
 }
