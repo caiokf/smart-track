@@ -243,6 +243,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppSettingsWrapper.tt</DependentUpon>
     </Compile>
+    <Compile Include="CodeTemplates\BuildConfigurationsEnum.gen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildConfigurationsEnum.tt</DependentUpon>
+    </Compile>
     <Compile Include="Configuration\FluentNhibernateMappings.cs" />
     <Compile Include="Configuration\FubuMvcRegistry.cs" />
     <Compile Include="Configuration\ScriptsBundling.cs" />
@@ -305,6 +310,10 @@
     <None Include="CodeTemplates\AppSettingsWrapper.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AppSettingsWrapper.gen.cs</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\BuildConfigurationsEnum.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BuildConfigurationsEnum.gen.cs</LastGenOutput>
     </None>
     <None Include="Content\styles\colors.less" />
     <None Include="Content\styles\login\login.less" />
