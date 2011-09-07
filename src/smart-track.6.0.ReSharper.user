@@ -72,32 +72,84 @@
   </UnitTestSessions>
   <RecentFiles>
     <RecentFiles>
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts/d:Measures/f:Tag.cs" caret="201" fromTop="9" />
-      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Transactions/f:TransactionProcessorTests.cs" caret="421" fromTop="10" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts/d:Measures/f:UserAggregateEvents.cs" caret="518" fromTop="18" />
-      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="1176" fromTop="19" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:UserRepository.cs" caret="1568" fromTop="16" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Login.aspx" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Controllers/d:Login/f:Join.aspx" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit.js" caret="0" fromTop="0" />
       <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Views/d:Shared/f:Site.master" caret="675" fromTop="15" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="479" fromTop="16" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Persistance/d:InMemory/f:InMemoryPersistenceTestsSetup.cs" caret="231" fromTop="9" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:CodeTemplates/f:AppSettingsWrapper.gen.cs" caret="135" fromTop="7" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.Tests.Unit.config" caret="241" fromTop="6" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.Release.config" caret="25" fromTop="2" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.Deploy.config" caret="196" fromTop="5" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.Debug.config" caret="255" fromTop="7" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:CodeTemplates/f:AppSettingsWrapper.tt" caret="529" fromTop="13" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:CodeTemplates/f:BuildConfigurationsEnum.tt" caret="96" fromTop="1" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Utils/d:Extensions/f:ObjectExtensions.cs" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="349" fromTop="12" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Utils/d:Extensions/f:EnumExtensions.cs" caret="169" fromTop="7" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:SchedulerRegistry.cs" caret="272" fromTop="11" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:ScheduledTasks/f:RefreshDatabase.cs" caret="1032" fromTop="32" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:CodeTemplates/f:BuildConfigurationsEnum.gen.cs" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="552" fromTop="16" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:StructureMapRegistry.cs" caret="2042" fromTop="16" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/d:Rules/f:StringExtensions.cs" caret="144" fromTop="6" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:JsonValidationFailurePolicy.cs" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:ConventionalValidator.cs" caret="938" fromTop="12" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="811" fromTop="16" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:UserRepository.cs" caret="1641" fromTop="20" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.config" caret="4689" fromTop="7" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:ScheduledTasks/f:CreateTestData.cs" caret="412" fromTop="16" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:packages.config" caret="103" fromTop="3" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="4454" fromTop="18" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:App.config" caret="823" fromTop="22" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Features/d:Measures/f:add-measures.feature" caret="320" fromTop="10" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="308" fromTop="0" />
     </RecentFiles>
-    <RecentEdits />
+    <RecentEdits>
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="1123" fromTop="22" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="1448" fromTop="17" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="1866" fromTop="17" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="2312" fromTop="17" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="2908" fromTop="11" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="1183" fromTop="19" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="673" fromTop="14" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="2908" fromTop="9" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="4677" fromTop="22" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="475" fromTop="10" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="1183" fromTop="18" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="3031" fromTop="10" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="1499" fromTop="23" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="3620" fromTop="19" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="3190" fromTop="10" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="4110" fromTop="18" />
+      <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="4412" fromTop="18" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:UserRepository.cs" caret="1570" fromTop="18" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:App.config" caret="880" fromTop="10" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:App.config" caret="903" fromTop="10" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="614" fromTop="22" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="644" fromTop="24" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="1105" fromTop="21" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="1269" fromTop="28" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="738" fromTop="23" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="914" fromTop="29" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="496" fromTop="14" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:App.config" caret="806" fromTop="20" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:packages.config" caret="103" fromTop="3" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Features/d:Measures/f:add-measures.feature" caret="321" fromTop="11" />
+    </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
       <Item value="IActionBehavior`0" priority="31" />
-      <Item value="ctor" priority="127" />
+      <Item value="ctor" priority="223" />
       <Item value="this" priority="287" />
-      <Item value="x" priority="287" />
+      <Item value="x" priority="447" />
       <Item value="IModelBinder`0" priority="31" />
       <Item value="Models" priority="31" />
-      <Item value="public" priority="284" />
+      <Item value="public" priority="347" />
       <Item value="class" priority="93" />
       <Item value="Registry`0" priority="31" />
-      <Item value="var" priority="94" />
-      <Item value="new" priority="384" />
-      <Item value="NotificationMessage" priority="29" />
+      <Item value="var" priority="158" />
+      <Item value="new" priority="480" />
+      <Item value="NotificationMessage" priority="58" />
       <Item value="container" priority="31" />
       <Item value="IValidate" priority="127" />
       <Item value="typeof" priority="63" />
@@ -111,20 +163,20 @@
       <Item value="LoginJoinValidationKeys`0" priority="26" />
       <Item value="ObjectFactory`0" priority="31" />
       <Item value="Services`0" priority="31" />
-      <Item value="interface" priority="30" />
+      <Item value="interface" priority="61" />
       <Item value="IValidate`0" priority="31" />
       <Item value="T`0" priority="95" />
       <Item value="NotificationMessage`0" priority="58" />
       <Item value="Enumerable`0" priority="31" />
       <Item value="static" priority="158" />
-      <Item value="void" priority="31" />
+      <Item value="void" priority="127" />
       <Item value="Transactions" priority="30" />
       <Item value="where" priority="31" />
       <Item value="message" priority="31" />
       <Item value="property" priority="32" />
-      <Item value="return" priority="223" />
+      <Item value="return" priority="351" />
       <Item value="notification" priority="58" />
-      <Item value="bool" priority="63" />
+      <Item value="bool" priority="95" />
       <Item value="object" priority="31" />
       <Item value="obj" priority="31" />
       <Item value="default" priority="31" />
@@ -147,12 +199,12 @@
       <Item value="ConfirmPassword" priority="27" />
       <Item value="LoginJoinEmailShouldBeInCorrectFormat" priority="29" />
       <Item value="TestCase" priority="31" />
-      <Item value="if" priority="31" />
+      <Item value="if" priority="95" />
       <Item value="shouldBeValid" priority="31" />
       <Item value="UserRepository" priority="16" />
       <Item value="repository" priority="63" />
       <Item value="Func&lt;IQueryable&lt;User&gt;&gt;" priority="28" />
-      <Item value="AsQueryable`1" priority="27" />
+      <Item value="AsQueryable`1" priority="54" />
       <Item value="LoginJoinUsernameShouldBeUnique" priority="28" />
       <Item value="Username" priority="31" />
       <Item value="base" priority="63" />
@@ -164,6 +216,34 @@
       <Item value="IJavaScriptBundle`0" priority="31" />
       <Item value="bundle" priority="96" />
       <Item value="SquishIt.Framework" priority="31" />
+      <Item value="For`0" priority="63" />
+      <Item value="IAppSettings`0" priority="156" />
+      <Item value="AppSettingsHelper`0" priority="31" />
+      <Item value="ConfigXmlDocument`0" priority="64" />
+      <Item value="appSettings" priority="162" />
+      <Item value="BuildConfigurations`0" priority="31" />
+      <Item value="refreshOn" priority="26" />
+      <Item value="System" priority="30" />
+      <Item value="ISessionFactory`0" priority="31" />
+      <Item value="private" priority="63" />
+      <Item value="Configuration" priority="31" />
+      <Item value="Cfg" priority="26" />
+      <Item value="configuration" priority="63" />
+      <Item value="sessionFactory" priority="31" />
+      <Item value="true" priority="31" />
+      <Item value="configurationCreated" priority="31" />
+      <Item value="BuildSessionFactory`0" priority="31" />
+      <Item value="SchemaUpdate" priority="58" />
+      <Item value="NHibernateConfiguration`0" priority="31" />
+      <Item value="persistenceConfiguration" priority="32" />
+      <Item value="Schedule`0" priority="31" />
+      <Item value="RefreshDatabase`0" priority="31" />
+      <Item value="AbstractValidator" priority="31" />
+      <Item value="RuleFor`1" priority="95" />
+      <Item value="email" priority="63" />
+      <Item value="input" priority="31" />
+      <Item value="false" priority="31" />
+      <Item value="NhQueryable&lt;User&gt;" priority="28" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Web.Configuration.FubuMvcRegistry">
       <Item value="Views" priority="26" />
@@ -175,6 +255,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:StructureMap.Configuration.DSL.Expressions.CreatePluginFamilyExpression`1">
       <Item value="HybridHttpOrThreadLocalScoped`0" priority="26" />
+      <Item value="Use`1" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuMVC.Core.Registration.DSL.ModelsExpression">
       <Item value="BindModelsWith`1" priority="26" />
@@ -197,7 +278,7 @@
       <Item value="SelectMany`2" priority="27" />
       <Item value="Select`2" priority="26" />
       <Item value="Count`1" priority="107" />
-      <Item value="Where`1" priority="26" />
+      <Item value="Where`1" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuValidation.ValidationContext">
       <Item value="Notification" priority="26" />
@@ -213,11 +294,11 @@
       <Item value="IncludeRegistry`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Web.Controllers.Login.JoinInput">
-      <Item value="Username" priority="45" />
-      <Item value="Email" priority="45" />
-      <Item value="Password" priority="68" />
-      <Item value="ConfirmEmail" priority="68" />
-      <Item value="ConfirmPassword" priority="91" />
+      <Item value="Username" priority="99" />
+      <Item value="Email" priority="72" />
+      <Item value="Password" priority="152" />
+      <Item value="ConfirmEmail" priority="95" />
+      <Item value="ConfirmPassword" priority="119" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="IsNullOrWhiteSpace`0" priority="49" />
@@ -252,13 +333,14 @@
     <ItemStatistics item="Qualified:System.String">
       <Item value="IsEmpty`0" priority="22" />
       <Item value="Replace`0" priority="54" />
-      <Item value="Contains`0" priority="26" />
+      <Item value="Contains`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NHibernate.ISession">
       <Item value="Query`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
       <Item value="Where`1" priority="26" />
+      <Item value="WithEmail`0" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Model.Measures.User">
       <Item value="Name" priority="26" />
@@ -329,6 +411,56 @@
       <Item value="Add_JQueryUi`0" priority="54" />
       <Item value="Add_LinqJs`0" priority="53" />
       <Item value="Add_LessHandler`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.FluentConfiguration">
+      <Item value="Database`0" priority="27" />
+      <Item value="ConfigureDatabase`0" priority="26" />
+      <Item value="ExposeConfiguration`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.IContext">
+      <Item value="GetInstance`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IAppSettings">
+      <Item value="Configuration" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@BuildConfigurations">
+      <Item value="Debug" priority="26" />
+      <Item value="TestsUnit" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Tool.hbm2ddl.SchemaUpdate">
+      <Item value="Execute`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Web.Configuration.IPersistenceConfiguration">
+      <Item value="RecreateDatabase`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentScheduler.Model.Schedule">
+      <Item value="ToRunNow`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentValidation.IRuleBuilderInitial`2">
+      <Item value="NotEmpty`2" priority="26" />
+      <Item value="Matches`1" priority="26" />
+      <Item value="Must`2" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentValidation.IRuleBuilderOptions`2">
+      <Item value="WithLocalizedMessage`2" priority="26" />
+      <Item value="EmailAddress`1" priority="53" />
+      <Item value="WithMessage`2" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentValidation.Results.ValidationResult">
+      <Item value="Errors" priority="107" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentValidation.Results.ValidationFailure">
+      <Item value="PropertyName" priority="81" />
+      <Item value="ErrorMessage" priority="76" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Where`1" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Configuration.ConfigurationManager">
+      <Item value="AppSettings" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="Sleep`0" priority="27" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>

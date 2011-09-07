@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="tests.build">
+		
+	<target name="unit-test" depends="compile">
+		<exec program="tools\nunit\nunit-console-x86.exe">
+			<arg file="src\SmartTrack.Tests.Unit\bin\debug\SmartTrack.Tests.Unit.dll"/>
+			<arg value="/xml:${nunit.output.file}"/>
+			<arg value="/xml:${nunit.output.file}"/>
+		</exec>
+	</target>
+		
+</project>

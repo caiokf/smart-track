@@ -1,13 +1,17 @@
 <?xml version="1.0"?>
 <project name="SmartTrack" default="build" basedir="..">
-	
+		
 	<property name="configuration" value="debug" />
 	<property name="basedir" value="${directory::get-current-directory()}" />
 	<property name="tools.dir" value="${basedir}\tools" />
 	
 	<property name="nant.settings.currentframework" value="net-4.0" />
 	<property name="nunit.output.file" value="results\Tests.Unit.xml"/>
-			
+	
+	<include buildfile="${basedir}\build-scripts\deploy.build"/>
+    <include buildfile="${basedir}\build-scripts\metrics.build"/>
+    <include buildfile="${basedir}\build-scripts\tests.build"/>
+	
 	<target name="build" depends="compile,unit-test"></target>
 	
 	<target name="init">
@@ -21,13 +25,5 @@
 			<arg value="/nologo"/>                           
 		</msbuild>
 	</target>
-	
-	<target name="unit-test" depends="compile">
-		<exec program="tools\nunit\nunit-console-x86.exe">
-			<arg file="src\SmartTrack.Tests.Unit\bin\debug\SmartTrack.Tests.Unit.dll"/>
-			<arg value="/xml:${nunit.output.file}"/>
-			<arg value="/xml:${nunit.output.file}"/>
-		</exec>
-	</target>
-		
+			
 </project>
