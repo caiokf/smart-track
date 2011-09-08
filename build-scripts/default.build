@@ -1,22 +1,31 @@
 <?xml version="1.0"?>
 <project name="SmartTrack" default="build" basedir="..">
-		
+	
+	<property name="application-name" value="SmartTrack"/>	
 	<property name="configuration" value="debug" />
+	
+	<property name="assembly-unit-tests" value="${application-name}.Tests.Unit.dll" />
+	<property name="assembly-acceptance-tests" value="${application-name}.Tests.Acceptance.dll" />
+				
 	<property name="basedir" value="${directory::get-current-directory()}" />
 	<property name="tools.dir" value="${basedir}\tools" />
-	
+	<property name="nunit-exe" value="${tools.dir}\nunit\nunit-console-x86.exe"/>
+	<property name="ncover-exe" value="${tools.dir}\ncover\1.5.8\ncover.console.exe"/>
+		
 	<property name="nant.settings.currentframework" value="net-4.0" />
-	<property name="nunit.output.file" value="results\Tests.Unit.xml"/>
-	
+		
 	<include buildfile="${basedir}\build-scripts\deploy.build"/>
     <include buildfile="${basedir}\build-scripts\metrics.build"/>
     <include buildfile="${basedir}\build-scripts\tests.build"/>
 	
-	<target name="build" depends="compile,unit-test"></target>
+	<target name="build" depends="compile,artifacts,unit-tests,coverage"></target>
 	
 	<target name="init">
 		<delete dir="${basedir}\results"/>
+		<delete dir="${basedir}\build"/>
+		
 		<mkdir dir="${basedir}\results"/>
+		<mkdir dir="${basedir}\build"/>
 	</target>
 	
 	<target name="compile" depends="init">
@@ -25,5 +34,34 @@
 			<arg value="/nologo"/>                           
 		</msbuild>
 	</target>
-			
+	
+	<target name="artifacts" depends="artifacts-web, artifacts-unit-tests, artifacts-acceptance-tests" />
+	
+	<target name="artifacts-web" depends="init,compile">
+		<mkdir dir="${basedir}\build\web"/>
+		<copy todir="${basedir}\build\web">
+			<fileset basedir="${basedir}\src\${application-name}\bin\">
+				<include name="**.*" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="artifacts-unit-tests" depends="init,compile">
+		<mkdir dir="${basedir}\build\unit-tests"/>
+		<copy todir="${basedir}\build\unit-tests">
+			<fileset basedir="${basedir}\src\${application-name}.Tests.Unit\bin\${configuration}\">
+				<include name="**.*" />
+			</fileset>
+		</copy>		
+	</target>
+	
+	<target name="artifacts-acceptance-tests" depends="init,compile">
+		<mkdir dir="${basedir}\build\acceptance-tests"/>
+		<copy todir="${basedir}\build\acceptance-tests">
+			<fileset basedir="${basedir}\src\${application-name}.Tests.Acceptance\bin\${configuration}\">
+				<include name="**.*" />
+			</fileset>
+		</copy>		
+	</target>
+	
 </project>

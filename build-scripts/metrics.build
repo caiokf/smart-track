@@ -1,4 +1,18 @@
 <?xml version="1.0"?>
 <project name="metrics.build">
-				
+		
+	<target name="coverage" depends="compile, unit-tests">
+		
+		<ncover program="${ncover-exe}"
+            commandLineExe="${nunit-exe}"
+            workingDirectory="${basedir}"
+            commandLineArgs="${basedir}\build\unit-tests\${assembly-unit-tests} /xml=results\Tests-Coverage.xml"
+            logFile="${basedir}\results\Tests-Coverage.log"
+            coverageFile="${basedir}\results\Tests-coverage.xml">
+			<assemblies basedir="${basedir}\build\unit-tests">
+				<include name="${application-name}.*.dll"/>
+			</assemblies>					
+        </ncover>
+	</target>
+			
 </project>
