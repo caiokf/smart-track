@@ -1,4 +1,20 @@
-﻿Persistence
+﻿General tasks
+--------------------------------------------------------------------
+	install firefox 3.6
+	run acceptance tests on firefox
+	run acceptance tests on ie
+	run acceptance tests on chrome
+	finish validation handler
+	localization infra
+	coffesscript tests
+	refactor coffeescript for validation
+	test in release config mode on build scripts
+	assert app is deploying to appharbor
+	insert test data
+	generate code coverage metrics
+	
+
+Persistence
 --------------------------------------------------------------------
 	Debug vs. Prod configs
 	Transactions
