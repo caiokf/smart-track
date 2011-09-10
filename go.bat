@@ -1,1 +1,1 @@
-tools/nant/NAnt.exe -buildfile:build-scripts/default.build
+@tools\nant\NAnt.exe -buildfile:build-scripts/default.build %*

@@ -1,14 +1,39 @@
 <?xml version="1.0"?>
 <project name="tests.build">
 	
-	<property name="nunit.output.file" value="results\Tests.Unit.xml"/>
+	<property name="nunit.output.file.unit" value="results\Tests.Unit.xml"/>
+	<property name="nunit.output.file.acceptance" value="results\Tests.Acceptance.Firefox.xml"/>
 	
-	<target name="unit-tests" depends="compile">
+	<target name="unit-tests" depends="compile,artifacts">
 		<exec program="${nunit-exe}">
-			<arg file="src\${application-name}.Tests.Unit\bin\debug\${assembly-unit-tests}"/>
-			<arg value="/xml:${nunit.output.file}"/>
-			<arg value="/xml:${nunit.output.file}"/>
+			<arg file="${basedir}\build\unit-tests\${assembly-unit-tests}"/>
+			<arg value="/xml:${nunit.output.file.unit}"/>
+			<arg value="/xml:${nunit.output.file.unit}"/>
 		</exec>
 	</target>
-		
+	
+	<target name="acceptance-tests" depends="compile,artifacts">
+		<exec program="${nunit-exe}">
+			<arg file="${basedir}\build\acceptance-tests\${assembly-acceptance-tests}"/>
+			<arg value="/xml:${nunit.output.file.acceptance}"/>
+			<arg value="/xml:${nunit.output.file.acceptance}"/>
+		</exec>
+	</target>
+	
+	<target name="acceptance-tests-firefox">
+		<property name="nunit.output.file.acceptance" value="results\Tests.Acceptance.Firefox.xml"/>
+		<xmlpoke file="${basedir}\build\acceptance-tests\${assembly-acceptance-tests}.config"
+                 xpath="/configuration/appSettings/add[@key = 'Browser']/@value"
+                 value="firefox" />
+		<call target="acceptance-tests" />
+	</target>
+	
+	<target name="acceptance-tests-ie">
+		<property name="nunit.output.file.acceptance" value="results\Tests.Acceptance.IE.xml"/>
+		<xmlpoke file="${basedir}\build\acceptance-tests\${assembly-acceptance-tests}.config"
+                 xpath="/configuration/appSettings/add[@key = 'Browser']/@value"
+                 value="ie" />
+		<call target="acceptance-tests" />
+	</target>
+	
 </project>

@@ -1,4 +1,34 @@
 <?xml version="1.0"?>
 <project name="deploy.build">
-			
+
+	<property name="web.dir" value="C:\inetpub\wwwroot\${application-name}" />
+	
+	<target name="web-deploy" depends="iis-stop,webdir-delete,webdir-copy,iis-start"/>
+	
+	<target name="iis-stop">
+		<exec program="iisreset" failonerror="true">
+			<arg value="/stop"/>
+			<arg value="localhost"/>
+		</exec>
+	</target>
+	
+	<target name="iis-start">
+		<exec program="iisreset" failonerror="true">
+			<arg value="/start"/>
+			<arg value="localhost"/>
+		</exec>
+	</target>
+	
+	<target name="webdir-delete">
+		<delete dir="${web.dir}" failonerror="true"/>
+	</target>
+		
+	<target name="webdir-copy">
+		<copy todir="${web.dir}">
+		  	<fileset basedir="${basedir}\build\web">
+				<include name="**.*" />
+			</fileset>
+		</copy>				
+	</target>
+	
 </project>
