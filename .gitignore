@@ -6,7 +6,6 @@ getpwds.bat
 build/
 build/unit-tests/
 results/
-src/SmartTrack/Bin/
 src/SmartTrack/obj/
 src/SmartTrack.Model/obj/
 src/SmartTrack.Model/bin/
