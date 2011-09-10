@@ -76,11 +76,32 @@ this.ScenarioSetup(scenarioInfo);
 #line 8
  testRunner.And("I have no existing measures");
 #line 9
- testRunner.When("I add a new measure called \"Biceps\"");
+ testRunner.When("I add a new measure called \"Biceps\" with unit in \"cm\" and save");
 #line 10
- testRunner.Then("I can see \"Biceps\" measure in my home page");
+ testRunner.Then("I can see \"Biceps\" measure in my measures page");
 #line 11
- testRunner.And("I only have 1 measure(s)");
+ testRunner.And("I have exactly 1 measure(s) in my measures page");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add a new metric and cancel")]
+        public virtual void AddANewMetricAndCancel()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a new metric and cancel", ((string[])(null)));
+#line 13
+this.ScenarioSetup(scenarioInfo);
+#line 14
+ testRunner.Given("I am logged in user");
+#line 15
+ testRunner.And("I have no existing measures");
+#line 16
+ testRunner.When("I add a new measure called \"Biceps\" with unit in \"cm\" and cancel");
+#line 17
+ testRunner.Then("I cannot see \"Biceps\" measure in my measures page");
+#line 18
+ testRunner.And("I have exactly 0 measure(s) in my measures page");
 #line hidden
             this.ScenarioCleanup();
         }

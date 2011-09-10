@@ -85,8 +85,9 @@
     <Reference Include="EcmaScript.NET.modified">
       <HintPath>..\packages\YUICompressor.NET.1.5.0.0\lib\NET35\EcmaScript.NET.modified.dll</HintPath>
     </Reference>
-    <Reference Include="FluentNHibernate, Version=1.2.0.712, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
-      <HintPath>..\packages\FubuMVC.FastPack.0.4.1.44\lib\FluentNHibernate.dll</HintPath>
+    <Reference Include="FluentNHibernate, Version=1.3.0.717, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\FluentNHibernate.1.3.0.717\lib\FluentNHibernate.dll</HintPath>
     </Reference>
     <Reference Include="FluentScheduler">
       <HintPath>..\packages\FluentScheduler.1.0.6\lib\FluentScheduler.dll</HintPath>
@@ -125,7 +126,7 @@
       <HintPath>..\packages\HtmlTags.1.0.0.23\lib\4.0\HtmlTags.dll</HintPath>
     </Reference>
     <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <HintPath>..\packages\FubuMVC.FastPack.0.4.1.44\lib\Iesi.Collections.dll</HintPath>
+      <HintPath>..\..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip">
       <HintPath>..\packages\DotNetZip.1.9\lib\Ionic.Zip.dll</HintPath>
@@ -161,14 +162,13 @@
     <Reference Include="MigSharp">
       <HintPath>..\packages\MigSharp.1.1.0\lib\net40\MigSharp.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.4.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=4.0.2.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Newtonsoft.Json.4.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <HintPath>..\packages\FubuMVC.FastPack.0.4.1.44\lib\NHibernate.dll</HintPath>
-    </Reference>
-    <Reference Include="NHibernate.ByteCode.Castle, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <HintPath>..\packages\FubuMVC.FastPack.0.4.1.44\lib\NHibernate.ByteCode.Castle.dll</HintPath>
+    <Reference Include="NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\NHibernate.3.2.0.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="SassAndCoffee.AspNet">
       <HintPath>..\packages\SassAndCoffee.AspNet.1.0\lib\net40\SassAndCoffee.AspNet.dll</HintPath>
@@ -507,7 +507,6 @@
     <Content Include="Controllers\Measures\Measures\EditMeasure.aspx" />
     <Content Include="Controllers\Measures\Measures\CreateMeasure.aspx" />
     <Content Include="fubu-content\fubumvc-diagnostics\bin\FubuMVC.Diagnostics.dll" />
-    <Content Include="fubu-content\fubumvc-diagnostics\bin\Newtonsoft.Json.dll" />
     <Content Include="fubu-content\fubumvc-diagnostics\bin\Spark.dll" />
     <Content Include="fubu-content\fubumvc-diagnostics\WebContent\Content\Images\block.png" />
     <Content Include="fubu-content\fubumvc-diagnostics\WebContent\Content\Images\console-line.png" />

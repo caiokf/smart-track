@@ -61,9 +61,12 @@
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Fizzler">
+      <HintPath>..\..\tools\fizzler-0.9\Fizzler.dll</HintPath>
+    </Reference>
     <Reference Include="Interop.SHDocVw">
       <HintPath>..\..\packages\WatiN.2.1.0\lib\net40\Interop.SHDocVw.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Ionic.Zip">
       <HintPath>..\..\packages\DotNetZip.1.9.1.8\lib\net20\Ionic.Zip.dll</HintPath>
@@ -112,18 +115,22 @@
     <Reference Include="WatiN.Extensions.NUnit">
       <HintPath>..\..\packages\WatiN.Extensions.NUnit.1.0.0.5\lib\net40\WatiN.Extensions.NUnit.dll</HintPath>
     </Reference>
-    <Reference Include="WebDriver">
-      <HintPath>..\..\packages\Selenium.WebDriver.2.5.1\lib\net40\WebDriver.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseSteps.cs" />
+    <Compile Include="Pages\AllMeasuresPage.cs" />
+    <Compile Include="Base\BasePage.cs" />
+    <Compile Include="Base\ScenarioContextExtensions.cs" />
+    <Compile Include="Base\WebBrowser.cs" />
     <Compile Include="Features\Measures\add-measures.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>add-measures.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\StepsSetup.cs" />
     <Compile Include="Steps\Measures\AddMeasures.cs" />
+    <Compile Include="Pages\CreateMeasurePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\Login\" />

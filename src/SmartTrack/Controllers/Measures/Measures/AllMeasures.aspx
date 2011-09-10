@@ -43,7 +43,9 @@
         </table>
 
         <div>           
-            <%= this.LinkTo<MeasuresController>(x => x.CreateMeasure()).Text("Another Measure?") %>
+            <%= this.LinkTo<MeasuresController>(x => x.CreateMeasure())
+                .Id("add-another-measure")
+                .Text("Another Measure?") %>
         </div>
         
         <%= this.Button().Value("Save").Id("save-all-measures") %>

@@ -7,7 +7,7 @@ namespace SmartTrack.Web.HtmlTags
     {
         public CancelButtonTag() : base("input")
         {
-            this.Attr("type", "submit")
+            this.Attr("type", "button")
                 .Value("Cancel")
                 .AddClass("cancel-button")
                 .Attr("onclick", "javascript:history.back();");

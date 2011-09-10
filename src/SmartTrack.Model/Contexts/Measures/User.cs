@@ -19,9 +19,9 @@ namespace SmartTrack.Model.Measures
             Name = name;
         }
 
-        public virtual string Name { get; private set; }
-        public virtual string Email { get; private set; }
-        public virtual string Password { get; private set; }
+        public virtual string Name { get; protected set; }
+        public virtual string Email { get; protected set; }
+        public virtual string Password { get; protected set; }
 
         private readonly List<Measure> measures;
         public virtual IEnumerable<Measure> Measures { get { return measures; } }
@@ -32,7 +32,7 @@ namespace SmartTrack.Model.Measures
         private readonly List<Group> groups;
         public virtual IEnumerable<Group> Groups { get { return groups; } }
 
-        protected void Apply(MeasureAdded e)
+        protected virtual void Apply(MeasureAdded e)
         {
             var measure = Measures.WithName(e.Measure);
             if (measure == null)
@@ -43,7 +43,7 @@ namespace SmartTrack.Model.Measures
             measure.AddMeasurement(e.Date, e.Value);
         }
 
-        protected void Apply(MeasureCreated e)
+        protected virtual void Apply(MeasureCreated e)
         {
             var measure = Measures.WithName(e.Measure);
             if (measure == null)
@@ -53,7 +53,7 @@ namespace SmartTrack.Model.Measures
             }
         }
 
-        protected void Apply(MeasureEdited e)
+        protected virtual void Apply(MeasureEdited e)
         {
             var measure = Measures.WithName(e.OldMeasure);
             if (measure == null)
@@ -66,36 +66,36 @@ namespace SmartTrack.Model.Measures
             if (!e.Unit.IsNullOrEmpty()) measure.ChangeUnitTo(e.Unit);
         }
 
-        protected void Apply(MeasureDeleted e)
+        protected virtual void Apply(MeasureDeleted e)
         {
             measures.RemoveAll(x => x.Name.ToLower() == e.Measure.ToLower());
         }
 
-        protected void Apply(TagAdded e)
+        protected virtual void Apply(TagAdded e)
         {
             var tag = Tags.WithNameAndDate(e.Tag, e.StartDate);
             if (tag == null)
                 tags.Add(new Tag(e.Tag, e.StartDate));
         }
 
-        protected void Apply(TagDeleted e)
+        protected virtual void Apply(TagDeleted e)
         {
             tags.RemoveAll(x => x.Name.ToLower() == e.Tag.ToLower() && x.StartDate.Date == e.StartDate.Date);
         }
 
-        protected void Apply(GroupAdded e)
+        protected virtual void Apply(GroupAdded e)
         {
             var group = groups.WithName(e.Group);
             if (group == null)
                 groups.Add(new Group(e.Group));
         }
 
-        protected void Apply(GroupDeleted e)
+        protected virtual void Apply(GroupDeleted e)
         {
             groups.RemoveAll(x => x.Name == e.Group);
         }
 
-        protected void Apply(GroupEdited e)
+        protected virtual void Apply(GroupEdited e)
         {
             var group = Groups.WithName(e.OldGroup);
             if (group == null)
@@ -107,7 +107,7 @@ namespace SmartTrack.Model.Measures
             if (!emptyName && !existingName) group.ChangeNameTo(e.NewGroup);
         }
 
-        protected void Apply(MeasureAddedToGroup e)
+        protected virtual void Apply(MeasureAddedToGroup e)
         {
             var measure = Measures.WithName(e.Measure);
             var group = Groups.WithName(e.Group);
@@ -116,7 +116,7 @@ namespace SmartTrack.Model.Measures
                 group.AddMeasure(measure);
         }
 
-        protected void Apply(MeasureRemovedFromGroup e)
+        protected virtual void Apply(MeasureRemovedFromGroup e)
         {
             var measure = Measures.WithName(e.Measure);
             var group = Groups.WithName(e.Group);
@@ -125,7 +125,7 @@ namespace SmartTrack.Model.Measures
                 group.RemoveMeasure(measure);
         }
 
-        protected void Apply(TagAddedToGroup e)
+        protected virtual void Apply(TagAddedToGroup e)
         {
             var tag = Tags.WithNameAndDate(e.Tag, e.TagStartDate);
             var group = Groups.WithName(e.Group);
@@ -134,7 +134,7 @@ namespace SmartTrack.Model.Measures
                 group.AddTag(tag);
         }
 
-        protected void Apply(TagRemovedFromGroup e)
+        protected virtual void Apply(TagRemovedFromGroup e)
         {
             var tag = Tags.WithNameAndDate(e.Tag, e.TagStartDate);
             var group = Groups.WithName(e.Group);
@@ -143,5 +143,4 @@ namespace SmartTrack.Model.Measures
                 group.RemoveTag(tag);
         }
 	}
-
 }

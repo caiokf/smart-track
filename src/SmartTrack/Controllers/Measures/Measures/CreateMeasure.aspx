@@ -13,8 +13,8 @@
         Unit: <%= this.TextBoxFor(x => x.Unit).Id("measure-unit") %>
        
     </div>
-    <%= this.SubmitButton().Value("Save") %>
-    <%= this.CancelButton() %>
+    <%= this.SubmitButton().Id("save-button").Value("Save")%>
+    <%= this.CancelButton().Id("cancel-button")%>
     <%= this.EndForm() %>
 	
 </asp:Content>

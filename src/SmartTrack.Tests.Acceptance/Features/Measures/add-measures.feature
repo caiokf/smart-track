@@ -6,6 +6,13 @@
 Scenario: Add a new metric
 	Given I am logged in user
 	And I have no existing measures
-	When I add a new measure called "Biceps"
-	Then I can see "Biceps" measure in my home page
-	And I only have 1 measure(s)
+	When I add a new measure called "Biceps" with unit in "cm" and save
+	Then I can see "Biceps" measure in my measures page
+	And I have exactly 1 measure(s) in my measures page
+
+Scenario: Add a new metric and cancel
+	Given I am logged in user
+	And I have no existing measures
+	When I add a new measure called "Biceps" with unit in "cm" and cancel
+	Then I cannot see "Biceps" measure in my measures page
+	And I have exactly 0 measure(s) in my measures page
