@@ -239,7 +239,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behaviors\Validation\ConventionalValidator.cs" />
+    <Compile Include="Behaviors\Validation\FluentValidator.cs" />
     <Compile Include="CodeTemplates\AppSettingsWrapper.gen.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

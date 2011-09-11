@@ -1,5 +1,4 @@
 using FluentValidation;
-using FubuLocalization;
 using FubuValidation;
 using SmartTrack.Model.Repositories;
 using SmartTrack.Web.Controllers.Login;
@@ -10,7 +9,7 @@ namespace SmartTrack.Web.Validation
     {
         public LoginJoinValidator(UserRepository userRepository)
         {
-            RuleFor(x => x.Username).NotNull().NotEmpty().WithMessage("Email is required");
+            RuleFor(x => x.Username).NotNull().NotEmpty().WithMessage("Username is required");
             RuleFor(x => x.Username).Must(x => userRepository.Users.Named(x).Count() == 0).WithMessage("Sorry, the selected Username is already being used");
 
             RuleFor(x => x.Email).NotNull().NotEmpty().WithMessage("Email is required");

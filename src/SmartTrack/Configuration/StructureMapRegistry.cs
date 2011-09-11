@@ -56,10 +56,10 @@ namespace SmartTrack.Web.Configuration
         {
             Scan(x =>
             {
-                x.AssemblyContainingType<ConventionalValidator>();
+                x.AssemblyContainingType<FluentValidator>();
                 x.ConnectImplementationsToTypesClosing(typeof (IValidator<>));
             });
-            For<IValidator>().Use<ConventionalValidator>();
+            For<IValidator>().Use<FluentValidator>();
             For<IValidationFailureHandler>().Use<ValidationFailureHandler>();
             For<IValidationFailurePolicy>().Add<JsonValidationFailurePolicy>();
         }

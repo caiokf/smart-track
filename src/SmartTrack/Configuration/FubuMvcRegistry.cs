@@ -27,7 +27,7 @@ namespace SmartTrack.Web.Configuration
                 //.WrapBehaviorChainsWith<TransactionBehavior>()
                 .Add<ValidationPolicy>();
 
-            Services(x => x.ReplaceService<IValidator, ConventionalValidator>());
+            Services(s => s.ReplaceService<IValidator, FluentValidator>());
 
             Routes
                 .HomeIs<MeasuresController>(x => x.AllMeasures())
