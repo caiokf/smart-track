@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTrack.Tests.Acceptance
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTrack.Model", "SmartTrack.Model\SmartTrack.Model.csproj", "{86B9CDA1-17B8-435D-AC29-A55FB04EF3AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTrack.Scripts", "SmartTrack.Scripts\SmartTrack.Scripts.csproj", "{DE844355-ABEE-4874-8431-E579AD9A2824}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,14 @@ Global
 		{86B9CDA1-17B8-435D-AC29-A55FB04EF3AA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{86B9CDA1-17B8-435D-AC29-A55FB04EF3AA}.Tests.Unit|Any CPU.ActiveCfg = Debug|Any CPU
 		{86B9CDA1-17B8-435D-AC29-A55FB04EF3AA}.Tests.Unit|Any CPU.Build.0 = Debug|Any CPU
+		{DE844355-ABEE-4874-8431-E579AD9A2824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE844355-ABEE-4874-8431-E579AD9A2824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE844355-ABEE-4874-8431-E579AD9A2824}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE844355-ABEE-4874-8431-E579AD9A2824}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{DE844355-ABEE-4874-8431-E579AD9A2824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE844355-ABEE-4874-8431-E579AD9A2824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE844355-ABEE-4874-8431-E579AD9A2824}.Tests.Unit|Any CPU.ActiveCfg = Release|Any CPU
+		{DE844355-ABEE-4874-8431-E579AD9A2824}.Tests.Unit|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

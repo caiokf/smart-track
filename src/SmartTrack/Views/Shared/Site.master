@@ -20,7 +20,6 @@
 		    .Add("~/Scripts/master-ready.js")
 		    .Add("~/Scripts/form-ajax-validate-and-submit.js")
 		    .Add("~/Scripts/link-confirmation.js")
-            .Add("~/Scripts/watermark.js")
 		    .WithMinifier(JavaScriptMinifiers.Yui)      
             .Render("~/Content/scripts/sitemaster_#.js")
 		%>

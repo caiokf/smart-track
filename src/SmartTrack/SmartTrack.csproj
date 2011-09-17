@@ -472,6 +472,8 @@
     <Content Include="Content\scripts\jquery\jquery.loading.overflow.min.js" />
     <Content Include="Content\scripts\jquery\jquery.templates-1.0.js" />
     <Content Include="Content\scripts\jquery\jquery.tools.min.js" />
+    <Content Include="Content\scripts\mscorlib.js" />
+    <Content Include="Content\scripts\SmartTrack.Scripts.js" />
     <Content Include="Content\styles\site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -617,11 +619,6 @@
     </Content>
     <Content Include="Content\scripts\underscore\underscore.js" />
     <Content Include="Content\scripts\underscore\underscore.min.js" />
-    <Content Include="Scripts\watermark.js">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>watermark.coffee</DependentUpon>
-    </Content>
     <Content Include="Scripts\Measures\allmeasures.js">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -687,10 +684,6 @@
     <None Include="Scripts\master-ready.coffee">
       <Generator>CoffeeScriptGenerator</Generator>
       <LastGenOutput>master-ready.js</LastGenOutput>
-    </None>
-    <None Include="Scripts\watermark.coffee">
-      <Generator>CoffeeScriptGenerator</Generator>
-      <LastGenOutput>watermark.js</LastGenOutput>
     </None>
     <None Include="Scripts\Measures\allmeasures.coffee">
       <Generator>CoffeeScriptGenerator</Generator>

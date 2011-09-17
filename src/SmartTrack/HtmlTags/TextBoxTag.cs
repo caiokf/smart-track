@@ -1,5 +1,4 @@
 ﻿using HtmlTags;
-using HtmlTags.Extended.Attributes;
 
 namespace SmartTrack.Web.HtmlTags
 {
@@ -8,8 +7,8 @@ namespace SmartTrack.Web.HtmlTags
         public static HtmlTag Watermark(this HtmlTag textbox, string watermark)
         {
             return textbox
-                .Attr("onfocus", "javascript:Watermark.focusInput($(this));")
-                .Attr("onblur", "javascript:Watermark.blurInput($(this));")
+                .Attr("onfocus", "javascript:SmartTrack.Scripts.Watermark.inputFocus($(this));")
+                .Attr("onblur", "javascript:SmartTrack.Scripts.Watermark.inputBlur($(this));")
                 .WrapWith(new HtmlTag("div"))
                     .Style("position", "relative")
                     .Style("display", "inline")
@@ -19,9 +18,9 @@ namespace SmartTrack.Web.HtmlTags
                     .Style("left", "15px")
                     .Style("top", "2px")
                     .Text(" " + watermark + " ")
-                    .Attr("onclick", "javascript:Watermark.focusSpan($(this));")
-                    .Attr("onfocus", "javascript:Watermark.focusSpan($(this));")
-                    .Attr("onblur", "javascript:Watermark.blurSpan($(this));")
+                    .Attr("onclick", "javascript:SmartTrack.Scripts.Watermark.spanFocus($(this));")
+                    .Attr("onfocus", "javascript:SmartTrack.Scripts.Watermark.spanFocus($(this));")
+                    .Attr("onblur", "javascript:SmartTrack.Scripts.Watermark.spanBlur($(this));")
                 );
         }
     }
