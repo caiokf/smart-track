@@ -584,6 +584,11 @@
     <Content Include="fubu-content\fubumvc-diagnostics\WebContent\Content\Styles\snapdragon\common.css" />
     <Content Include="fubu-content\fubumvc-diagnostics\WebContent\Content\Styles\snapdragon\forms.css" />
     <Content Include="fubu-content\fubumvc-diagnostics\WebContent\Shared\bindings.xml" />
+    <Content Include="Scripts\event-types.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>event-types.tt</DependentUpon>
+    </Content>
     <Content Include="Scripts\form-ajax-validate-and-submit.js" />
     <Content Include="Scripts\form-ajax-validate-and-submit_.js">
       <AutoGen>True</AutoGen>
@@ -592,6 +597,11 @@
     </Content>
     <Content Include="Content\scripts\jquery-ui\jquery-ui-1.8.16.js" />
     <Content Include="Content\scripts\jquery-ui\jquery-ui-1.8.16.min.js" />
+    <Content Include="Scripts\input-model-types.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>input-model-types.tt</DependentUpon>
+    </Content>
     <Content Include="Scripts\link-confirmation.js">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -658,9 +668,17 @@
     <Content Include="fubu-content\fubumvc-diagnostics\WebContent\web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </Content>
+    <None Include="Scripts\event-types.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>event-types.js</LastGenOutput>
+    </None>
     <None Include="Scripts\form-ajax-validate-and-submit_.coffee">
       <Generator>CoffeeScriptGenerator</Generator>
       <LastGenOutput>form-ajax-validate-and-submit_.js</LastGenOutput>
+    </None>
+    <None Include="Scripts\input-model-types.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>input-model-types.js</LastGenOutput>
     </None>
     <None Include="Scripts\link-confirmation.coffee">
       <Generator>CoffeeScriptGenerator</Generator>

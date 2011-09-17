@@ -4,7 +4,7 @@
 	XXX	run acceptance tests on firefox
 		run acceptance tests on ie
 		run acceptance tests on chrome
-		finish validation handler
+	XXX	finish validation handler
 		localization infra
 		coffesscript tests
 		refactor coffeescript for validation

@@ -24,6 +24,7 @@
         <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.add_more_than_one_measure" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="add_more_than_one_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
         <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.MeasuresEvents.add_one_measure" ParentId="SmartTrack.Tests.Unit.Measures.MeasuresEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.MeasuresEvents" MethodName="add_one_measure" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
         <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Acceptance.Features.Measures.AddMetricsFeature.AddANewMetric" ParentId="SmartTrack.Tests.Acceptance.Features.Measures.AddMetricsFeature" type="NUnitTestElement" TypeName="SmartTrack.Tests.Acceptance.Features.Measures.AddMetricsFeature" MethodName="AddANewMetric" Project="763A35F6-9D42-49E3-BD1F-0212FED5243B" />
+        <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Acceptance.Features.Measures.AddMetricsFeature.AddANewMetricAndCancel" ParentId="SmartTrack.Tests.Acceptance.Features.Measures.AddMetricsFeature" type="NUnitTestElement" TypeName="SmartTrack.Tests.Acceptance.Features.Measures.AddMetricsFeature" MethodName="AddANewMetricAndCancel" Project="763A35F6-9D42-49E3-BD1F-0212FED5243B" />
         <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests.commit_should_call_on_transaction" ParentId="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Transactions.TransactionBoundaryTests" MethodName="commit_should_call_on_transaction" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
         <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.create_new_group" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="create_new_group" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
         <UnitTestElement Provider="nUnit" Id="SmartTrack.Tests.Unit.Measures.GroupsEvents.create_new_group_with_name_of_existing_group_should_have_no_effect" ParentId="SmartTrack.Tests.Unit.Measures.GroupsEvents" type="NUnitTestElement" TypeName="SmartTrack.Tests.Unit.Measures.GroupsEvents" MethodName="create_new_group_with_name_of_existing_group_should_have_no_effect" Project="7C5E3F69-87AE-42A2-9B6F-0A716822B673" />
@@ -74,89 +75,85 @@
   </UnitTestSessions>
   <RecentFiles>
     <RecentFiles>
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Utils/d:Extensions/f:ObjectExtensions.cs" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Utils/d:Extensions/f:EnumExtensions.cs" caret="169" fromTop="7" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:SchedulerRegistry.cs" caret="272" fromTop="11" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:ScheduledTasks/f:RefreshDatabase.cs" caret="1032" fromTop="32" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:CodeTemplates/f:BuildConfigurationsEnum.gen.cs" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Global.asax.cs" caret="552" fromTop="16" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:StructureMapRegistry.cs" caret="2042" fromTop="16" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/d:Rules/f:StringExtensions.cs" caret="144" fromTop="6" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:JsonValidationFailurePolicy.cs" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:ConventionalValidator.cs" caret="938" fromTop="12" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="811" fromTop="16" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Web.config" caret="5173" fromTop="7" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:packages.config" caret="103" fromTop="3" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Features/d:Measures/f:add-measures.feature" caret="320" fromTop="10" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:packages.config" caret="0" fromTop="0" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:ScheduledTasks/f:CreateTestData.cs" caret="213" fromTop="9" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:EventRepository.cs" caret="502" fromTop="1" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:BaseSteps.cs" caret="304" fromTop="13" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="1937" fromTop="54" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:App.config" caret="0" fromTop="0" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Pages/f:CreateMeasurePage.cs" caret="0" fromTop="0" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/f:AggregateRoot.cs" caret="434" fromTop="16" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Features/d:Measures/f:add-measures.feature" caret="413" fromTop="12" />
+      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:EventRepository.cs" caret="813" fromTop="26" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:ScenarioContextExtensions.cs" caret="0" fromTop="0" />
       <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Repositories/f:UserRepository.cs" caret="1641" fromTop="20" />
-      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:NHibernateConfiguration.cs" caret="1128" fromTop="17" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:BasePage.cs" caret="0" fromTop="0" />
       <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts/d:Measures/f:User.cs" caret="488" fromTop="18" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Features/d:Measures/f:add-measures.feature.cs" caret="2631" fromTop="19" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="315" fromTop="11" />
+      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Pages/f:AllMeasuresPage.cs" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:StructureMapRegistry.cs" caret="1947" fromTop="20" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="892" fromTop="20" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:FluentValidator.cs" caret="1888" fromTop="34" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="876" fromTop="17" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Backlog.txt" caret="217" fromTop="6" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:watermark.coffee" caret="464" fromTop="19" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Views/d:Shared/f:Site.master" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit.js" caret="0" fromTop="0" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="492" fromTop="10" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:link-confirmation.coffee" caret="274" fromTop="11" />
       <File id="7C5E3F69-87AE-42A2-9B6F-0A716822B673/d:Validations/f:LoginJoinInputValidationTests.cs" caret="4454" fromTop="18" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:App.config" caret="375" fromTop="11" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:WebBrowser.cs" caret="514" fromTop="19" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:ScenarioContextExtensions.cs" caret="268" fromTop="9" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Pages/f:AllMeasuresPage.cs" caret="10" fromTop="0" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="743" fromTop="23" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:BasePage.cs" caret="297" fromTop="12" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:input-model-types.tt" caret="91" fromTop="1" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:event-types.tt" caret="91" fromTop="1" />
     </RecentFiles>
     <RecentEdits>
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts/d:Measures/f:User.cs" caret="4064" fromTop="34" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts/d:Measures/f:User.cs" caret="4349" fromTop="22" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts/d:Measures/f:User.cs" caret="4615" fromTop="30" />
-      <File id="86B9CDA1-17B8-435D-AC29-A55FB04EF3AA/d:Contexts/d:Measures/f:User.cs" caret="674" fromTop="23" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="0" fromTop="0" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Steps/d:Measures/f:AddMeasures.cs" caret="345" fromTop="11" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="978" fromTop="12" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:WebBrowser.cs" caret="136" fromTop="5" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:WebBrowser.cs" caret="229" fromTop="9" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:WebBrowser.cs" caret="699" fromTop="16" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:WebBrowser.cs" caret="793" fromTop="21" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:WebBrowser.cs" caret="26" fromTop="0" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:WebBrowser.cs" caret="953" fromTop="31" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/f:App.config" caret="372" fromTop="11" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="806" fromTop="25" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="688" fromTop="22" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:BasePage.cs" caret="299" fromTop="12" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:BasePage.cs" caret="160" fromTop="8" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:BasePage.cs" caret="428" fromTop="17" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:BasePage.cs" caret="27" fromTop="0" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:WebBrowser.cs" caret="391" fromTop="17" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:BasePage.cs" caret="297" fromTop="12" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="1115" fromTop="17" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="1115" fromTop="28" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:ScenarioContextExtensions.cs" caret="268" fromTop="9" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="411" fromTop="6" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="939" fromTop="18" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="1116" fromTop="28" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Pages/f:AllMeasuresPage.cs" caret="10" fromTop="0" />
-      <File id="763A35F6-9D42-49E3-BD1F-0212FED5243B/d:Base/f:StepsSetup.cs" caret="771" fromTop="16" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:FluentValidator.cs" caret="1916" fromTop="34" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:FluentValidator.cs" caret="1381" fromTop="25" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:FluentValidator.cs" caret="385" fromTop="13" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:FluentValidator.cs" caret="419" fromTop="4" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:FluentValidator.cs" caret="575" fromTop="9" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Configuration/f:FubuMvcRegistry.cs" caret="892" fromTop="20" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:FluentValidator.cs" caret="1189" fromTop="23" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="400" fromTop="12" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Validation/f:LoginJoinValidator.cs" caret="25" fromTop="1" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Behaviors/d:Validation/f:FluentValidator.cs" caret="1888" fromTop="34" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/f:Backlog.txt" caret="217" fromTop="6" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit.js" caret="1082" fromTop="23" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit.js" caret="1475" fromTop="30" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit.js" caret="1082" fromTop="23" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="914" fromTop="20" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="367" fromTop="8" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="848" fromTop="18" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="721" fromTop="16" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="1449" fromTop="33" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="1449" fromTop="32" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="923" fromTop="12" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="1153" fromTop="17" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="1390" fromTop="26" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="1276" fromTop="21" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="1414" fromTop="27" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="169" fromTop="6" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="163" fromTop="4" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:form-ajax-validate-and-submit_.coffee" caret="30" fromTop="1" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:input-model-types.tt" caret="91" fromTop="1" />
+      <File id="4D6C9BE9-C8F0-44B7-93DA-7D7EAF8672A9/d:Scripts/f:event-types.tt" caret="91" fromTop="1" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
       <Item value="IActionBehavior`0" priority="31" />
       <Item value="ctor" priority="287" />
-      <Item value="this" priority="447" />
-      <Item value="x" priority="447" />
+      <Item value="this" priority="543" />
+      <Item value="x" priority="543" />
       <Item value="IModelBinder`0" priority="31" />
       <Item value="Models" priority="31" />
-      <Item value="public" priority="475" />
+      <Item value="public" priority="571" />
       <Item value="class" priority="93" />
       <Item value="Registry`0" priority="31" />
-      <Item value="var" priority="190" />
+      <Item value="var" priority="254" />
       <Item value="new" priority="736" />
       <Item value="NotificationMessage" priority="58" />
       <Item value="container" priority="31" />
       <Item value="IValidate" priority="127" />
       <Item value="typeof" priority="95" />
-      <Item value="validatedType" priority="63" />
+      <Item value="validatedType" priority="96" />
       <Item value="validators" priority="63" />
-      <Item value="notificationMessages" priority="58" />
+      <Item value="notificationMessages" priority="90" />
       <Item value="context" priority="63" />
       <Item value="Scan`0" priority="31" />
       <Item value="ConventionalValidator`0" priority="63" />
@@ -166,22 +163,22 @@
       <Item value="Services`0" priority="31" />
       <Item value="interface" priority="61" />
       <Item value="IValidate`0" priority="31" />
-      <Item value="T`0" priority="127" />
+      <Item value="T`0" priority="222" />
       <Item value="NotificationMessage`0" priority="58" />
       <Item value="Enumerable`0" priority="31" />
       <Item value="static" priority="190" />
       <Item value="void" priority="159" />
       <Item value="Transactions" priority="30" />
-      <Item value="where" priority="63" />
+      <Item value="where" priority="127" />
       <Item value="message" priority="31" />
-      <Item value="property" priority="32" />
-      <Item value="return" priority="479" />
+      <Item value="property" priority="97" />
+      <Item value="return" priority="735" />
       <Item value="notification" priority="58" />
       <Item value="bool" priority="124" />
       <Item value="object" priority="60" />
       <Item value="obj" priority="31" />
       <Item value="default" priority="31" />
-      <Item value="string" priority="96" />
+      <Item value="string" priority="160" />
       <Item value="IQueryable`0" priority="63" />
       <Item value="get" priority="95" />
       <Item value="session" priority="31" />
@@ -200,7 +197,7 @@
       <Item value="ConfirmPassword" priority="27" />
       <Item value="LoginJoinEmailShouldBeInCorrectFormat" priority="29" />
       <Item value="TestCase" priority="31" />
-      <Item value="if" priority="127" />
+      <Item value="if" priority="159" />
       <Item value="shouldBeValid" priority="31" />
       <Item value="UserRepository" priority="16" />
       <Item value="repository" priority="63" />
@@ -231,7 +228,7 @@
       <Item value="Cfg" priority="26" />
       <Item value="configuration" priority="63" />
       <Item value="sessionFactory" priority="31" />
-      <Item value="true" priority="31" />
+      <Item value="true" priority="63" />
       <Item value="configurationCreated" priority="31" />
       <Item value="BuildSessionFactory`0" priority="31" />
       <Item value="SchemaUpdate" priority="58" />
@@ -256,31 +253,50 @@
       <Item value="InternetExplorerDriver" priority="25" />
       <Item value="Chrome" priority="26" />
       <Item value="ChromeDriver" priority="25" />
-      <Item value="WatiN" priority="61" />
-      <Item value="Core" priority="75" />
+      <Item value="WatiN" priority="93" />
+      <Item value="Core" priority="129" />
       <Item value="FireFox" priority="80" />
       <Item value="Browser`0" priority="54" />
-      <Item value="browser" priority="252" />
+      <Item value="browser" priority="316" />
       <Item value="waitForCompleteTimeOut" priority="31" />
       <Item value="#region" priority="31" />
       <Item value="WebBrowser" priority="57" />
-      <Item value="else" priority="31" />
+      <Item value="else" priority="63" />
       <Item value="browserSetting" priority="95" />
       <Item value="ScenarioContextExtensions`0" priority="31" />
-      <Item value="ScenarioContext`0" priority="63" />
+      <Item value="ScenarioContext`0" priority="95" />
       <Item value="browsers" priority="31" />
       <Item value="Page`0" priority="26" />
       <Item value="protected" priority="31" />
       <Item value="abstract" priority="31" />
-      <Item value="WebBrowser`0" priority="63" />
-      <Item value="BasePage`0" priority="31" />
+      <Item value="WebBrowser`0" priority="95" />
+      <Item value="BasePage`0" priority="159" />
       <Item value="T" priority="28" />
-      <Item value="page" priority="63" />
+      <Item value="page" priority="159" />
       <Item value="AllMeasuresPage`0" priority="31" />
+      <Item value="measures" priority="31" />
+      <Item value="int" priority="30" />
+      <Item value="BaseSteps`0" priority="31" />
+      <Item value="Browser" priority="127" />
+      <Item value="Table`0" priority="31" />
+      <Item value="Link`0" priority="58" />
+      <Item value="CssSelectorExtensions" priority="27" />
+      <Item value="Element`0" priority="31" />
+      <Item value="webBrowser" priority="31" />
+      <Item value="TextField`0" priority="91" />
+      <Item value="as" priority="63" />
+      <Item value="canCannot" priority="31" />
+      <Item value="When`0" priority="31" />
+      <Item value="measure" priority="63" />
+      <Item value="using" priority="30" />
+      <Item value="Fizzler" priority="30" />
+      <Item value="StructureMap" priority="31" />
+      <Item value="ValidationResult`0" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Web.Configuration.FubuMvcRegistry">
       <Item value="Views" priority="26" />
       <Item value="Services`0" priority="26" />
+      <Item value="IncludeDiagnostics`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuMVC.Core.Registration.IServiceRegistry">
       <Item value="DefaultServiceFor`1" priority="53" />
@@ -298,6 +314,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Type">
       <Item value="MakeGenericType`0" priority="26" />
+      <Item value="GetProperty`0" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.IList">
       <Item value="OfType`1" priority="26" />
@@ -308,10 +325,11 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="Each`1" priority="26" />
-      <Item value="SelectMany`2" priority="27" />
-      <Item value="Select`2" priority="26" />
+      <Item value="SelectMany`2" priority="54" />
+      <Item value="Select`2" priority="53" />
       <Item value="Count`1" priority="107" />
       <Item value="Where`1" priority="53" />
+      <Item value="ToList`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuValidation.ValidationContext">
       <Item value="Notification" priority="26" />
@@ -338,6 +356,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="Add`0" priority="45" />
+      <Item value="ForEach`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FubuValidation.NotificationMessage">
       <Item value="AddSubstitution`0" priority="22" />
@@ -420,7 +439,7 @@
       <Item value="Append`0" priority="189" />
       <Item value="Text`0" priority="26" />
       <Item value="WrapWith`0" priority="26" />
-      <Item value="Id`0" priority="26" />
+      <Item value="Id`0" priority="80" />
       <Item value="Hide`0" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ASP.controllers_login_join_aspx">
@@ -434,8 +453,8 @@
       <Item value="if" priority="10" />
       <Item value="$" priority="9" />
       <Item value="response" priority="10" />
-      <Item value="function" priority="21" />
-      <Item value="return" priority="10" />
+      <Item value="function" priority="32" />
+      <Item value="return" priority="21" />
       <Item value="x" priority="10" />
       <Item value="var" priority="10" />
     </ItemStatistics>
@@ -480,11 +499,11 @@
       <Item value="WithMessage`2" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentValidation.Results.ValidationResult">
-      <Item value="Errors" priority="107" />
+      <Item value="Errors" priority="130" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentValidation.Results.ValidationFailure">
-      <Item value="PropertyName" priority="81" />
-      <Item value="ErrorMessage" priority="76" />
+      <Item value="PropertyName" priority="108" />
+      <Item value="ErrorMessage" priority="103" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
       <Item value="Where`1" priority="27" />
@@ -511,10 +530,10 @@
     <ItemStatistics item="Qualified:TechTalk.SpecFlow.ScenarioContext">
       <Item value="Get`1" priority="26" />
       <Item value="Set`1" priority="26" />
-      <Item value="Browser`0" priority="80" />
+      <Item value="Browser`0" priority="107" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@TechTalk.SpecFlow.ScenarioContext">
-      <Item value="Current" priority="107" />
+      <Item value="Current" priority="135" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SharpTestsEx.IClassConstraints">
       <Item value="Not" priority="26" />
@@ -528,6 +547,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:">
       <Item value="Visit`0" priority="26" />
+      <Item value="Url" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Activator">
       <Item value="CreateInstance`1" priority="26" />
@@ -537,8 +557,35 @@
       <Item value="ServerAdress" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SmartTrack.Tests.Acceptance.WebBrowser">
-      <Item value="Goto`1" priority="26" />
+      <Item value="Goto`1" priority="107" />
       <Item value="Close`0" priority="26" />
+      <Item value="Url" priority="26" />
+      <Item value="Link`0" priority="26" />
+      <Item value="CssSelect`0" priority="27" />
+      <Item value="CssSelectAll`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WatiN.Core.Element">
+      <Item value="As`1" priority="53" />
+      <Item value="Click`0" priority="81" />
+      <Item value="Text" priority="53" />
+      <Item value="Parent" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SmartTrack.Tests.Acceptance.BasePage">
+      <Item value="Get`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Tests.Acceptance.Pages.AllMeasuresPage">
+      <Item value="Visit`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SmartTrack.Tests.Acceptance.Pages.CreateMeasurePage">
+      <Item value="MeasureName" priority="26" />
+      <Item value="Save" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WatiN.Core.TextField">
+      <Item value="TypeText`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FubuMVC.Core.IDiagnosticsConfigurationExpression">
+      <Item value="LimitRecordingTo`0" priority="26" />
+      <Item value="ApplyFilter`1" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>
