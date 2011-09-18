@@ -47,9 +47,13 @@
   <ItemGroup>
     <Content Include="Properties\SmartTrack.Scripts.ruleset" />
     <Content Include="Properties\SmartTrack.Scripts.script" />
-    <Compile Include="AjaxFormValidation.cs" />
+    <Compile Include="Scripts\AjaxFormValidation.cs" />
+    <Compile Include="JsonResponse.cs" />
+    <Compile Include="Libraries\jQueryForms.cs" />
+    <Compile Include="Libraries\jQueryValidation.cs" />
+    <Compile Include="Libraries\Linq.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Watermark.cs" />
+    <Compile Include="Scripts\Watermark.cs" />
   </ItemGroup>
   <Import Project="$(ProgramFiles)\ScriptSharp\v1.0\ScriptSharp.targets" />
 </Project>

@@ -18,7 +18,6 @@
             .Add_LessHandler()
             .Add_Underscore()      
 		    .Add("~/Scripts/master-ready.js")
-		    .Add("~/Scripts/form-ajax-validate-and-submit.js")
 		    .Add("~/Scripts/link-confirmation.js")
 		    .WithMinifier(JavaScriptMinifiers.Yui)      
             .Render("~/Content/scripts/sitemaster_#.js")

@@ -21,7 +21,7 @@ namespace SquishIt.Framework
                 .Add("~/Content/scripts/jquery/jquery.templates-1.0.js")
                 .Add("~/Content/scripts/jquery/jquery.tools.min.js")
                 .Add("~/Content/scripts/mscorlib.js")
-                .Add("~/Content/scripts/SmartTrack.Scripts.js");
+                .Add("~/Content/scripts/SmartTrack.Scripts.debug.js");
             return bundle;
         }
 

@@ -472,7 +472,9 @@
     <Content Include="Content\scripts\jquery\jquery.loading.overflow.min.js" />
     <Content Include="Content\scripts\jquery\jquery.templates-1.0.js" />
     <Content Include="Content\scripts\jquery\jquery.tools.min.js" />
+    <Content Include="Content\scripts\mscorlib.debug.js" />
     <Content Include="Content\scripts\mscorlib.js" />
+    <Content Include="Content\scripts\SmartTrack.Scripts.debug.js" />
     <Content Include="Content\scripts\SmartTrack.Scripts.js" />
     <Content Include="Content\styles\site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -591,12 +593,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>event-types.tt</DependentUpon>
     </Content>
-    <Content Include="Scripts\form-ajax-validate-and-submit.js" />
-    <Content Include="Scripts\form-ajax-validate-and-submit_.js">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>form-ajax-validate-and-submit_.coffee</DependentUpon>
-    </Content>
     <Content Include="Content\scripts\jquery-ui\jquery-ui-1.8.16.js" />
     <Content Include="Content\scripts\jquery-ui\jquery-ui-1.8.16.min.js" />
     <Content Include="Scripts\input-model-types.js">
@@ -668,10 +664,6 @@
     <None Include="Scripts\event-types.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>event-types.js</LastGenOutput>
-    </None>
-    <None Include="Scripts\form-ajax-validate-and-submit_.coffee">
-      <Generator>CoffeeScriptGenerator</Generator>
-      <LastGenOutput>form-ajax-validate-and-submit_.js</LastGenOutput>
     </None>
     <None Include="Scripts\input-model-types.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

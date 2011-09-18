@@ -1,3 +1,4 @@
+using System;
 using jQueryApi;
 
 namespace SmartTrack.Scripts

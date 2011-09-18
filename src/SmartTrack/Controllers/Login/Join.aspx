@@ -25,7 +25,6 @@
 			.Add_LessHandler()
             .Add_Underscore()
 			.Add("~/Content/scripts/less-1.1.3.min.js")
-            .Add("~/Scripts/form-ajax-validate-and-submit.js")
             .WithMinifier(JavaScriptMinifiers.Yui)
             .Render("~/Content/scripts/login_join_#.js")
 		%>
