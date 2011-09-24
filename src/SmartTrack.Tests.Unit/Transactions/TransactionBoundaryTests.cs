@@ -1,9 +1,7 @@
 using Moq;
 using NHibernate;
 using NUnit.Framework;
-using SmartTrack.Web.Http.Behaviors;
 using SmartTrack.Web.Http.Behaviors.Transactions;
-using StructureMap;
 
 namespace SmartTrack.Tests.Unit.Transactions
 {

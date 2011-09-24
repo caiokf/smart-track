@@ -1,6 +1,7 @@
 // SmartTrack.Scripts.js
 (function($){
-Type.registerNamespace('SmartTrack.Scripts');SmartTrack.Scripts.SetupAjaxValidation=function(){}
+Type.registerNamespace('SmartTrack.Scripts');window.$create_JsonResponse=function(){return {};}
+SmartTrack.Scripts.SetupAjaxValidation=function(){}
 SmartTrack.Scripts.AjaxFormValidation=function(f){this.$0=$(f);}
 SmartTrack.Scripts.AjaxFormValidation.prototype={$0:null,setupValidation:function(){var $0={};$0.errorElement='span';$0.errorPlacement=function($p1_0,$p1_1){
 $p1_0.prependTo($p1_1.parent());};$0.submitHandler=ss.Delegate.create(this,this.$1);this.$0.validate($0);},$1:function($p0){var $0={};$0.url=this.$0.attr('action');$0.type='POST';$0.dataType='json';$0.success=ss.Delegate.create(this,this.$2);$0.error=ss.Delegate.create(this,function(){

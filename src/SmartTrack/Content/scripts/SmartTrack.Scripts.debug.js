@@ -6,6 +6,12 @@
 Type.registerNamespace('SmartTrack.Scripts');
 
 ////////////////////////////////////////////////////////////////////////////////
+// JsonResponse
+
+window.$create_JsonResponse = function JsonResponse() { return {}; }
+
+
+////////////////////////////////////////////////////////////////////////////////
 // SmartTrack.Scripts.SetupAjaxValidation
 
 SmartTrack.Scripts.SetupAjaxValidation = function SmartTrack_Scripts_SetupAjaxValidation() {

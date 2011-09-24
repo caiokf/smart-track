@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace SmartTrack.Scripts
 {
-    [IgnoreNamespace] [Imported]
+    [IgnoreNamespace]
     public sealed class JsonResponse : Record
     {
         [PreserveCase] public bool Success;
