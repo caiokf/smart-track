@@ -453,6 +453,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>allmeasures.coffee</DependentUpon>
     </Content>
+    <Content Include="Scripts\watermark.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>watermark.coffee</DependentUpon>
+    </Content>
     <Content Include="Views\Shared\Site.master" />
     <None Include="Scripts\event-types.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -480,6 +485,10 @@
     <Content Include="Web.Tests.Unit.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <None Include="Scripts\watermark.coffee">
+      <Generator>CoffeeScriptGenerator</Generator>
+      <LastGenOutput>watermark.js</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\scripts\less-1.1.3.min.js" />
