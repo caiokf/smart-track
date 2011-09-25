@@ -20,7 +20,8 @@ namespace SquishIt.Framework
                 .Add("~/Content/scripts/jquery/jquery.loading.overflow.min.js")
                 .Add("~/Content/scripts/jquery/jquery.templates-1.0.js")
                 .Add("~/Content/scripts/jquery/jquery.tools.min.js")
-                .Add("~/Scripts/watermark.js");
+                .Add("~/Scripts/watermark.js")
+                .Add("~/Scripts/form-submit-ajax.js");
             return bundle;
         }
 

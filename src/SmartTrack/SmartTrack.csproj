@@ -383,10 +383,6 @@
     <Content Include="Content\scripts\jquery\jquery.loading.overflow.min.js" />
     <Content Include="Content\scripts\jquery\jquery.templates-1.0.js" />
     <Content Include="Content\scripts\jquery\jquery.tools.min.js" />
-    <Content Include="Content\scripts\mscorlib.debug.js" />
-    <Content Include="Content\scripts\mscorlib.js" />
-    <Content Include="Content\scripts\SmartTrack.Scripts.debug.js" />
-    <Content Include="Content\scripts\SmartTrack.Scripts.js" />
     <Content Include="Content\styles\site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -428,6 +424,11 @@
     </Content>
     <Content Include="Content\scripts\jquery-ui\jquery-ui-1.8.16.js" />
     <Content Include="Content\scripts\jquery-ui\jquery-ui-1.8.16.min.js" />
+    <Content Include="Scripts\form-submit-ajax.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>form-submit-ajax.coffee</DependentUpon>
+    </Content>
     <Content Include="Scripts\input-model-types.js">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -462,6 +463,10 @@
     <None Include="Scripts\event-types.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>event-types.js</LastGenOutput>
+    </None>
+    <None Include="Scripts\form-submit-ajax.coffee">
+      <Generator>CoffeeScriptGenerator</Generator>
+      <LastGenOutput>form-submit-ajax.js</LastGenOutput>
     </None>
     <None Include="Scripts\input-model-types.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
